@@ -1,0 +1,35 @@
+$button-bg-color: #0b0016;
+$button-text-color: #f9f9fa;
+
+.join-now-button {
+  background-color: $button-bg-color;
+  color: $button-text-color;
+  white-space: nowrap;
+  border-radius: 18px;
+  border: none;
+  margin-bottom: 15px;
+  font-size: 12px;
+  padding: 7px 12px;
+  font-weight: 600;
+}
+
+.header_joinbutton {
+  background-color: #1f013e;
+  color: white !important;
+  border: none;
+  border-radius: 14px;
+  font-size: 14px;
+  width: auto;
+  white-space: nowrap;
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-weight: 600;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
+
+  p {
+    padding-bottom: 10px;
+    height: 20px;
+  }
+}

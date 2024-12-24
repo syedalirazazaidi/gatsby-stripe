@@ -1,0 +1,152 @@
+footer.footer_sceond {
+  width: $full-width;
+  background: $gray-light-100;
+  .white_container {
+    position: $relative;
+    left: 5%;
+    display: flex;
+    width: 95%;
+    background: #fafafa;
+    .abstract_shape_left {
+      position: $absolute;
+      top: -40px;
+      left: 40px;
+      display: inline-flex;
+      img {
+        width: 80px;
+        height: 80px;
+      }
+    }
+    .abstract_shape_right {
+      position: $absolute;
+      top: 20px;
+      right: 40px;
+      display: inline-flex;
+    }
+    .container {
+      .subscribe_newsletter {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 6rem;
+        margin-bottom: 3rem;
+        .left_content {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          h5 {
+            display: block;
+            font-family: $font-family-poppins;
+            font-size: 1rem;
+            font-weight: $font-weight-medium;
+            color: #343434;
+            letter-spacing: .01rem;
+          }
+          span {
+            display: block;
+            font-family: $font-family-poppins;
+            font-size: .875rem;
+            font-weight: $font-weight-light;
+            color: #8c8c8c;
+            letter-spacing: .00875rem;
+          }
+        }
+        .right_content {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: flex-end;
+          margin-top: .5rem;
+          form {
+            input {
+              flex-shrink: 0;
+              width: 21.25rem;
+              height: 2.41794rem;
+              font-family: $font-family-poppins;
+              font-size: .8125rem;
+              font-weight: $font-weight-normal;
+              color: rgba(47, 5, 89, .5);
+              letter-spacing: .00813rem;
+              background: $white;
+              border: 1px solid rgba(47, 5, 89, .2);
+              border-radius: .375rem;
+            }
+          }
+        }
+      }
+
+      .copyright_content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 2rem 0;
+        span {
+          display: inline-flex;
+          justify-content: flex-start;
+          font-family: $font-family-poppins;
+          font-size: .8125rem;
+          font-weight: $font-weight-light;
+          color: $gray-light-500;
+        }
+        ul.foot_menus {
+          display: flex;
+          flex-direction: row;
+          padding: 0;
+          margin-top: .8rem;
+          list-style-type: none;
+          li {
+            padding: 0 .5rem;
+            &:last-child {
+              padding: 0 0 0 .5rem;
+              border-right: none;
+            }
+            a,
+            span {
+              font-family: $font-family-poppins;
+              font-size: .8125rem;
+              font-weight: $font-weight-light;
+              color: $gray-light-500;
+            }
+          }
+        }
+
+        #select_country {
+          display: inline-block;
+          .choose_region {
+            min-width: 150px;
+            min-height: 28px;
+            padding: 5px 10px 8px;
+            text-align: left;
+            background-color: #2f0559;
+            border: 1px solid #2f0559;
+            border-radius: 4px;
+            outline: none;
+            box-shadow: none;
+            span {
+              display: inline-block;
+              margin: 0 10px 0 5px;
+              font-family: $font-family-poppins;
+              font-size: 14px;
+              color: $white;
+              vertical-align: middle;
+            }
+          }
+        }
+      }
+      .bottom_msg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: $full-width;
+        padding: .8rem 0;
+        font-family: $font-family-poppins;
+        font-size: .875rem;
+        font-weight: $font-weight-light;
+        color: rgba(255, 255, 255, .52);
+        background: #050826;
+      }
+    }
+  }
+}

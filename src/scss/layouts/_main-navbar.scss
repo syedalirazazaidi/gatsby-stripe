@@ -1,0 +1,40 @@
+//********** ES Booking main navigation **********//
+.global {
+  background: $white;
+  border-bottom: 1px solid rgba($color: $black, $alpha: .1);
+  box-shadow: 0 .125rem .25rem 0 rgba(0, 0, 0, .1);
+  .container {
+    &.nav_container {
+      .menu_container {
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: flex-end;
+        font-family: $font-family-poppins;
+        ul.navbar-nav {
+          li {
+            padding-right: .3rem;
+            padding-left: .3rem;
+            a {
+              font-family: $font-family-poppins;
+              font-size: .818rem;
+              font-weight: $font-weight-semibold;
+              color: $black;
+              &.learn {
+                position: $relative;
+                padding-right: .8rem;
+                border-right: 1px solid $black;
+              }
+              &.join-in-btn {
+                &:hover {
+                  color: $white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//********** ES Booking main navigation ends! **********//
+

@@ -1,0 +1,29 @@
+.negativeZIndex {
+    z-index: 1;
+     padding-top: 34px;
+  }
+  
+  .right_countries {
+    display: block;
+  
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+  
+  .countries_screen {
+    display: none !important;
+  
+    @media (max-width: 767px) {
+      display: block !important;
+    }
+  }
+  
+  .swiper-slide-hide {
+    display: none !important;
+  
+    @media (min-width: 1024px) {
+      display: block !important;
+    }
+  }
+  

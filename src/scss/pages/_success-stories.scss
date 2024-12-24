@@ -1,0 +1,313 @@
+main.success_stories {
+  width: $full-width;
+  overflow: hidden;
+  //**** Success stories hero styles ****//
+  section.success_hero {
+    width: $full-width;
+    padding: 4rem 0;
+    background: linear-gradient(117deg, #fff 0%, #fff 19.79%, #ebebeb 100%);
+    .container {
+      @include media-breakpoint-only(md) {
+        .pr_null {
+          padding-right: calc(var(--bs-gutter-x) * .5) !important;
+        }
+        .pl_null {
+          padding-left: calc(var(--bs-gutter-x) * .5) !important;
+        }
+      }
+      .left_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 2rem;
+        @include media-breakpoint-only(md) {
+          align-items: center;
+          justify-content: center;
+          margin-top: 0;
+        }
+        .special_offer {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 20rem;
+          padding: 1rem 0;
+          background: #3734a9;
+          border-radius: .5rem;
+          span {
+            display: inline-flex;
+            font-family: $font-family-poppins;
+            font-size: .875rem;
+            font-weight: $font-weight-light;
+            color: $white;
+          }
+          .bulb_icon {
+            display: inline-flex;
+            margin-left: .5rem;
+            img {
+              width: 24px;
+              height: 24px;
+            }
+          }
+        }
+        .hero_heading {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          width: 80%;
+          margin: 2rem 0;
+          font-family: $font-family-poppins;
+          font-size: 2.125rem;
+          font-weight: $font-weight-lighter;
+          line-height: 3rem;
+          color: $black;
+          @include media-breakpoint-only(md) {
+            align-items: center;
+            justify-content: center;
+            width: $full-width;
+            margin: 2rem 0 1rem;
+          }
+          span {
+            display: inline-block;
+            font-size: 2.75rem;
+            font-weight: $font-weight-bold;
+            line-height: 3.75rem;
+            @include media-breakpoint-only(md) {
+              margin-right: 10px;
+            }
+          }
+        }
+        p {
+          display: block;
+          width: 80%;
+          margin-bottom: 2rem;
+          font-family: $font-family-poppins;
+          font-size: 1rem;
+          font-weight: $font-weight-lighter;
+          line-height: 1.75rem;
+          color: $gray-light-500;
+          @include media-breakpoint-only(md) {
+            width: $full-width;
+            text-align: center;
+          }
+        }
+        // a.view_stories {
+        //   display: flex;
+        //   flex-direction: row;
+        //   flex-shrink: 0;
+        //   align-items: center;
+        //   justify-content: center;
+        //   width: 11.25rem;
+        //   height: 2.75rem;
+        //   background: #085be4;
+        //   border-radius: 1.875rem;
+        //   @include media-breakpoint-only(md) {
+        //     margin-bottom: 3rem;
+        //   }
+        //   span.white_text {
+        //     display: inline-flex;
+        //     font-family: $font-family-poppins;
+        //     font-size: .9375rem;
+        //     font-weight: $font-weight-medium;
+        //     color: $white;
+        //   }
+        //   i {
+        //     display: inline-flex;
+        //     margin-top: 1px;
+        //     margin-left: .5rem;
+        //     font-size: 1.2rem;
+        //     color: $white;
+        //   }
+        // }
+      }
+      .hero_bg {
+        display: flex;
+        width: $full-width;
+        height: 480px;
+        background: url("../../assets/images/success-stories/success-hero-bg.png") no-repeat 0 center;
+        background-size: contain;
+        @include media-breakpoint-only(md) {
+          height: 460px;
+          background-size: cover;
+        }
+      }
+    }
+  }
+  //**** Success stories hero style ends! ****//
+
+  //**** Our stories styles ****//
+  section.our_stories {
+    width: $full-width;
+    background: $white;
+    .bg_clipart {
+      min-height: 610px;
+      max-height: auto;
+      background-image: url("../../assets/images/success-stories/our-stories-bg.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      .container {
+        @include media-breakpoint-only(md) {
+          .pr_null {
+            padding-right: calc(var(--bs-gutter-x) * .5) !important;
+          }
+          .pl_null {
+            padding-left: calc(var(--bs-gutter-x) * .5) !important;
+          }
+        }
+        .stories_content {
+          z-index: 111;
+          width: $full-width;
+          padding: 6rem 0;
+          @include media-breakpoint-only(md) {
+            padding: 3rem 0;
+          }
+          h2 {
+            display: block;
+            width: $full-width;
+            font-family: $font-family-poppins;
+            font-size: 2.375rem;
+            font-weight: $font-weight-semibold;
+            color: #313131;
+            text-align: center;
+          }
+          .left_container {
+            z-index: 111;
+            display: flex;
+            flex-direction: column;
+            width: 84%;
+            padding: 2rem;
+            background: linear-gradient(180deg, #bafcf2 0%, #d6fef6 51.56%, rgba(255, 255, 255,) 100%);
+            border-radius: .375rem;
+            @include media-breakpoint-only(md) {
+              width: $full-width;
+              margin-bottom: 6rem;
+            }
+            .img_content {
+              display: block;
+              margin-bottom: 1.5rem;
+            }
+            .user_comment {
+              display: block;
+              margin-bottom: 1.5rem;
+              font-family: $font-family-poppins;
+              font-size: 1rem;
+              font-weight: $font-weight-light;
+              line-height: 1.875rem;
+              color: $black;
+              span {
+                font-weight: $font-weight-semibold;
+              }
+            }
+          }
+          .right_container {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            width: $full-width;
+            .user_box {
+              position: $relative;
+              display: flex;
+              flex-direction: row;
+              padding: 1.5rem 0 .9rem 1rem;
+              background: #c4e0fd;
+              border-radius: 8px;
+              &.second {
+                margin-top: 8rem;
+                @include media-breakpoint-only(md) {
+                  margin-top: 11rem;
+                }
+              }
+              .content_section {
+                display: flex;
+                flex-direction: column;
+                width: 60%;
+                &.right {
+                  position: relative;
+                  left: calc(60% - 150px);
+                }
+                p {
+                  display: block;
+                  font-family: $font-family-poppins;
+                  font-size: 1rem;
+                  font-weight: $font-weight-light;
+                  line-height: 1.875rem;
+                  color: $black;
+                }
+              }
+              .user_img_right {
+                position: $absolute;
+                top: -9.8rem;
+                right: 64px;
+                display: flex;
+                align-items: flex-end;
+                width: 40%;
+                @include media-breakpoint-only(md) {
+                  top: -10rem;
+                  right: 55px;
+                }
+              }
+              .user_img_left {
+                position: $absolute;
+                top: -10.5rem;
+                left: -52px;
+                display: flex;
+                align-items: flex-start;
+                width: 40%;
+                @include media-breakpoint-only(md) {
+                  top: -10.7rem;
+                  left: -40px;
+                }
+              }
+            }
+          }
+
+          .user_box {
+            display: flex;
+            flex-direction: column;
+            width: $full-width;
+            .img_container {
+              display: flex;
+              align-items: center;
+              justify-content: flex-end;
+              padding-top: 1rem;
+              padding-right: 1rem;
+              background: #c4e0fd;
+              border-radius: .375rem;
+            }
+            h5 {
+              display: block;
+              margin: .8rem 0;
+              font-family: $font-family-poppins;
+              font-size: 1rem;
+              font-weight: $font-weight-semibold;
+              line-height: 1.875rem;
+              color: #39484f;
+            }
+            p {
+              display: block;
+              font-family: $font-family-poppins;
+              font-size: .875rem;
+              font-weight: $font-weight-light;
+              line-height: 1.75rem;
+              color: #39484f;
+            }
+          }
+
+          a.load_more {
+            display: flex;
+            justify-content: center;
+            width: 12.5rem;
+            height: 2.5rem;
+            font-family: $font-family-poppins;
+            font-size: .9375rem;
+            font-weight: $font-weight-normal;
+            line-height: 1.875rem;
+            color: $black;
+            background: #f3f3f3;
+            border-radius: .25rem;
+          }
+        }
+      }
+    }
+  }
+  //**** Our stories style ends! ****//
+}

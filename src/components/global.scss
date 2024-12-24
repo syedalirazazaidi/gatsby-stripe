@@ -1,0 +1,21 @@
+ul,
+nav,
+li {
+  list-style: none;
+}
+
+html,
+body,
+#root {
+  overflow-x: hidden;
+}
+.main-container {
+  padding-top: 81px;
+}
+.disable-interactions * {
+  pointer-events: none;
+}
+
+.disable-interactions button {
+  pointer-events: none;
+}

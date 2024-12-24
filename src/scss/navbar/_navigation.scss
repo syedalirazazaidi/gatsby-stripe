@@ -1,0 +1,94 @@
+.navigationItems {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  > button {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    @include flex-center;
+    border: none;
+    background-color: transparent;
+    @include transition(opacity, $transition-duration);
+    position: relative;
+    margin: 0 5px;
+    text-align: center;
+
+    &:hover {
+      opacity: 0.6;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+      }
+    }
+
+    > p {
+      font-size: 12px;
+      font-weight: 600;
+      color: #000000;
+      white-space: nowrap;
+    }
+  }
+
+  > button > a > p.contact-sale {
+    font-size: 14px !important;
+    color: #000000 !important;
+  }
+  > p {
+    font-size: 16px; 
+    font-weight: 400; 
+    color: #000; 
+    margin: 0 10px; 
+    display: flex;
+    align-items: center; 
+  }
+}
+
+.navigationWrapper {
+  height: 100%;
+
+  @media (max-width: 940px) {
+    display: none;
+  }
+}
+.navigationItems {
+  button {
+    border: none;
+    cursor: pointer;
+
+    p {
+      font-size: 14px;
+      color: black;
+      font-weight: 600;
+      margin: 0;
+      white-space: nowrap;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #000000;
+      }
+    }
+  }
+}
+
+.join-now-button {
+  
+  color: white;
+  border-radius: 18px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin-top: 10px;
+
+  &:hover {
+    background-color: #0b0016;
+  }
+}

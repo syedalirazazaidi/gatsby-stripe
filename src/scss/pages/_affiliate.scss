@@ -1,0 +1,452 @@
+main.affiliate_page {
+  width: $full-width;
+  overflow: hidden;
+  section.affi_top_banner {
+    position: $relative;
+    width: $full-width;
+    padding: 4rem 0;
+    background-color: $gray-light-100;
+    .top_shape {
+      position: $absolute;
+      left: -10px;
+      z-index: 1000;
+      width: 70px;
+      height: 59px;
+      background: url("../../assets/images/affiliate/affi-banner-shape.webp") no-repeat 0 0;
+    }
+    .container {
+      .affi_banner_content {
+        display: flex;
+        flex-direction: column;
+        width: $full-width;
+        margin-top: 8rem;
+        span {
+          display: inline-flex;
+          width: $full-width;
+          font-family: $font-family-poppins;
+          font-size: 1.15rem;
+          font-weight: $font-weight-light;
+          color: #646363;
+        }
+        h1 {
+          display: inline-flex;
+          width: $full-width;
+          margin: .6rem 0;
+          font-family: $font-family-poppins;
+          font-size: 2.65rem;
+          font-weight: $font-weight-semibold;
+          color: $black;
+        }
+      }
+      .top_button_container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 2rem;
+        .arrow_right_bg {
+          display: inline-flex;
+          width: 91px;
+          height: 48px;
+          margin-left: 5rem;
+          background: url("../../assets/images/affiliate/arrow-shape.webp") no-repeat 0 0;
+        }
+      }
+      .affi_banner_container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        .affi_banner_bg {
+          display: inline-flex;
+          width: 773px;
+          height: 480px;
+          background: url("../../assets/images/affiliate/affi-banner-bg.png") no-repeat 0 0;
+          background-size: $full-width;
+        }
+      }
+    }
+  }
+
+  //********** Second purple section **********//
+  section.purple_section {
+    width: $full-width;
+    padding: 6rem 0;
+    background: linear-gradient(180deg, #362c62 0%, #362c62 47.4%, #130b36 100%);
+    .container {
+      .affi_purple_bg {
+        position: $relative;
+        z-index: 1001;
+        width: 743px;
+        height: 764px;
+        background: url("../../assets/images/affiliate/affi-purple-bg.webp") no-repeat 0 0;
+        background-size: $full-width;
+      }
+      .affi_right_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: $full-width;
+        margin-top: 4rem;
+        h3.yellow_heading {
+          display: flex;
+          flex-wrap: wrap;
+          width: $full-width;
+          margin-bottom: 2rem;
+          font-family: $font-family-poppins;
+          font-size: 1.75rem;
+          font-weight: $font-weight-semibold;
+          line-height: 2.625rem; /* 150% */
+          color: #ffe500;
+        }
+        ul.affi_listing {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          width: $full-width;
+          padding: 0;
+          list-style-type: none;
+          li {
+            margin-bottom: 2rem;
+            &:last-child {
+              margin-bottom: 0;
+            }
+            .heading {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              margin-bottom: .6rem;
+              .number {
+                display: inline-flex;
+                font-family: $font-family-poppins;
+                font-size: 1.875rem;
+                font-weight: $font-weight-normal;
+                color: rgba(255, 255, 255, .8);
+                letter-spacing: .01875rem;
+              }
+              .list_head {
+                display: inline-flex;
+                margin-left: .6rem;
+                font-family: $font-family-poppins;
+                font-size: 1.625rem;
+                font-weight: $font-weight-medium;
+                color: $white;
+              }
+            }
+            .list_content {
+              display: inline-flex;
+              width: $full-width;
+              font-family: $font-family-poppins;
+              font-size: 1rem;
+              font-weight: $font-weight-light;
+              line-height: 1.875rem; /* 187.5% */
+              color: #fcfbfb;
+            }
+          }
+        }
+      }
+    }
+  }
+  //********** Second purple section ends! **********//
+
+  //********** Affiliate FAQ section **********//
+  section.affiliate_faq {
+    width: $full-width;
+    padding: 4em 0;
+    background: $gray-light-100;
+    .container {
+      h2.faqs_heading {
+        display: block;
+        width: $full-width;
+        margin-bottom: 1rem;
+        font-family: $font-family-poppins;
+        font-size: 2em;
+        font-weight: $font-weight-semibold;
+        color: $black;
+        text-align: center;
+      }
+      span {
+        display: block;
+        padding: 0 8rem;
+        font-family: $font-family-poppins;
+        font-size: 1rem;
+        font-weight: $font-weight-light;
+        color: $gray-light-500;
+        text-align: center;
+      }
+      .faq_container {
+        display: block;
+        width: $full-width;
+        margin-top: 1.5rem;
+      }
+      .read_faq {
+        display: flex;
+        justify-content: center;
+        width: $full-width;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-family: $font-family-poppins;
+        font-size: 1rem;
+        font-weight: $font-weight-semibold;
+        color: #022d8d;
+        span.right_arrow {
+          display: inline-flex;
+          width: 24px;
+          height: 24px;
+          padding: 0;
+          background: url("../../assets/images/icons/right-arrow.svg") no-repeat 10px 5px;
+        }
+      }
+      .chat_team {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        font-family: $font-family-poppins;
+        font-size: 1rem;
+        font-weight: $font-weight-normal;
+        color: $gray-light-500;
+        a {
+          display: inline-flex;
+          color: $gray-light-500;
+          text-decoration: underline !important;
+        }
+      }
+    }
+  }
+  //********** Affiliate FAQ section ends! **********//
+
+  //********** Affiliate benefits section style starts *********//
+  section.affiliate_benefits {
+    width: $full-width;
+    padding: 4rem 0 2rem;
+    background: $white;
+    .container {
+      .left_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: $full-width;
+        h4 {
+          display: block;
+          margin-top: 2rem;
+          font-family: $font-family-poppins;
+          font-size: 2.125rem;
+          font-weight: $font-weight-lighter;
+          line-height: 3.5rem;
+          color: #313131;
+          @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+            margin-top: 0;
+            font-size: 1.845rem;
+            line-height: 3rem;
+          }
+          @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+            br {
+              display: none;
+            }
+          }
+        }
+        ul.benefits {
+          display: flex;
+          flex-direction: column;
+          width: $full-width;
+          padding: 0;
+          margin-top: 3rem;
+          list-style-type: none;
+          li {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            margin-bottom: 2rem;
+            &:last-child {
+              margin-bottom: 0;
+            }
+            .number_container {
+              display: inline-flex;
+              width: 12%;
+              @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+                width: auto;
+                margin-right: 10px;
+              }
+              .number {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 64px;
+                height: 64px;
+                font-family: $font-family-poppins;
+                font-size: 2rem;
+                font-weight: $font-weight-medium;
+                color: $white;
+                background: #1a0681;
+                border-radius: 50%;
+                @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+                  width: 48px;
+                  height: 48px;
+                  font-size: 1.45rem;
+                }
+              }
+            }
+            .list_content {
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-start;
+              width: 88%;
+              h3 {
+                display: block;
+                margin-bottom: .6rem;
+                font-family: $font-family-poppins;
+                font-size: 1.875rem;
+                font-weight: $font-weight-semibold;
+                color: $black;
+                @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+                  font-size: 1.425rem;
+                }
+              }
+              p {
+                display: block;
+                font-family: $font-family-poppins;
+                font-size: 1rem;
+                font-weight: $font-weight-light;
+                line-height: 1.875rem;
+                color: $gray-light-500;
+              }
+            }
+          }
+        }
+      }
+      .benefits_right {
+        width: $full-width;
+        height: 699px;
+        background-image: url("../../assets/images/affiliate/referral-right-bg.png");
+        background-repeat: no-repeat;
+        background-position-y: 15px;
+        background-size: contain;
+        @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+          height: 470px;
+        }
+      }
+    }
+  }
+  //********** Affiliate benefits section style ends! *********//
+
+  //********** Affiliate influancer section style starts *********//
+  section.influencer {
+    width: $full-width;
+    background: linear-gradient(90deg, #ffe81b 0%, #ffe500 49.93%, #ffe81b 100.9%);
+    .influencer_bg {
+      width: $full-width;
+      height: 500px;
+      background-image: url("../../assets/images/affiliate/influancer-bg.svg");
+      background-repeat: no-repeat;
+      background-position: left;
+      background-position-y: 0;
+      .container {
+        .influencer_content {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          padding: 10rem 0;
+          h1 {
+            display: block;
+            margin-bottom: .6rem;
+            font-family: $font-family-poppins;
+            font-size: 2.675rem;
+            font-weight: $font-weight-bold;
+            color: #1b1a1a;
+            letter-spacing: .0375rem;
+          }
+          span {
+            display: block;
+            font-family: $font-family-poppins;
+            font-size: 1rem;
+            font-weight: $font-weight-light;
+            color: #484848;
+            letter-spacing: .01875rem;
+          }
+          .default_btn {
+            width: 11.25rem;
+          }
+        }
+      }
+    }
+  }
+  //********** Affiliate influancer section style starts *********//
+
+  //********** Affiliate terms and condition section **********//
+  section.affi_terms_condition {
+    width: $full-width;
+    padding: 6rem 0;
+    background: $white;
+    .container {
+      h4 {
+        display: flex;
+        width: $full-width;
+        margin-bottom: 1rem;
+        font-family: $font-family-poppins;
+        font-size: 1.175rem;
+        font-weight: $font-weight-semibold;
+        color: $black;
+      }
+      span {
+        display: block;
+        width: $full-width;
+        font-family: $font-family-poppins;
+        font-size: .9375rem;
+        font-weight: $font-weight-light;
+        line-height: 1.875rem;
+        color: $gray-light-500;
+        a {
+          display: inline-block;
+          color: #022d8d;
+        }
+      }
+      a.box_link {
+        font-family: $font-family-poppins;
+        font-size: .9375rem;
+        font-weight: $font-weight-normal;
+        color: #022d8d;
+      }
+    }
+  }
+  //********** Affiliate terms and condition section ends! **********//
+
+  //********** Community of Happy User’s section **********//
+  section.happy_users {
+    width: $full-width;
+    padding: 4rem 0;
+    background: linear-gradient(135deg, #e5ebff 0%, #fff 47.4%, #e5ebff 100%);
+    .container {
+      h2 {
+        display: block;
+        width: $full-width;
+        margin-bottom: .8rem;
+        font-family: $font-family-poppins;
+        font-size: 2rem;
+        font-weight: $font-weight-semibold;
+        color: #000;
+      }
+      span {
+        display: block;
+        width: $full-width;
+        margin-bottom: .8rem;
+        font-family: $font-family-poppins;
+        font-size: 1rem;
+        font-weight: $font-weight-light;
+        color: $gray-light-500;
+      }
+      .happy_user_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: $full-width;
+        .happy_user_bg {
+          width: 949px;
+          height: 539px;
+          background: url("../../assets/images/affiliate/happy-user-bg.png") no-repeat 0 0;
+          background-position: $full-width;
+        }
+      }
+    }
+  }
+  //********** Community of Happy User’s section ends! **********//
+}

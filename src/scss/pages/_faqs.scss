@@ -1,0 +1,286 @@
+main.faq_page {
+  width: $full-width;
+  overflow: hidden;
+  section.faq_hero {
+    align-items: center;
+    justify-content: center;
+    width: $full-width;
+    padding: 2rem 0;
+    background: linear-gradient(106deg, #9262f9 11.96%, #7e46eb 50.56%, #7337e2 89.97%);
+    @media screen and (min-device-width: 768px) and (max-device-width: 992px) {
+      padding: 2rem 0;
+    }
+    .hero_bg {
+      width: 1365px;
+      height: 408px;
+      background: url("../../assets/images/faq/faq-hero-bg.svg") no-repeat 0 0;
+      background-size: cover;
+      @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+        height: auto;
+        background-image: none;
+      }
+      @media screen and (min-device-width: 768px) and (max-device-width: 992px) {
+        width: 100%;
+        height: auto;
+        background-image: none;
+      }
+    }
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 4.2rem;
+      @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+        margin-top: 0;
+      }
+      @media screen and (min-device-width: 768px) and (max-device-width: 992px) {
+        margin-top: 0;
+      }
+      .hero_content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 60%;
+        @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+          width: $full-width;
+        }
+        @media screen and (min-device-width: 768px) and (max-device-width: 992px) {
+          width: 90%;
+        }
+        h2 {
+          display: inline-flex;
+          font-family: $font-family-poppins;
+          font-size: 2.175rem;
+          font-weight: $font-weight-semibold;
+          line-height: 1.4;
+          color: $white;
+          text-align: center;
+          @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+            font-size: 1.625rem;
+          }
+          @media screen and (min-device-width: 768px) and (max-device-width: 992px) {
+            font-size: 1.875rem;
+          }
+        }
+        h6 {
+          display: inline-flex;
+          margin: 1rem 0 2rem;
+          font-family: $font-family-poppins;
+          font-size: 1rem;
+          font-weight: $font-weight-light;
+          color: #f5f5f5;
+          text-align: center;
+          @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+            margin: 1rem 0 1.5rem;
+          }
+        }
+        form {
+          width: 80%;
+          margin-bottom: 45px;
+          @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+            width: $full-width;
+            margin-bottom: 20px;
+          }
+          @media screen and (min-device-width: 768px) and (max-device-width: 992px) {
+            width: 90%;
+          }
+          .input-group {
+            .input-group-text {
+              padding: .375rem 1.2rem;
+              background: $white;
+              border: 1px solid #c1bfbf;
+              border-top-left-radius: 1.875rem;
+              border-bottom-left-radius: 1.875rem;
+              @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+                padding: .375rem .645rem;
+              }
+            }
+            input {
+              padding: .8rem 1rem;
+              background: $white;
+              border: 1px solid #c1bfbf;
+              border-radius: 1.875rem;
+            }
+          }
+        }
+        .popular_tags {
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          width: $full-width;
+          @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+            flex-direction: column;
+          }
+          h6 {
+            display: inline-flex;
+            margin: 0 5px 0 0;
+            font-family: $font-family-poppins;
+            font-size: 1rem;
+            font-weight: $font-weight-medium;
+            color: $white;
+            @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+              margin: 0 5px 25px 0;
+            }
+          }
+          ul.tags_listing {
+            display: flex;
+            flex-direction: row;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+              flex-wrap: wrap;
+              align-items: center;
+              justify-content: center;
+            }
+            li {
+              margin: 0 5px;
+              @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+                margin: 0 5px 25px;
+              }
+              a {
+                padding: 8px 16px;
+                font-family: $font-family-poppins;
+                font-size: 1.0625rem;
+                font-weight: $font-weight-lighter;
+                color: $white;
+                text-align: center;
+                background: $black;
+                border-radius: .25rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  section.faq_categories {
+    width: $full-width;
+    padding: 6rem 0;
+    background: $white;
+    @include media-breakpoint-only(md) {
+      padding: 3rem 0;
+    }
+
+    .container {
+      @include media-breakpoint-only(md) {
+        .no-margin {
+          --bs-gutter-x: 1.5rem !important;
+          &.mt-5 {
+            margin-top: 1rem !important;
+          }
+          .pr_null {
+            padding-left: calc(var(--bs-gutter-x) * .1) !important;
+          }
+        }
+      }
+      .pl_null {
+        padding-left: 0 !important;
+      }
+      .pr_null {
+        padding-right: 0 !important;
+      }
+      .left_section {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: $full-width;
+        h1 {
+          display: inline-flex;
+          margin-bottom: 1rem;
+          font-family: $font-family-poppins;
+          font-size: 2rem;
+          font-weight: $font-weight-semibold;
+          color: $black;
+        }
+        p {
+          display: block;
+          width: $full-width;
+          margin-top: 1rem;
+          font-family: $font-family-poppins;
+          font-size: 1rem;
+          font-weight: $font-weight-light;
+          line-height: 1.7rem;
+          color: $gray-light-500;
+          a {
+            color: #0028fb;
+          }
+        }
+      }
+      .accordion_content {
+        display: block;
+        width: $full-width;
+      }
+
+      .write_us {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span {
+          display: block;
+          font-family: $font-family-poppins;
+          font-size: .9375rem;
+          font-weight: $font-weight-light;
+          line-height: 1.8rem;
+          color: $gray-light-600;
+          text-align: center;
+          letter-spacing: .00938rem;
+          a {
+            font-weight: $font-weight-semibold;
+            color: #0028fb;
+          }
+        }
+      }
+    }
+  }
+
+  section.get_in_touch {
+    width: $full-width;
+    padding-bottom: 3.5rem;
+    background: $white;
+    .grey_bg {
+      width: 95%;
+      padding: 4rem 0;
+      background: #f9fafc;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      .container {
+        .content_touch {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: $full-width;
+          img {
+            display: block;
+            width: 158px;
+            height: 66px;
+          }
+          h5 {
+            display: block;
+            margin: .8rem 0 .5rem;
+            font-family: $font-family-poppins;
+            font-size: 1rem;
+            font-weight: $font-weight-semibold;
+            color: $black;
+            letter-spacing: .02rem;
+          }
+          span {
+            display: block;
+            margin-bottom: 2.5rem;
+            font-family: $font-family-poppins;
+            font-size: .9375rem;
+            font-weight: $font-weight-light;
+            color: $gray-light-500;
+            letter-spacing: .01875rem;
+          }
+          a.get_in_touch {
+            display: block;
+            width: 12.5rem;
+          }
+        }
+      }
+    }
+  }
+}

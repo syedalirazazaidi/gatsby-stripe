@@ -1,0 +1,721 @@
+@use "./variables" as *;
+
+main.customer_review {
+    width: 100%;
+    overflow: hidden;
+    //********** customer review hero styles **********//
+    section.review_hero {
+        background: linear-gradient(105deg, #f8f8f8 0%, $white 50%, #f8f8f8 100%);
+        width: 100%;
+        padding: 40px 0;
+        .dot_shape {
+            margin-left: 4px;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            @media screen and (min-device-width: 320px) and (max-device-width: 961px) {
+                flex-direction: column;
+            }
+            .left_content {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                width: 40%;
+                padding: 40px 0;
+                @media screen and (min-device-width: 320px) and (max-device-width: 961px) {
+                    width: $full-width;
+                    padding: 20px 0 0 0;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .label {
+                    border-radius: 30px;
+                    background: #f3eef8;
+                    color: #5801c4;
+                    font-family:
+                        "Poppins",
+                        system-ui,
+                        -apple-system,
+                        Roboto;
+                    font-size: 0.875rem;
+                    font-weight: 400;
+                    text-align: center;
+                    width: 200px;
+                    padding: 8px 0;
+                }
+                h1 {
+                    color: #091e42;
+                    font-family:
+                        "Poppins",
+                        system-ui,
+                        -apple-system,
+                        Roboto;
+                    font-size: 2.5rem;
+                    font-weight: 700;
+                    line-height: 3.75rem;
+                    margin: 20px 0 15px 0;
+                    @media screen and (min-device-width: 320px) and (max-device-width: 961px) {
+                        font-size: 1.8rem;
+                        line-height: 2.6rem;
+                        text-align: center;
+                        br {
+                            display: none;
+                        }
+                    }
+                }
+                p {
+                    color: #3a3a3a;
+                    font-family:
+                        "Poppins",
+                        system-ui,
+                        -apple-system,
+                        Roboto;
+                    font-size: 0.9375rem;
+                    font-weight: 300;
+                    line-height: 1.625rem;
+                    margin-bottom: 30px;
+                    @media screen and (min-device-width: 320px) and (max-device-width: 961px) {
+                        text-align: center;
+                    }
+                }
+                a.review_btn {
+                    width: 210px;
+                    height: 60px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    border-radius: 90px;
+                    background: #0e1012;
+                    padding: 5px;
+                    .circle {
+                        display: inline-flex;
+                        height: 50px;
+                        width: 50px;
+                        border-radius: 50%;
+                        background: #12b886;
+                        align-items: center;
+                        justify-content: center;
+                        img {
+                            height: 22px;
+                            width: 22px;
+                        }
+                    }
+                    .btn_content {
+                        display: flex;
+                        flex-direction: column;
+                        margin-left: 10px;
+                        .rating {
+                            display: flex;
+                            flex-direction: row;
+                            h5 {
+                                color: $white;
+                                font-family: $font-family-poppins;
+                                font-size: 1.375rem;
+                                font-weight: $font-weight-bold;
+                                margin-bottom: 0;
+                            }
+                            span {
+                                color: $white;
+                                font-size: 0.975rem;
+                                font-family: $font-family-poppins;
+                                font-weight: $font-weight-light;
+                                margin-left: 8px;
+                                margin-top: 3px;
+                            }
+                        }
+                        .subtitle {
+                            color: $white;
+                            font-family: $font-family-poppins;
+                            font-size: 0.6875rem;
+                            font-weight: $font-weight-light;
+                        }
+                    }
+                }
+            }
+            .right_clipart {
+                display: flex;
+                width: 50%;
+                background: url("../../../src/images/customer-review/hero-clipart.svg") no-repeat right 0;
+                background-size: contain;
+                @media screen and (min-device-width: 320px) and (max-device-width: 961px) {
+                    display: none;
+                }
+            }
+        }
+    }
+    //********** customer review hero styles **********//
+
+    //********** review testimonial styles **********//
+    section.review_testimonial {
+        background: #f9f9f9;
+        width: $full-width;
+        padding: 80px 0;
+        @media screen and (min-device-width: 320px) and (max-device-width: 961px) {
+            padding: 40px 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            h1 {
+                color: #091e42;
+                font-family: $font-family-poppins;
+                font-size: 2.125rem;
+                line-height: 1.4;
+                font-weight: $font-weight-bold;
+                text-align: center;
+                width: 75%;
+                @media screen and (min-device-width: 320px) and (max-device-width: 961px) {
+                    width: $full-width;
+                    font-size: 1.8rem;
+                    line-height: 2.6rem;
+                }
+            }
+            p.sub_text {
+                color: $black;
+                text-align: center;
+                font-family: $font-family-poppins;
+                font-size: 0.9375rem;
+                font-weight: $font-weight-light;
+                width: 50%;
+                margin-top: 15px;
+                @media screen and (min-device-width: 320px) and (max-device-width: 961px) {
+                    width: $full-width;
+                }
+            }
+            .card_wrapper {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                margin: 35px 0;
+                width: $full-width;
+                @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+                    flex-direction: column;
+                }
+                .testi_card {
+                    width: 31%;
+                    border-radius: 10px;
+                    border: 1px solid #3e4ff7;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 25px;
+                    box-shadow: rgba(62, 79, 247, 1) 0px 9px;
+                    @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+                        width: $full-width;
+                        margin-bottom: 30px;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                    &.active {
+                        background: #3e4ff7;
+                        box-shadow: rgba(1, 9, 91, 1) 0px 9px;
+                        .user_details {
+                            h6 {
+                                color: $white !important;
+                            }
+                            .sub_text {
+                                color: $white !important;
+                            }
+                        }
+                        .testi_text {
+                            color: $white !important;
+                        }
+                        .quote {
+                            background: url("../../../src/images/customer-review/quote-white.svg") no-repeat 0 0 !important;
+                        }
+                    }
+                    .user_details {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        .user_img {
+                            height: 48px;
+                            width: 48px;
+                        }
+                        .user_info {
+                            margin-left: 10px;
+                            display: flex;
+                            flex-direction: column;
+                            h6 {
+                                color: $black;
+                                font-family: $font-family-poppins;
+                                font-size: 0.9125rem;
+                                font-weight: $font-weight-bold;
+                                margin-bottom: 2px;
+                            }
+                            .sub_text {
+                                color: #676666;
+                                font-family: $font-family-poppins;
+                                font-size: 0.8125rem;
+                                font-weight: $font-weight-light;
+                            }
+                        }
+                    }
+                    .testi_text {
+                        color: $black;
+                        font-family: $font-family-poppins;
+                        font-size: 0.945rem;
+                        font-weight: $font-weight-light;
+                        line-height: 1.375rem;
+                        margin: 20px 0;
+                    }
+                    .rating_wrapper {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: space-between;
+                        ul.stars {
+                            display: flex;
+                            flex-direction: row;
+                            margin: 0;
+                            padding: 0;
+                            list-style-type: none;
+                            li {
+                                a.star {
+                                    height: 22px;
+                                    width: 22px;
+                                }
+                            }
+                        }
+                        .quote {
+                            background: url("../../../src/images/customer-review/quote-black.svg") no-repeat 0 0;
+                            width: 32px;
+                            height: 24px;
+                        }
+                    }
+                }
+            }
+            .carousel_indicator {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                li {
+                    margin-right: 6px;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    a {
+                        width: 16px;
+                        height: 16px;
+                        background: #c6b4fb;
+                        border-radius: 50%;
+                        display: flex;
+                        &.active {
+                            background: #7a4dff;
+                            height: 20px;
+                            width: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //********** review testimonial styles **********//
+
+    //********** social comments styles **********//
+    section.social_comments {
+        width: $full-width;
+        background: $white;
+        padding: 80px 0;
+        @media screen and (min-device-width: 320px) and (max-device-width: 961px) {
+            padding: 40px 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h1 {
+                color: #091e42;
+                text-align: center;
+                font-family: $font-family-poppins;
+                font-size: 2.125rem;
+                font-weight: $font-weight-bold;
+                width: 75%;
+                line-height: 1.4;
+                @media screen and (min-device-width: 320px) and (max-device-width: 961px) {
+                    width: $full-width;
+                    font-size: 1.8rem;
+                    line-height: 2.6rem;
+                }
+            }
+            p {
+                color: $black;
+                font-family: $font-family-poppins;
+                font-size: 0.9375rem;
+                font-weight: $font-weight-light;
+                width: 70%;
+                margin-top: 10px;
+                text-align: center;
+                @media screen and (min-device-width: 320px) and (max-device-width: 961px) {
+                    width: $full-width;
+                }
+            }
+            .comments_section {
+                margin-top: 30px;
+                width: $full-width;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                ul.nav {
+                    border: 1px solid #b3b3b3;
+                    border-radius: 40px;
+                    padding: 7px;
+                    li.nav-item {
+                        margin-right: 10px;
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                        button.nav-link {
+                            background: none;
+                            border: none;
+                            display: flex;
+                            align-items: center;
+                            flex-direction: row;
+                            background: $white;
+                            border-radius: 30px;
+                            padding: 10px 35px;
+                            .btn_icon {
+                                height: 20px;
+                                width: 20px;
+                                &.twitter {
+                                    background: url("../../../src/images/customer-review/twitter.svg") no-repeat 0 0;
+                                }
+                                &.facebook {
+                                    background: url("../../../src/images/customer-review/facebook.svg") no-repeat 0 0;
+                                }
+                                &.google {
+                                    background: url("../../../src/images/customer-review/google.svg") no-repeat 0 0;
+                                }
+                            }
+                            .btn_text {
+                                color: #b3b3b3;
+                                font-family: $font-family-poppins;
+                                font-size: 1rem;
+                                font-weight: $font-weight-normal;
+                                margin-left: 5px;
+                            }
+                            &:focus,
+                            &:hover,
+                            &.active {
+                                background: #6245da;
+                                .btn_icon {
+                                    &.twitter {
+                                        background: url("../../../src/images/customer-review/twitter-active.svg")
+                                            no-repeat 0 0;
+                                    }
+                                    &.facebook {
+                                        background: url("../../../src/images/customer-review/facebook-active.svg")
+                                            no-repeat 0 0;
+                                    }
+                                    &.google {
+                                        background: url("../../../src/images/customer-review/google-active.svg")
+                                            no-repeat 0 0;
+                                    }
+                                }
+                                .btn_text {
+                                    color: $white;
+                                }
+                            }
+                        }
+                    }
+                }
+                .tab-content {
+                    width: $full-width;
+                    margin-top: 30px;
+                    .tab-pane {
+                        &.fade {
+                            background-color: initial !important;
+                        }
+                        .comments_wrapper {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: space-between;
+                            flex-wrap: wrap;
+                            @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+                                flex-direction: column;
+                            }
+                            .card {
+                                display: flex;
+                                flex-direction: column;
+                                background: #f7f7f7;
+                                border-radius: 16px;
+                                padding: 20px;
+                                width: 31%;
+                                @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+                                    width: $full-width;
+                                    margin-bottom: 20px;
+                                    &:last-child {
+                                        margin-bottom: 0;
+                                    }
+                                }
+                                @media screen and (min-device-width: 768px) and (max-device-width: 961px) {
+                                    width: 48%;
+                                    margin-bottom: 20px;
+                                }
+                                &.second_row {
+                                    margin-top: 25px;
+                                    @media screen and (min-device-width: 320px) and (max-device-width: 961px) {
+                                        margin-top: 0;
+                                    }
+                                }
+                                p.text {
+                                    color: $black;
+                                    font-family: $font-family-poppins;
+                                    font-size: 0.9375rem;
+                                    font-weight: $font-weight-light;
+                                    line-height: 1.625rem;
+                                    width: $full-width;
+                                    text-align: left;
+                                    margin-bottom: 40px;
+                                }
+                                .user_details {
+                                    display: flex;
+                                    flex-direction: row;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    .name {
+                                        display: flex;
+                                        flex-direction: column;
+                                        h6 {
+                                            color: $black;
+                                            font-family: $font-family-poppins;
+                                            font-size: 0.875rem;
+                                            font-weight: $font-weight-bold;
+                                            margin-bottom: 4px;
+                                        }
+                                        .recommend {
+                                            display: flex;
+                                            flex-direction: row;
+                                            align-items: center;
+                                            .text {
+                                                color: #636363;
+                                                font-family: $font-family-poppins;
+                                                font-size: 0.8125rem;
+                                                font-weight: $font-weight-light;
+                                            }
+                                            .option {
+                                                font-family: $font-family-poppins;
+                                                font-size: 0.8125rem;
+                                                font-weight: $font-weight-medium;
+                                                margin-left: 5px;
+                                                &.yes {
+                                                    color: #21b73d;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .date {
+                                        color: #7b7b7b;
+                                        font-family: $font-family-poppins;
+                                        font-size: 0.875rem;
+                                        font-weight: $font-weight-light;
+                                    }
+                                }
+                            }
+                        }
+                        .btn_wrapper {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin-top: 50px;
+                            .load_reviews {
+                                color: #2f39bf;
+                                font-family: $font-family-poppins;
+                                font-size: 1rem;
+                                font-weight: $font-weight-medium;
+                                border: 1px solid #2f39bf;
+                                border-radius: 8px;
+                                padding: 10px 25px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //********** social comments styles **********//
+
+    //********** download styles **********//
+    section.download {
+        width: $full-width;
+        background: #080808;
+        padding: 80px 0;
+        @media screen and (min-device-width: 320px) and (max-device-width: 961px) {
+            padding: 40px 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h1 {
+                color: $white;
+                font-family: $font-family-poppins;
+                font-size: 2.5rem;
+                line-height: 1.4;
+                font-weight: $font-weight-bold;
+                width: 60%;
+                text-align: center;
+                @media screen and (min-device-width: 320px) and (max-device-width: 961px) {
+                    font-size: 1.8rem;
+                    line-height: 1.3;
+                    width: $full-width;
+                }
+            }
+            p.subtitle {
+                color: #d7d7d7;
+                text-align: center;
+                font-family: $font-family-poppins;
+                font-size: 0.8125rem;
+                font-weight: $font-weight-light;
+                line-height: 1.5rem;
+                width: 40%;
+                margin-top: 10px;
+                @media screen and (min-device-width: 320px) and (max-device-width: 961px) {
+                    width: $full-width;
+                }
+            }
+            .card_wrapper {
+                margin-top: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: $full-width;
+                @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+                    flex-direction: column;
+                }
+                @media screen and (min-device-width: 768px) and (max-device-width: 961px) {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                }
+                .download_card {
+                    width: 23%;
+                    background: #151619;
+                    border-radius: 14px;
+                    padding: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+                        width: $full-width;
+                        margin-bottom: 20px;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                    @media screen and (min-device-width: 768px) and (max-device-width: 961px) {
+                        width: 48%;
+                        margin-bottom: 20px;
+                    }
+                    &:hover,
+                    &.active {
+                        background: #1264ff;
+                        .card_icon {
+                            background: $white;
+                            .desktop {
+                                background: url("../../../src/images/customer-review/desktop-icon-active.svg") no-repeat
+                                    0 0;
+                            }
+                            .apple {
+                                background: url("../../../src/images/customer-review/apple-icon-active.svg") no-repeat 0
+                                    0;
+                            }
+                            .chrome {
+                                background: url("../../../src/images/customer-review/chrome-icon-active.svg") no-repeat
+                                    0 0;
+                            }
+                            .android {
+                                background: url("../../../src/images/customer-review/android-icon-active.svg") no-repeat
+                                    0 0;
+                            }
+                        }
+                    }
+                    .card_icon {
+                        width: 72px;
+                        height: 72px;
+                        background: #222327;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-bottom: 20px;
+                        .desktop {
+                            width: 33px;
+                            height: 33px;
+                            background: url("../../../src/images/customer-review/desktop-icon.svg") no-repeat 0 0;
+                        }
+                        .apple {
+                            width: 33px;
+                            height: 33px;
+                            background: url("../../../src/images/customer-review/apple-icon.svg") no-repeat 0 0;
+                        }
+                        .chrome {
+                            width: 33px;
+                            height: 33px;
+                            background: url("../../../src/images/customer-review/chrome-icon.svg") no-repeat 0 0;
+                        }
+                        .android {
+                            width: 33px;
+                            height: 33px;
+                            background: url("../../../src/images/customer-review/android-icon.svg") no-repeat 0 0;
+                        }
+                    }
+                    .sub_head {
+                        color: #ececed;
+                        font-family: $font-family-poppins;
+                        font-size: 0.875rem;
+                        font-weight: $font-weight-light;
+                        margin-bottom: 8px;
+                    }
+                    h3 {
+                        color: $white;
+                        font-family: $font-family-poppins;
+                        font-size: 1.375rem;
+                        font-weight: $font-weight-bold;
+                    }
+                    p.text {
+                        color: #ececed;
+                        font-family: $font-family-poppins;
+                        font-size: 0.8125rem;
+                        font-weight: $font-weight-light;
+                        margin: 15px 0 20px 0;
+                    }
+                    a.download_btn {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                        width: 140px;
+                        border-radius: 20px;
+                        background: $white;
+                        padding: 10px 0;
+                        .btn_icon {
+                            height: 18px;
+                            width: 18px;
+                            margin-top: -8px;
+                        }
+                        .btn_text {
+                            color: #1f1f1f;
+                            font-family: $font-family-poppins;
+                            font-size: 0.8125rem;
+                            font-weight: $font-weight-medium;
+                            margin-left: 6px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //********** download styles **********//
+}

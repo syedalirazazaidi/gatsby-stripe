@@ -1,0 +1,14 @@
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @mixin transition($property, $duration: 0.3s) {
+    transition: $property $duration ease;
+  }
+  
+  // MenuContainer
+  @mixin box-shadow($shadows...) {
+    box-shadow: $shadows;
+  }

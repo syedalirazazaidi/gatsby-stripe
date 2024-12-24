@@ -1,0 +1,18 @@
+@import './variables';
+@import './mixins';
+
+.arrow {
+  position: absolute;
+  width: $arrow-size;
+  height: $arrow-size;
+  margin-top: -6px;
+  transform: rotate(45deg);
+  background-color: $primary-bg-color;
+  border-top-left-radius: 3px;
+  transition: 0.2s;
+  @include box-shadow($shadow-light, $shadow-subtle);
+}
+.card {
+    position: absolute;
+    top: 0;
+  }

@@ -1,0 +1,205 @@
+.header {
+  align-items: center;
+  margin-top: 16px;
+  padding: 5px 110px;
+  box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.2) !important;
+}
+.header_css_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigationWrapper {
+  height: 100%;
+}
+
+.navigationItems {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.navigationItems > button {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  background-color: transparent;
+  transition: ' opacity 0.3s, border-bottom 0.3s';
+  position: relative;
+  margin: 0px 4px;
+  text-align: center;
+}
+.header_joinbutton {
+  /* padding: 6px 16px; */
+  border: none;
+  color: white !important;
+  font-size: 14px;
+  width: auto;
+  border-radius: 14px;
+  background-color: #1f013e !important;
+  white-space: nowrap;
+  margin-top: 10px;
+}
+.header_joinbutton p {
+  padding-bottom: 10px;
+  height: 20px;
+
+  color: white !important;
+}
+.navigationItems > button:hover {
+  opacity: 0.6;
+}
+
+.navigationItems > button:hover::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+}
+
+.navigationItems > button > p {
+  font-weight: 600;
+  font-size: 13px;
+  color: #000000;
+  white-space: nowrap;
+}
+
+.navigationItems > button > p {
+  font-weight: 600;
+  font-size: 14px;
+  color: #000000;
+}
+.mobileview {
+  display: none;
+}
+
+@media (max-width: 740px) {
+  .navigationWrapper {
+    display: none;
+  }
+  .mobileview {
+    display: block;
+    font-size: 1.4rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--radius);
+    border-color: transparent;
+    color: black;
+    background: var(--clr-black);
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  .header {
+    align-items: center;
+    margin-top: 16px;
+    padding: 5px 10px;
+    box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.2) !important;
+  }
+}
+
+.header_css_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobileview {
+  display: none; /* hide on desktop view */
+}
+
+/* Mobile-specific styling */
+@media (max-width: 768px) {
+  .mobileview {
+    display: block; /* show on mobile view */
+  }
+}
+
+.sheet-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.sheet-content {
+  width: 100%;
+  height: 100%;
+  background: white;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.link-container {
+  display: flex;
+}
+
+.link-container a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 5px 0;
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+}
+
+.arrow-icon {
+  font-size: 16px;
+  color: #333;
+}
+
+.sliding-sheet {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: slideIn 0.3s forwards;
+  z-index: 1000;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: black;
+  cursor: pointer;
+}
+
+.sheet-content {
+  color: black;
+  text-align: center;
+}

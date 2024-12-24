@@ -1,0 +1,471 @@
+
+        main.download_page {
+            width: 100%;
+            overflow: hidden;
+        }
+        /********** Hero section styles **********/
+        section.download_hero {
+            width: 100%;
+            background: #f1f0f5;
+        }
+        section.download_hero .hero_container {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+        section.download_hero .hero_container .hero_content {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+        }
+        section.download_hero .hero_container .hero_content .shape {
+            margin: 50px 0 0 3px;
+        }
+        section.download_hero .hero_container .hero_content .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 100%;
+            margin: 50px 0 50px 4rem;
+        }
+        section.download_hero .hero_container .hero_content .content .label {
+            background: #E5EAF5;
+            border-radius: 20px;
+            width: 310px;
+            font-family: "Poppins", system-ui, -apple-system, Roboto;
+            color: #007AFF;
+            font-size: 0.975rem;
+            text-align: center;
+            padding: 12px 0;
+        }
+        section.download_hero .hero_container .hero_content .content .label .download_icon {
+            height: 20px;
+            width: 20px;
+            padding-right: 4px;
+        }
+        section.download_hero .hero_container .hero_content .content .hero_text {
+            margin: 25px 0;
+            color: #000;
+            font-family: "Poppins", system-ui, -apple-system, Roboto;
+            font-size: 2.85rem;
+            font-weight: 300;
+        }
+        section.download_hero .hero_container .hero_content .content .hero_text b {
+            font-weight: 600;
+        }
+        section.download_hero .hero_container .hero_content .content p {
+            display: flex;
+            color: #595858;
+            font-family: "Poppins", system-ui, -apple-system, Roboto;
+            font-size: 1.2rem;
+            font-weight: 300;
+            line-height: 2.4rem;
+            width: 80%;
+            margin-bottom: 40px;
+        }
+        section.download_hero .hero_container .hero_content .content a.download {
+            width: 260px;
+            height: 56px;
+            border-radius: 36px;
+            background: #2F0559;
+            border: 1px solid #2F0559;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-family: "Poppins", system-ui, -apple-system, Roboto;
+        }
+        section.download_hero .hero_container .hero_content .content a.download .btn_text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-left: 15px;
+        }
+        section.download_hero .hero_container .hero_content .content a.download .btn_text .small {
+            font-size: 12px;
+            font-weight: 500;
+        }
+        section.download_hero .hero_container .hero_content .content a.download .btn_text .title {
+            font-size: 14px;
+            font-weight: 300;
+        }
+        section.download_hero .hero_container .hero_clipart {
+            display: flex;
+            width: 50%;
+        }
+        /**** Mobile devices ****/
+        @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+            section.download_hero .hero_container .hero_content {
+                flex-direction: column;
+                width: 100%;
+            }
+            section.download_hero .hero_container .hero_clipart {
+                display: none;
+            }
+            section.download_hero .hero_container .hero_content .content {
+                margin: 50px 15px;
+                width: 93%;
+            }
+            section.download_hero .hero_container .hero_content .content .hero_text {
+                font-size: 2.2rem;
+            }
+            section.download_hero .hero_container .hero_content .content p {
+                width: 100%;
+                font-size: 1.1rem;
+                line-height: 2.2rem;
+            }
+        }
+        /**** Mobile devices ****/
+
+        /**** Tablet devices ****/
+        @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+            section.download_hero .hero_container .hero_clipart {
+                display: none;
+            }
+            section.download_hero .hero_container {
+                flex-direction: column;
+            }
+            section.download_hero .hero_container .hero_content {
+                width: 100%;
+            }
+            section.download_hero .hero_container .hero_content .content {
+                width: 93%;
+                margin: 50px 2rem;
+            }
+            section.download_hero .hero_container .hero_content .content .hero_text br {
+                display: none;
+            }
+            section.download_hero .hero_container .hero_content .content p {
+                width: 100%;
+            }
+        }
+        /**** Tablet devices ****/
+        /********** Hero section styles **********/
+
+        /********** Browser extension styles **********/
+        section.browser_listing {
+            background: #F7F8F9;
+            padding: 25px 0;
+        }
+        ul.extension_listing {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            list-style-type: none;
+            margin-bottom: 0;
+            padding-left: 0;
+        }
+        ul.extension_listing li {
+            display: flex;
+            margin-right: 60px;
+        }
+        ul.extension_listing li:last-child {
+            margin-right: 0;
+        }
+        ul.extension_listing li a {
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        ul.extension_listing li a span.icon {
+            height: 40px;
+            width: 40px;
+        }
+        ul.extension_listing li a h6 {
+            color: #667682;
+            font-family: "Poppins", system-ui, -apple-system, Roboto;
+            font-size: 1.1rem;
+            font-weight: 400;
+            margin-top: 4px;
+        }
+        ul.extension_listing li a h6.active {
+            color: #001D2E;
+        }
+        /**** Tablet devices ****/
+        @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+            ul.extension_listing li {
+                margin-right: 70px;
+            }
+        }
+        /**** Tablet devices ****/
+        /********** Browser extension styles **********/
+
+        /********** Why ESB styles **********/
+        section.why_esb {
+            width: 100%;
+            background: url("../../images/download/why-esb-shape.svg") no-repeat left 20%;
+            background-color: #fff;
+        }
+        .why_esb_content {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 60px 0 50px 0;
+            justify-content: center;
+            align-items: center;
+        }
+        .why_esb_content h1 {
+            color: #000;
+            text-align: center;
+            font-family: "Poppins", system-ui, -apple-system, Roboto;
+            font-size: 2.225rem;
+            font-weight: 500;
+            line-height: 3.2rem;
+            display: block;
+        }
+        .why_esb_content p.subtitle {
+            color: #757373;
+            text-align: center;
+            font-family: "Poppins", system-ui, -apple-system, Roboto;
+            font-size: 1rem;
+            font-weight: 300;
+            line-height: 1.75rem;
+            display: block;
+            margin: 5px 0;
+        }
+        .why_esb_content .content_row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin-top: 60px;
+        }
+        .why_esb_content .content_row .left_clipart {
+            width: 30%;
+        }
+        .why_esb_content .content_row .right_content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 60%;
+        }
+        .why_esb_content .content_row .right_content h3 {
+            color: #000;
+            font-family: "Poppins", system-ui, -apple-system, Roboto;
+            font-size: 1.75rem;
+            line-height: 2.4rem;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+        .why_esb_content .content_row .right_content .content {
+            display: flex;
+            flex-direction: row;
+            margin-top: 20px;
+        }
+        .why_esb_content .content_row .right_content .content .tick_icon {
+            height: 38px;
+            width: 38px;
+        }
+        .why_esb_content .content_row .right_content .content p.why_content {
+            color: #272727;
+            font-family: "Poppins", system-ui, -apple-system, Roboto;
+            font-size: 0.975rem;
+            font-weight: 300;
+            line-height: 1.625rem;
+            text-align: left;
+            margin-left: 20px;
+        }
+        /**** Mobile devices ****/
+        @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+            section.why_esb {
+                background: none;
+            }
+            .why_esb_content h1 {
+                font-size: 1.9rem;
+                line-height: 2.8rem;
+            }
+            .why_esb_content h1 br {
+                display: none;
+            }
+            .why_esb_content p.subtitle br {
+                display: none;
+            }
+            .why_esb_content .content_row {
+                flex-direction: column;
+                justify-content: center;
+                margin-top: 40px;
+            }
+            .why_esb_content .content_row .left_clipart {
+                width: 100%;
+            }
+            .why_esb_content .content_row .right_content {
+                width: 100%;
+                margin-top: 20px;
+            }
+            .why_esb_content .content_row .right_content h3 {
+                font-size: 1.45rem;
+                line-height: 2.1rem;
+                margin-bottom: 0;
+            }
+            .why_esb_content .content_row .right_content .content p.why_content {
+                font-size: 0.9rem;
+                line-height: 1.625rem;
+                margin-left: 15px;
+            }
+        }
+        /**** Mobile devices ****/
+
+        /**** Tablet devices ****/
+        @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+            section.why_esb {
+                background: url("../../images/download/why-esb-shape.svg") no-repeat left 10%;
+            }
+            .why_esb_content h1 {
+                font-size: 2rem;
+                line-height: 3rem;
+            }
+            .why_esb_content .content_row {
+                flex-direction: column;
+                justify-content: center;
+            }
+            .why_esb_content .content_row .left_clipart {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+            .why_esb_content .content_row .right_content {
+                width: 100%;
+                margin-top: 20px;
+            }
+            .why_esb_content .content_row .right_content h3 {
+                margin-bottom: 0;
+            }
+        }
+        /**** Tablet devices ****/
+        /********** Why ESB styles **********/
+        
+        /********** Extension setup styles **********/
+        section.extension_setup {
+            background: #FBFBFB;
+            padding: 50px 0;
+        }
+        .star_shape {
+            position: absolute;
+            background: url('../../images/download/star-shape.svg') no-repeat;
+            width: 153px;
+            height: 130px;
+            right: 0;
+            margin-top: -120px;
+        }
+        .setup_content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .setup_content h1 {
+            color: #000;
+            text-align: center;
+            font-family: "Poppins", system-ui, -apple-system, Roboto;
+            font-size: 2.125rem;
+            line-height: 3rem;
+            font-weight: 500;
+        }
+        .setup_content p.subtitle {
+            color: #535353;
+            text-align: center;
+            font-family: "Poppins", system-ui, -apple-system, Roboto;
+            font-size: 1rem;
+            font-weight: 300;
+            line-height: 1.75rem;
+            display: block;
+            margin: 10px 0;
+        }
+        .setup_content p.subtitle a {
+            text-decoration: underline;
+            color: #0703EC;
+        }
+        .setup_content .contect_container {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            margin-top: 40px;
+            align-items: center;
+        }
+        .setup_content .contect_container .content_box {
+            border-radius: 10px;
+            border: 1px solid #BFBFBF;
+            background: #FFFCFC;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 30%;
+        }
+        .setup_content .contect_container .content_box h4 {
+            color: #3D5FFF;
+            font-family: "Poppins", system-ui, -apple-system, Roboto;
+            font-size: 1.25rem;
+            font-weight: 600;
+            letter-spacing: 0.0625rem;
+            text-decoration: underline;
+        }
+        .setup_content .contect_container .content_box h5.title {
+            color: #000;
+            font-family: "Poppins", system-ui, -apple-system, Roboto;
+            font-size: 1.2rem;
+            font-weight: 500;
+            display: block;
+            margin: 10px 0 15px 0;
+        }
+        .setup_content .contect_container .content_box p {
+            color: #878585;
+            font-family: "Poppins", system-ui, -apple-system, Roboto;
+            font-size: 1rem;
+            font-weight: 300;
+            line-height: 1.6rem;
+        }
+        .setup_content .contect_container .divider {
+            width: 5%;
+            height: 1px;
+            background: #BFBFBF;
+        }
+        /**** Mobile devices ****/
+        @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+            .setup_content h1 {
+                font-size: 1.9rem;
+                line-height: 2.8rem;
+            }
+            .setup_content h1 br {
+                display: none;
+            }
+            .setup_content p.subtitle br {
+                display: none;
+            }
+            .setup_content .contect_container {
+                flex-direction: column;
+            }
+            .setup_content .contect_container .content_box {
+                width: 100%;
+            }
+            .setup_content .contect_container .divider {
+                width: 1px;
+                height: 50px;
+            }
+        }
+        /**** Mobile devices ****/
+
+        /**** Tablet devices ****/
+        @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+            .setup_content p.subtitle br {
+                display: none;
+            }
+            .setup_content .contect_container {
+                flex-direction: column;
+            }
+            .setup_content .contect_container .content_box {
+                width: 90%;
+            }
+            .setup_content .contect_container .divider {
+                width: 1px;
+                height: 50px;
+            }
+        }
+        /**** Tablet devices ****/
+        /********** Extension setup styles **********/

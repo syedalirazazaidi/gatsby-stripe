@@ -1,0 +1,204 @@
+main.referral_page {
+  width: $full-width;
+  overflow: hidden;
+  //**** Referral hero styles ****//
+  section.referral_hero {
+    width: $full-width;
+    padding-top: 4rem;
+    background: #feede4;
+    .hero_content {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin-top: 6rem;
+      @include media-breakpoint-only(md) {
+        align-items: center;
+        justify-content: center;
+        margin-top: 0;
+      }
+      h1 {
+        display: block;
+        width: 80%;
+        margin-bottom: 2rem;
+        font-family: $font-family-poppins;
+        font-size: 2.5rem;
+        font-weight: $font-weight-light;
+        line-height: 3.875rem;
+        color: $black;
+        letter-spacing: .025rem;
+        @include media-breakpoint-only(md) {
+          width: $full-width;
+          margin-bottom: 1rem;
+          line-height: 1.4;
+          text-align: center;
+        }
+      }
+      a {
+        display: block;
+        width: 15rem;
+        font-family: $font-family-poppins;
+        font-size: 1.25rem;
+        font-weight: $font-weight-semibold;
+        color: $white;
+        letter-spacing: .025rem;
+        background: #fd491f;
+        border-radius: .25rem;
+        @include media-breakpoint-only(md) {
+          margin-top: 1rem;
+          margin-bottom: 3rem;
+        }
+      }
+    }
+    @include media-breakpoint-only(md) {
+      img.referral_bg {
+        display: block;
+        width: 75%;
+        margin: 0 auto;
+      }
+    }
+  }
+  //**** Referral hero style ends! ****//
+
+  //**** Grey section styles ****//
+  section.gradient_section {
+    position: $relative;
+    width: $full-width;
+    overflow: hidden;
+    background: rgb(254, 237, 228);
+    background: linear-gradient(180deg, rgba(254, 237, 228, 1) 0%, rgba(254, 237, 228, 1) 20%, rgba(245, 245, 245, 1) 21%, rgba(245, 245, 245, 1) 100%);
+    .container {
+      .reff_white {
+        display: flex;
+        flex-direction: column;
+        width: $full-width;
+        padding: 1rem 3rem;
+        background: $white;
+        border-radius: .25rem;
+        .reff_content {
+          display: flex;
+          flex-direction: row;
+          &.bordered {
+            padding: 2rem 0;
+            border-bottom: 1px dashed rgba(0, 0, 0, .2);
+          }
+          .content_box {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-left: 4rem;
+            h2 {
+              display: block;
+              margin-bottom: 2rem;
+              font-family: $font-family-poppins;
+              font-size: 2rem;
+              font-weight: $font-weight-semibold;
+              color: $black;
+              letter-spacing: .04rem;
+            }
+            p {
+              display: block;
+              font-family: $font-family-poppins;
+              font-size: .975rem;
+              font-weight: $font-weight-light;
+              line-height: 2rem;
+              color: $gray-light-500;
+              letter-spacing: .01125rem;
+            }
+          }
+        }
+      }
+      .divider {
+        display: flex;
+        height: 1px;
+        margin: 3rem 0;
+        border: 1px dashed rgba(0, 0, 0, .2);
+      }
+      //**** Referral page FAQ section ****//
+      .faq_section {
+        display: flex;
+        flex-direction: row;
+        width: $full-width;
+        .left_tab_content {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          @include media-breakpoint-only(md) {
+            align-items: center;
+            justify-content: center;
+          }
+          h1 {
+            display: block;
+            margin-bottom: 2rem;
+            font-family: $font-family-poppins;
+            font-size: 1.425rem;
+            font-weight: $font-weight-semibold;
+            color: $black;
+          }
+          ul.reff_faq_tab {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            list-style-type: none;
+            li {
+              display: flex;
+              margin-bottom: 1rem;
+              a {
+                display: flex;
+                justify-content: center;
+                width: 16rem;
+                padding: .8rem 0;
+                font-family: $font-family-poppins;
+                font-size: 1.175rem;
+                font-weight: $font-weight-lighter;
+                color: #656565;
+                border-radius: 1.875rem;
+                &.active,
+                &:hover {
+                  font-weight: $font-weight-semibold;
+                  color: $white;
+                  background: #202020;
+                }
+              }
+            }
+          }
+        }
+        .faq_container {
+          display: block;
+          width: $full-width;
+          padding-left: 4rem;
+          @include media-breakpoint-only(md) {
+            padding-left: 0;
+          }
+        }
+      }
+      //**** Referral page FAQ section ****//
+    }
+  }
+  //**** Grey section style ends! ****//
+}
+@include media-breakpoint-only(md) {
+  footer.footer_sceond {
+    .white_container {
+      top: 5rem;
+      left: 0;
+      width: $full-width;
+      .right_content {
+        justify-content: flex-start !important;
+        margin-top: 1rem !important;
+        .row {
+          .col-auto {
+            padding-left: 0 !important;
+            margin-top: 2rem !important;
+          }
+        }
+      }
+    }
+    .copyright_content {
+      flex-direction: column !important;
+    }
+    .bottom_msg {
+      padding: 1rem;
+      text-align: center;
+    }
+  }
+}

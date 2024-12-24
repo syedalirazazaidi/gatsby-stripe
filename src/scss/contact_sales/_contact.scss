@@ -1,0 +1,443 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+main.contact_page {
+    width: $full-width;
+    overflow: hidden;
+  
+    //**** ES Booking team section styles ****//
+    section.our_teams {
+      width: $full-width;
+      padding: 4rem 0;
+      background: linear-gradient(180deg, $white 0%, #f5f5f5 50%, $white 100%);
+      @media screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+        padding: 3rem 0;
+      }
+      .container {
+        .team_banner {
+          z-index: 1111;
+          display: flex;
+          justify-content: center;
+          height: 382px;
+          background: url("../../../src/images/contact/team_banner.svg") no-repeat 0 0;
+          background-size: 100%;
+          @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+            height: auto;
+            background-image: none;
+          }
+          @media screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+            height: 270px;
+          }
+          .banner_container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 55%;
+            @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+              width: 95%;
+            }
+            h1 {
+              display: block;
+              margin-bottom: 2rem;
+              font-family: $font-family-poppins;
+              font-size: 2.8rem;
+              font-weight: $font-weight-semibold;
+              line-height: 2.125rem;
+              color: #161616;
+              @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+                margin-bottom: 1rem;
+              }
+              @media screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+                margin-bottom: 1rem;
+                font-size: 2.5rem;
+                line-height: 3rem;
+                text-align: center;
+              }
+            }
+            p {
+              display: block;
+              width: $full-width;
+              font-family: $font-family-poppins;
+              font-size: .975rem;
+              font-weight: $font-weight-light;
+              line-height: 1.8rem;
+              color: #656565;
+              text-align: center;
+            }
+          }
+        }
+        .box_container {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          width: $full-width;
+          margin-top: 1rem;
+          @media screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+            &.mt-5 {
+              margin-top: 1rem !important;
+            }
+          }
+          .content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            justify-content: center;
+            width: 85%;
+            @media screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+              flex-wrap: wrap;
+              justify-content: space-between;
+              width: $full-width;
+              .ms-3 {
+                margin-left: 0 !important;
+              }
+              .me-3 {
+                margin-right: 0 !important;
+              }
+            }
+            .white_box {
+              display: flex;
+              flex-direction: column;
+              padding: 1.6rem 2rem;
+              background: $white;
+              border-radius: 8px;
+              box-shadow: rgba(0, 0, 0, .15) 0 3px 3px 0;
+              @media screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+                margin-bottom: 1.5rem;
+                &.ms-5 {
+                  margin-left: 0 !important;
+                }
+                &.me-5 {
+                  margin-right: 0 !important;
+                }
+              }
+              .heading {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                width: $full-width;
+                margin-bottom: 1.6rem;
+                span.icon {
+                  display: inline-flex;
+                  img {
+                    width: 32px;
+                    height: 32px;
+                  }
+                }
+                h3 {
+                  display: inline-flex;
+                  padding-top: 8px;
+                  margin-left: .8rem;
+                  font-family: $font-family-poppins;
+                  font-size: 1.45rem;
+                  font-weight: $font-weight-bold;
+                  line-height: 2.125rem;
+                  color: #161616;
+                }
+              }
+              p.box_content {
+                display: flex;
+                width: $full-width;
+                padding-bottom: 2rem;
+                font-family: $font-family-poppins;
+                font-size: .875rem;
+                font-weight: $font-weight-light;
+                line-height: 1.725rem;
+                color: $gray-light-500;
+                border-bottom: 1px solid #b6c7d6;
+              }
+              ul.link_list {
+                display: flex;
+                flex-direction: column;
+                width: $full-width;
+                padding: 0;
+                margin-top: 1rem;
+                list-style-type: none;
+                li {
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  justify-content: flex-start;
+                  margin-bottom: 1rem;
+                  a {
+                    display: inline-flex;
+                    font-family: $font-family-poppins;
+                    font-size: .875rem;
+                    font-weight: $font-weight-normal;
+                    line-height: 1.625rem;
+                    color: #0238d2;
+                  }
+                  span{
+                    display: inline-flex;
+                    padding-top: 1px;
+                    margin-left: .6rem;
+                    img {
+                      width: 22px;
+                      height: 22px;
+                    }
+                  }
+                }
+              }
+              .blue_btn {
+                width: 14rem;
+                padding: .6rem 1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    //**** ES Booking team section style ends! ****//
+  
+    .divider {
+      flex-shrink: 0;
+      width: $full-width;
+      height: .1475rem;
+      background: linear-gradient(270deg, #4287fd 0%, #61bc90 23.96%, #95d83b 48.44%, #f3d321 75%, #fd4f00 100%);
+    }
+  
+    //**** Location section styles starts ****//
+    section.location {
+      width: $full-width;
+      min-height: 380px;
+      padding: 6rem 0;
+      background: #f9f9f9;
+      background-image: url("../../../src/images/contact/map-clipart.png");
+      background-repeat: no-repeat;
+      background-position: right;
+      background-position-y: 5.5em;
+      @media screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+        padding: 3rem 0;
+        background-image: none;
+      }
+      .container {
+        .contact_details {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          width: 50%;
+          padding-left: 1.5rem;
+          border-left: 1px solid #9f9f9f;
+          @media screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+            width: $full-width;
+            padding-left: 0;
+            border-left: 0;
+          }
+          .left_details {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            h2 {
+              display: block;
+              margin-bottom: 2rem;
+              font-family: $font-family-poppins;
+              font-size: 2rem;
+              font-weight: $font-weight-semibold;
+              line-height: 3.125rem;
+              color: $black;
+              letter-spacing: .02rem;
+            }
+            .location {
+              display: flex;
+              flex-direction: column;
+              p.address {
+                display: block;
+                font-family: $font-family-poppins;
+                font-size: .9375rem;
+                font-weight: $font-weight-light;
+                line-height: 1.875rem;
+                color: $gray-light-500;
+                letter-spacing: .00938rem;
+              }
+            }
+            .general_inquiries {
+              display: flex;
+              flex-direction: column;
+              margin-top: 3rem;
+              a {
+                display: block;
+                margin-bottom: .6rem;
+                font-family: $font-family-poppins;
+                font-size: .9375rem;
+                font-weight: $font-weight-normal;
+                line-height: 1.875rem;
+                color: $gray-light-500;
+                letter-spacing: .00938rem;
+              }
+            }
+          }
+  
+          .right_details {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            span {
+              display: block;
+              font-family: $font-family-poppins;
+              font-size: 1rem;
+              font-weight: $font-weight-normal;
+              color: #7d7c7c;
+              letter-spacing: .01rem;
+            }
+            .assistance_hours {
+              display: flex;
+              flex-direction: column;
+              margin-top: 5rem;
+              h5 {
+                display: block;
+                font-family: $font-family-poppins;
+                font-size: .8375rem;
+                font-weight: $font-weight-semibold;
+                line-height: 1.875rem;
+                color: #313131;
+                letter-spacing: .00938rem;
+              }
+              span.time {
+                display: block;
+                font-family: $font-family-poppins;
+                font-size: .9375rem;
+                font-weight: $font-weight-light;
+                line-height: 1.875rem;
+                color: $gray-light-500;
+                letter-spacing: .00938rem;
+              }
+            }
+            .contact_number {
+              display: flex;
+              flex-direction: column;
+              margin-top: 2rem;
+              span.number {
+                display: block;
+                font-family: $font-family-poppins;
+                font-size: .9375rem;
+                font-weight: $font-weight-light;
+                line-height: 1.875rem;
+                color: $gray-light-500;
+                letter-spacing: .00938rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    //**** Location section style ends! ****//
+  
+    //**** Contact form section style starts ****//
+    section.drop_us_line {
+      width: $full-width;
+      padding-top: 4rem;
+      background: $white;
+      @media screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+        padding-top: 3rem;
+      }
+      .container {
+        .no-margin {
+          --bs-gutter-x: 0 !important;
+          @media screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+            &.mt-5 {
+              margin-top: 0 !important;
+            }
+          }
+        }
+        .left_content {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          h2 {
+            display: block;
+            margin-bottom: 1rem;
+            font-family: $font-family-poppins;
+            font-size: 2rem;
+            font-weight: $font-weight-semibold;
+            line-height: 3rem;
+            color: $black;
+            letter-spacing: .02rem;
+            @media screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+              margin-bottom: 0;
+            }
+          }
+          span {
+            display: block;
+            font-family: $font-family-poppins;
+            font-size: .9375rem;
+            font-weight: $font-weight-light;
+            line-height: 1.875rem;
+            color: $gray-light-500;
+            letter-spacing: .00938rem;
+            @media screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+              br {
+                display: none;
+              }
+            }
+          }
+        }
+        .right_form {
+          width: $full-width;
+          @media screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+            margin-top: 1.5rem;
+          }
+          form {
+            width: $full-width;
+            label.form-label {
+              font-family: $font-family-poppins;
+              font-size: .9375rem;
+              font-weight: $font-weight-light;
+              color: #8a8f93;
+              @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+                margin-bottom: .6rem;
+              }
+            }
+            input.form-control {
+              width: 95%;
+              font-weight: $font-weight-light;
+              background: $white;
+              border: 1px solid #e0e1e3;
+              border-radius: .375rem;
+              @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+                width: $full-width;
+                margin-bottom: 1.2rem;
+              }
+            }
+            textarea {
+              width: $full-width;
+              min-height: 220px;
+              background: $white;
+              border: 1px solid #e0e1e3;
+            }
+            .form-check-input {
+              border: 1px solid #e0e1e3;
+            }
+            label.form-check-label {
+              font-family: $font-family-poppins;
+              font-size: .875rem;
+              font-weight: $font-weight-normal;
+              color: $gray-light-500;
+              letter-spacing: .00875rem;
+            }
+            .send_email {
+              width: 11rem;
+            }
+          }
+        }
+        .cities_grey_bg {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: $full-width;
+          margin-top: 10rem;
+          @media screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+            margin-top: 4rem !important;
+          }
+          img {
+            height: 400px;
+            @media screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+              width: $full-width;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+    //**** Contact form section style ends! ****//
+  }
+  

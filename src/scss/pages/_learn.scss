@@ -1,0 +1,390 @@
+main.learn_page {
+  width: $full-width;
+  overflow: hidden;
+  section.learn_hero {
+    width: $full-width;
+    padding: 6rem 0;
+    background: #191c1f;
+    @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+      padding: 3rem 0 1.5rem;
+    }
+    @media screen and (min-device-width: 768px) and (max-device-width: 1120px) {
+      padding: 3rem 0 2rem;
+    }
+    .container {
+      h2.white_heading {
+        display: flex;
+        width: 45%;
+        font-family: $font-family-poppins;
+        font-size: 2rem;
+        font-weight: $font-weight-bold;
+        line-height: 3.25rem;
+        color: $white;
+        @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+          width: $full-width;
+          font-size: 1.3rem;
+          line-height: 1.8;
+        }
+        @media screen and (min-device-width: 768px) and (max-device-width: 1120px) {
+          width: $full-width;
+        }
+      }
+      .learn_hero_container {
+        width: $full-width;
+        margin-top: 2rem;
+        .learn_content {
+          display: flex;
+          flex-direction: column;
+          width: $full-width;
+          span.white_text {
+            display: inline-flex;
+            width: $full-width;
+            margin-bottom: 2rem;
+            font-family: $font-family-poppins;
+            font-size: 1rem;
+            font-weight: $font-weight-light;
+            line-height: 1.75rem;
+            color: $white;
+            @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+              margin-bottom: 1rem;
+            }
+          }
+          span.reader_green {
+            font-family: $font-family-poppins;
+            font-size: 1rem;
+            font-weight: $font-weight-medium;
+            line-height: 1.75rem;
+            color: #22cb56;
+          }
+          a.read_article {
+            display: inline-flex;
+            font-family: $font-family-poppins;
+            font-size: 1.0625rem;
+            font-weight: $font-weight-semibold;
+            line-height: 1.75rem;
+            color: $white;
+            text-decoration-line: underline;
+            @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+              margin-top: .6rem;
+              font-weight: $font-weight-medium;
+            }
+          }
+        }
+        .color_box {
+          display: flex;
+          flex-direction: column;
+          flex-shrink: 0;
+          width: $full-width;
+          padding: 1.5rem;
+          margin-top: 3rem;
+          border-radius: .625rem;
+          @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+          }
+          @media screen and (min-device-width: 768px) and (max-device-width: 1120px) {
+            margin-bottom: 2.5rem;
+          }
+          &.pink {
+            background: #f1b2d8;
+          }
+          &.green {
+            background: #d0ea59;
+          }
+          &.sky {
+            background: #b1c7ef;
+          }
+          &.yellow {
+            background: #ffbb01;;
+          }
+          .icon_container {
+            display: block;
+            width: 36px;
+            height: 36px;
+          }
+          h6 {
+            display: block;
+            margin-top: 1rem;
+            margin-bottom: 1.5rem;
+            font-family: $font-family-poppins;
+            font-size: 1rem;
+            font-weight: $font-weight-normal;
+            color: $black;
+          }
+          h2 {
+            display: block;
+            font-family: $font-family-poppins;
+            font-size: 1.125rem;
+            font-weight: $font-weight-bold;
+            color: #020202;
+          }
+          p {
+            display: block;
+            width: $full-width;
+            font-family: $font-family-poppins;
+            font-size: .9375rem;
+            font-weight: $font-weight-light;
+            line-height: 1.625rem; /* 173.333% */
+            color: #3c3b3b;
+          }
+          a {
+            display: block;
+            margin-top: 1rem;
+            font-family: $font-family-poppins;
+            font-size: 1rem;
+            font-weight: $font-weight-normal;
+            color: #1c0689;
+          }
+        }
+      }
+    }
+  }
+  //********** Quick videos style **********//
+  section.quick_videos {
+    width: $full-width;
+    background: $white;
+    .container {
+      padding: 6rem 0 3rem;
+      border-bottom: 1px solid #cecdcd;
+      @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+        padding: 2.5rem 0;
+      }
+      @media screen and (min-device-width: 768px) and (max-device-width: 1120px) {
+        padding: 3.5rem 0;
+      }
+      .heading_row {
+        h4 {
+          font-family: $font-family-poppins;
+          font-size: 2.275rem;
+          font-weight: $font-weight-lighter;
+          color: $black;
+          @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+            font-size: 1.475rem;
+          }
+        }
+      }
+      @media screen and (min-device-width: 320px) and (max-device-width: 1120px) {
+        .mt-5 {
+          margin-top: 1.5rem !important;
+        }
+      }
+      .most_watched {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: $full-width;
+        padding-right: 1rem;
+        .clipart_icn {
+          display: inline-flex;
+          width: 115px;
+          height: 90px;
+          background: url("../../assets/images/learn/most-watched-clipart.svg") no-repeat 0 0;
+        }
+        h3 {
+          display: inline-flex;
+          width: $full-width;
+          margin: 1rem 0;
+          font-family: $font-family-poppins;
+          font-size: 1.35rem;
+          font-weight: $font-weight-light;
+          line-height: 1.6;
+          color: $black;
+          text-align: left;
+          @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+            font-size: 1.15rem;
+            line-height: 1.5;
+          }
+        }
+        p {
+          display: inline-flex;
+          width: $full-width;
+          font-family: $font-family-poppins;
+          font-size: .9375rem;
+          font-weight: $font-weight-light;
+          line-height: 1.75rem;
+          color: #656565;
+          text-align: left;
+        }
+        a {
+          margin-top: .8rem;
+          font-size: .875rem;
+          color: #0238d2;
+          @media screen and (min-device-width: 320px) and (max-device-width: 1120px) {
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+          }
+          i {
+            display: inline-block;
+            margin-left: .3rem;
+          }
+        }
+      }
+      .video_carousal_container {
+        position: $relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: $full-width;
+        padding-left: 1.8rem;
+        border-left: 1px solid #cecdcd;
+        @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+          flex-direction: column;
+          justify-content: flex-start;
+          padding-left: 0;
+          border-left: none;
+        }
+        @media screen and (min-device-width: 768px) and (max-device-width: 1120px) {
+          padding-left: 0;
+          border-left: none;
+        }
+        .video_content {
+          display: flex;
+          flex-direction: column;
+          width: 33%;
+          @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+            width: $full-width;
+          }
+          .thumb_img {
+            position: $relative;
+            display: block;
+            width: 300px;
+            min-height: 200px;
+            @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+              width: $full-width;
+              min-height: 275px;
+            }
+            @media screen and (min-device-width: 768px) and (max-device-width: 1120px) {
+              width: auto;
+            }
+            &.first {
+              background: url("../../assets/images/learn/video-thumb-01.png") no-repeat 0 0;
+              background-size: contain;
+              @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+                background-size: cover;
+              }
+            }
+            &.second {
+              background: url("../../assets/images/learn/video-thumb-02.png") no-repeat 0 0;
+              background-size: contain;
+              @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+                background-size: cover;
+              }
+            }
+            &.third {
+              background: url("../../assets/images/learn/video-thumb-03.png") no-repeat 0 0;
+              background-size: contain;
+              @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+                background-size: cover;
+              }
+            }
+            .time {
+              position: $absolute;
+              bottom: 0;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 90px;
+              padding: .2rem 1rem;
+              font-family: $font-family-poppins;
+              font-size: .8125rem;
+              font-weight: $font-weight-light;
+              color: $white;
+              background: rgba(0, 0, 0, .8);
+              border-bottom-left-radius: 4px;
+              i {
+                padding-right: .5rem;
+              }
+            }
+          }
+          .getting_started {
+            display: flex;
+            justify-content: center;
+            width: 140px;
+            margin: 1rem 0;
+            font-family: $font-family-poppins;
+            font-size: .8125rem;
+            font-weight: $font-weight-normal;
+            color: $black;
+            background: #ffce81;
+            border-radius: .25rem;
+          }
+          h3 {
+            display: flex;
+            font-family: $font-family-poppins;
+            font-size: 1.125rem;
+            font-weight: $font-weight-normal;
+            color: $black;
+            @media screen and (min-device-width: 768px) and (max-device-width: 1120px) {
+              font-size: .885rem;
+            }
+          }
+          p {
+            display: flex;
+            width: $full-width;
+            font-family: $font-family-poppins;
+            font-size: .875rem;
+            font-weight: $font-weight-light;
+            line-height: 1.625rem;
+            color: #656565;
+            @media screen and (min-device-width: 768px) and (max-device-width: 1120px) {
+              line-height: 1.8;
+            }
+          }
+        }
+        a.arrow-right {
+          position: $absolute;
+          top: 20%;
+          right: 0;
+          display: inline-flex;
+          width: 44px;
+          height: 44px;
+          @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  //********** Quick videos style ends! **********//
+
+  //********** Email Newsletter section **********//
+  section.email_newsletter {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: $white;
+
+    .subscribe {
+      flex-direction: column;
+      justify-content: flex-start;
+
+      h5 {
+        font-family: $font-family-poppins;
+        font-size: 1rem;
+        font-weight: $font-weight-medium;
+        color: $gray-light-600;
+      }
+
+      span {
+        font-family: $font-family-poppins;
+        font-size: $es-primary-font-size;
+        color: $gray-light-700;
+        letter-spacing: .00875rem;
+        @media screen and (min-device-width: 768px) and (max-device-width: 1120px) {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+
+    form.newsletter {
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+  }
+  //********** Email Newsletter section ends! **********//
+
+  section.gradient_divider {
+    width: $full-width;
+    height: 2px;
+    background: linear-gradient(270deg, #4287fd 0%, #61bc90 23.96%, #95d83b 48.44%, #f3d321 75%, #fd4f00 100%);
+  }
+}

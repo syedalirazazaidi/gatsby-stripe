@@ -1,0 +1,944 @@
+main.about_us {
+  width: $full-width;
+  overflow: hidden;
+  //**** About the company styles ****//
+  section.about_company {
+    width: $full-width;
+    height: 620px;
+    padding-top: 6rem;
+    background: url("../../assets/images/about-us/about_cmp_bg.svg") 0 0 no-repeat;
+    background-color: $white;
+    background-position: right;
+    background-position-y: 15px;
+    @include media-breakpoint-only(md) {
+      height: auto;
+      background-size: 65%;
+    }
+    .container {
+      .company_content {
+        position: $relative;
+        top: -30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 35%;
+        @include media-breakpoint-only(md) {
+          top: -50px;
+          width: 60%;
+        }
+        h6 {
+          display: inline-flex;
+          font-family: $font-family-poppins;
+          font-size: .9375rem;
+          font-weight: $font-weight-semibold;
+          color: #1a0681;
+        }
+        h2 {
+          display: block;
+          margin: 1rem 0;
+          font-family: $font-family-poppins;
+          font-size: 2.375rem;
+          font-weight: $font-weight-normal;
+          line-height: 3.675rem;
+          color: $black;
+          letter-spacing: .02375rem;
+          @include media-breakpoint-only(md) {
+            font-size: 1.945rem;
+            line-height: 1.6;
+          }
+        }
+        p {
+          display: block;
+          width: $full-width;
+          margin-bottom: 2rem;
+          font-family: $font-family-poppins;
+          font-size: 1rem;
+          font-weight: $font-weight-light;
+          line-height: 1.8rem;
+          color: $gray-light-500;
+          @include media-breakpoint-only(md) {
+            width: 60%;
+          }
+        }
+        ul.about_listing {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          padding: 0;
+          list-style-type: none;
+          @include media-breakpoint-only(md) {
+            margin-bottom: 0;
+          }
+          li {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            width: 50%;
+            margin-bottom: 2rem;
+            .tick_icon {
+              display: inline-flex;
+              width: 22px;
+              height: 22px;
+              margin-right: .6rem;
+            }
+            .list_text {
+              display: inline-flex;
+              font-family: $font-family-poppins;
+              font-size: 1rem;
+              font-weight: $font-weight-normal;
+              color: $black;
+              letter-spacing: .01rem;
+              @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+                font-size: .875rem;
+                letter-spacing: 0;
+              }
+            }
+          }
+        }
+        a.watch_video {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: flex-start;
+          .play_icon {
+            display: inline-flex;
+            width: 51px;
+            height: 49px;
+          }
+          .watch_text {
+            display: inline-flex;
+            margin-left: 1rem;
+            font-family: $font-family-poppins;
+            font-size: .875rem;
+            font-weight: $font-weight-semibold;
+            color: $black;
+            @include media-breakpoint-only(md) {
+              br {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  //**** About the company style ends! ****//
+
+  //**** Our mission section styles ****//
+  section.our_mission  {
+    width: $full-width;
+    padding: 5rem 0;
+    background: linear-gradient(231deg, #fff1e5 0%, #ffefe2 .01%, #fff 44.83%, #fff6ef 85.54%, #ffdfc7 98.94%);
+    @include media-breakpoint-only(md) {
+      padding: 2rem 0;
+    }
+    .mission_bg {
+      position: $relative;
+      z-index: 111;
+      width: $full-width;
+      height: 886px;
+      background: url("../../assets/images/about-us/mission_bg.png") no-repeat 90% 0;
+      background-size: cover;
+      @include media-breakpoint-only(md) {
+        height: 495px;
+        background: url("../../assets/images/about-us/mission_bg.png") no-repeat 0 0;
+        background-size: contain;
+      }
+      .container {
+        .mission_head {
+          display: block;
+          padding-top: 7rem;
+          font-family: $font-family-poppins;
+          font-size: 2rem;
+          font-weight: $font-weight-light;
+          line-height: 3.375rem;
+          color: $black;
+          @include media-breakpoint-only(md) {
+            padding-top: 3.5rem;
+            text-align: center;
+          }
+          @include media-breakpoint-only(md) {
+            br {
+              display: none;
+            }
+          }
+          h1 {
+            display: inline-block;
+            font-size: 2.35rem;
+            font-weight: $font-weight-semibold;
+            @include media-breakpoint-only(md) {
+              font-size: 1.875rem;
+            }
+          }
+          h2 {
+            display: inline-block;
+            font-size: 2.35rem;
+            font-weight: $font-weight-semibold;
+            color: #edb335;
+            @include media-breakpoint-only(md) {
+              font-size: 1.875rem;
+            }
+          }
+        }
+      }
+    }
+    .mission_text {
+      display: block;
+      width: 65%;
+      margin: 0 auto;
+      margin-top: 1rem;
+      @include media-breakpoint-only(md) {
+        width: 80%;
+        margin-top: 2rem;
+      }
+      p {
+        display: block;
+        font-family: $font-family-poppins;
+        font-size: 1rem;
+        font-weight: $font-weight-light;
+        line-height: 2rem;
+        color: #1b1a1a;
+      }
+    }
+  }
+  //**** Our mission section style ends! ****//
+
+  //**** Our story video section style ****//
+  section.our_story_video {
+    width: $full-width;
+    padding: 2.5rem 0;
+    background: url("../../assets/images/about-us/our-story-bg.svg") 0 0 no-repeat;
+    background-size: cover;
+    @include media-breakpoint-only(md) {
+      background-color: #121826;
+      background-size: contain;
+    }
+    .container {
+      .story_container {
+        display: block;
+        width: 65%;
+        margin: 0 auto;
+        @include media-breakpoint-only(md) {
+          width: $full-width;
+        }
+        .content {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          h3 {
+            display: block;
+            font-family: $font-family-poppins;
+            font-size: 2.2rem;
+            font-weight: $font-weight-light;
+            line-height: 3.425rem;
+            color: $white;
+            text-align: center;
+            @include media-breakpoint-only(md) {
+              margin-top: 2rem;
+              line-height: 1.2;
+            }
+            span {
+              display: inline-block;
+              font-size: 2.8rem;
+              font-weight: $font-weight-semibold;
+              color: #ffcf01;
+            }
+          }
+          p {
+            display: block;
+            width: $full-width;
+            margin-top: 1rem;
+            font-family: $font-family-poppins;
+            font-size: 1rem;
+            font-weight: $font-weight-light;
+            line-height: 2rem;
+            color: $white;
+            text-align: center;
+          }
+          .video_panel {
+            width: $full-width;
+            margin-top: 2rem;
+            border: 1px solid $white;
+            border-radius: .625rem .625rem .25rem .25rem;
+            .panel_head {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: space-between;
+              padding: 1rem 1.5rem;
+              border-bottom: 1px solid $white;
+              span.dots {
+                display: inline-flex;
+              }
+              .contact_sales {
+                display: inline-flex;
+                align-items: flex-end;
+              }
+            }
+            .panel_content {
+              display: flex;
+              align-items: center;
+              //background: url('../../assets/images/about-us/video_clipart.png') 0 0 no-repeat;
+              //height: 387px;
+              justify-content: center;
+              margin: 1rem 1.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  //**** Our story video section style ends! ****//
+
+  //**** Award winning section style ****//
+  section.award_winning {
+    width: $full-width;
+    height: 1004px;
+    padding-top: 6rem;
+    background: url("../../assets/images/about-us/award-bg.svg") no-repeat 0 0;
+    background-size: cover;
+    @include media-breakpoint-only(md) {
+      height: auto !important;
+      padding-top: 3rem;
+      padding-bottom: 2rem;
+      background-color: $gray-light-100 !important;
+      background-size: contain;
+    }
+    .container {
+      h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: $full-width;
+        margin-bottom: 1rem;
+        font-family: $font-family-poppins;
+        font-size: 2rem;
+        font-weight: $font-weight-semibold;
+        line-height: 3rem;
+        color: #313131;
+        text-align: center;
+      }
+      p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: $full-width;
+        font-family: $font-family-poppins;
+        font-size: 1rem;
+        font-weight: $font-weight-light;
+        line-height: 2rem;
+        color: $gray-light-500;
+        text-align: center;
+        @include media-breakpoint-only(md) {
+          br {
+            display: none;
+          }
+        }
+      }
+      span.blue_clipart {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: $full-width;
+        margin: 4rem 0;
+        img {
+          width: 515px;
+          height: 50px;
+        }
+      }
+      .award_details_container {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        @include media-breakpoint-only(md) {
+          width: $full-width;
+        }
+        .award_content {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          width: $full-width;
+          .content_box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 33.3%;
+            &.left {
+              border-right: 1px solid $gray-light-500;
+              border-bottom: 1px solid $gray-light-500;
+              @include media-breakpoint-only(md) {
+                &.pt-5 {
+                  padding-top: 1.2rem !important;
+                }
+              }
+
+            }
+            &.right {
+              border-bottom: 1px solid $gray-light-500;
+            }
+            img {
+              display: inline-flex;
+              width: 64px;
+              height: 64px;
+            }
+            h2 {
+              margin-top: 2rem;
+              margin-bottom: 1rem;
+              font-family: $font-family-poppins;
+              font-size: 2.75rem;
+              font-weight: $font-weight-bold;
+              line-height: 1.875rem;
+              color: #313131;
+              @include media-breakpoint-only(md) {
+                font-size: 1.645rem;
+              }
+            }
+            span {
+              margin-bottom: 2rem;
+              font-family: $font-family-poppins;
+              font-size: 1rem;
+              font-weight: $font-weight-light;
+              line-height: 1.875rem;
+              color: $gray-light-500;
+            }
+          }
+        }
+      }
+    }
+  }
+  //**** Award winning section style ends! ****//
+
+  //**** Customer feedback styles ****//
+  section.customer_feedback {
+    position: $relative;
+    z-index: 111;
+    width: $full-width;
+    padding-top: 2rem;
+    background: $white;
+    .container {
+      .cstmr_left_content {
+        position: $relative;
+        top: 7rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: $full-width;
+        height: 441px;
+        background: url("../../assets/images/about-us/cstmr-left-bg.svg") no-repeat 0 0;
+        background-position: right;
+        @include media-breakpoint-only(md) {
+          top: 2rem;
+          height: 390px;
+        }
+        h2 {
+          display: block;
+          margin-bottom: 2rem;
+          font-family: $font-family-poppins;
+          font-size: 3.625rem;
+          font-weight: $font-weight-lighter;
+          line-height: 4.25rem;
+          color: #030037;
+          span {
+            font-size: 3.125rem;
+            font-weight: $font-weight-bolder;
+          }
+        }
+        p {
+          display: block;
+          width: 50%;
+          margin-bottom: 2rem;
+          font-family: $font-family-poppins;
+          font-size: 1rem;
+          font-weight: $font-weight-light;
+          line-height: 2rem;
+          color: $gray-light-500;
+          @include media-breakpoint-only(md) {
+            width: 80%;
+          }
+        }
+        .read_stories {
+          width: 18rem;
+        }
+      }
+      .user_feedback_container {
+        display: flex;
+        justify-content: flex-end;
+        ul.user_listing {
+          position: $relative;
+          top: 7rem;
+          z-index: 9999;
+          display: flex;
+          flex-direction: column;
+          padding: 0;
+          list-style-type: none;
+          @include media-breakpoint-only(md) {
+            top: 4rem;
+          }
+          li {
+            display: flex;
+            flex-direction: column;
+            width: $full-width;
+            padding: 1rem 1.5rem;
+            margin-bottom: 2rem;
+            background: $white;
+            border-radius: .375rem;
+            box-shadow: 0 0 4px 0 rgba(0, 0, 0, .22);
+            .quote_icon {
+              display: block;
+              width: $full-width;
+              img {
+                width: 40px;
+                height: 40px;
+              }
+            }
+            .user_message {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              width: $full-width;
+              @include media-breakpoint-only(md) {
+                width: 99%;
+              }
+              span {
+                display: inline-flex;
+                font-family: $font-family-poppins;
+                font-size: .9375rem;
+                font-weight: $font-weight-light;
+                line-height: 1.875rem;
+                color: #313131;
+              }
+              img {
+                width: 115px;
+                height: 115px;
+              }
+            }
+            h2.name {
+              position: $relative;
+              top: -10px;
+              display: block;
+              font-family: $font-family-poppins;
+              font-size: 1.25rem;
+              font-weight: $font-weight-semibold;
+              color: #070254;
+            }
+          }
+        }
+      }
+    }
+    .cstmr_feedback_container {
+      width: $full-width;
+      background: linear-gradient(180deg, #362c62 0%, #362c62 47.4%, #130b36 100%);
+      .bg {
+        position: $relative;
+        top: 3rem;
+        height: 350px;
+        background: url("../../assets/images/about-us/cstmr-feedback-bg.png") 0 0 no-repeat;
+        background-position: center;
+        background-size: cover;
+        @include media-breakpoint-only(md) {
+          height: 240px;
+          background-size: contain;
+        }
+      }
+    }
+  }
+  //**** Customer feedback style ends! ****//
+
+  //**** Our Mission second section style ****//
+  section.mission_second {
+    width: $full-width;
+    padding: 5rem 0;
+    background: linear-gradient(231deg, #fff1e5 0%, #ffefe2 .01%, #fff 44.83%, #fff6ef 85.54%, #ffdfc7 98.94%);
+    @include media-breakpoint-only(md) {
+      padding: 2.5rem 0;
+    }
+    .line_clipart {
+      width: $full-width;
+      height: 60px;
+      background: url("../../assets/images/about-us/mission-clipart.svg") no-repeat 0 0;
+      background-size: cover;
+      @include media-breakpoint-only(md) {
+        height: 35px;
+        background-size: contain;
+      }
+    }
+    .container {
+      .left_section {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: $full-width;
+        margin-top: 6rem;
+        @include media-breakpoint-only(md) {
+          margin-top: 1rem;
+        }
+        h2 {
+          display: block;
+          margin-bottom: 1rem;
+          font-family: $font-family-poppins;
+          font-size: 2.25rem;
+          font-weight: $font-weight-lighter;
+          line-height: 3.375rem;
+          color: $black;
+          @include media-breakpoint-only(md) {
+            br {
+              display: none;
+            }
+          }
+          span {
+            font-weight: $font-weight-bolder;
+          }
+        }
+        p {
+          display: block;
+          width: 70%;
+          margin-bottom: 3rem;
+          font-family: $font-family-poppins;
+          font-size: 1rem;
+          font-weight: $font-weight-light;
+          line-height: 2rem;
+          color: $black;
+          @include media-breakpoint-only(md) {
+            width: $full-width;
+          }
+        }
+        .get_in_touch {
+          width: 12rem;
+        }
+      }
+      .right_container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: $full-width;
+        img {
+          width: 689px;
+          height: 656px;
+          @include media-breakpoint-only(md) {
+            width: $full-width;
+          }
+        }
+      }
+    }
+  }
+  //**** Our Mission second section style ****//
+
+  //**** Our story section styles ****//
+  section.our_story {
+    position: $relative;
+    z-index: 11;
+    width: $full-width;
+    padding: 6rem 0;
+    background: $gray-light-100;
+    @include media-breakpoint-only(md) {
+      padding: 4rem 0;
+    }
+    .right_clipart {
+      position: $absolute;
+      top: -70px;
+      right: 0;
+      z-index: 99;
+      img {
+        height: 502px;
+        @include media-breakpoint-only(md) {
+          width: $full-width;
+          height: 390px;
+        }
+      }
+    }
+    .left_bg_section {
+      width: $full-width;
+      height: 867px;
+      background: url("../../assets/images/about-us/story_bg.png") no-repeat;
+      background-size: contain;
+    }
+    .right_content_section {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 80%;
+      @include media-breakpoint-only(md) {
+        width: $full-width;
+        margin-top: 2rem;
+      }
+      h2 {
+        display: block;
+        margin-bottom: 1.5rem;
+        font-family: $font-family-poppins;
+        font-size: 2.5rem;
+        font-weight: $font-weight-semibold;
+        line-height: 3.375rem;
+        color: $black;
+      }
+      p {
+        display: block;
+        margin-bottom: 1rem;
+        font-family: $font-family-poppins;
+        font-size: 1rem;
+        font-weight: $font-weight-light;
+        line-height: 2rem;
+        color: $gray-light-500;
+      }
+    }
+  }
+  //**** Our story section style ends! ****//
+
+  //**** What do we offer section styles ****//
+  section.what_we_offer {
+    width: $full-width;
+    padding: 6rem 0;
+    background: $gray-light-100;
+    @include media-breakpoint-only(md) {
+      position: $relative;
+      top: -2rem;
+      padding: 3rem 0;
+    }
+    .container {
+      .left_section {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: $full-width;
+        h6 {
+          display: block;
+          font-family: $font-family-poppins;
+          font-size: 1rem;
+          font-weight: $font-weight-semibold;
+          color: #1a0681;
+          @include media-breakpoint-only(md) {
+            text-align: center;
+          }
+        }
+        h2 {
+          display: flex;
+          flex-wrap: wrap;
+          width: 60%;
+          margin: 1rem 0;
+          font-family: $font-family-poppins;
+          font-size: 2.375rem;
+          font-weight: $font-weight-lighter;
+          line-height: 3.575rem;
+          color: $black;
+          letter-spacing: .02375rem;
+          @include media-breakpoint-only(md) {
+            display: block;
+            width: $full-width;
+            margin: 0 auto;
+            text-align: center;
+          }
+          span {
+            font-weight: $font-weight-bold;
+            @include media-breakpoint-only(md) {
+              display: inline-flex;
+              margin-left: 2px;
+            }
+          }
+        }
+        p {
+          display: flex;
+          flex-wrap: wrap;
+          width: 60%;
+          margin-top: .5rem;
+          font-family: $font-family-poppins;
+          font-size: 1rem;
+          font-weight: $font-weight-light;
+          line-height: 1.875rem;
+          color: $gray-light-500;
+          @include media-breakpoint-only(md) {
+            display: block;
+            width: $full-width;
+            margin-top: 0;
+            text-align: center;
+          }
+        }
+      }
+      .right_section {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: flex-end;
+        @include media-breakpoint-only(md) {
+          justify-content: space-evenly;
+        }
+        a {
+          display: inline-flex;
+          width: 270px;
+          height: 248px;
+          @include media-breakpoint-only(md) {
+            &.mx-5 {
+              margin-right: 0 !important;
+              margin-left: 0 !important;
+            }
+          }
+        }
+      }
+      .visa_container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        @include media-breakpoint-only(md) {
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+        }
+        a {
+          display: inline-flex;
+          width: 270px;
+          height: 248px;
+          @include media-breakpoint-only(md) {
+            &.residence {
+              margin-top: 1.5rem;
+            }
+          }
+        }
+        .blue_bg {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 270px;
+          height: 248px;
+          background: url("../../assets/images/about-us/blue-bg.svg") no-repeat 0 0;
+          @include media-breakpoint-only(md) {
+            margin-top: 1.5rem;
+          }
+          h3 {
+            display: inline-flex;
+            padding: 0 3rem;
+            font-family: $font-family-poppins;
+            font-size: 1.5rem;
+            font-weight: $font-weight-semibold;
+            line-height: 2.125rem;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+  //**** What do we offer section style ends! ****//
+
+  //**** Get our support section styles ****//
+  section.our_support {
+    width: $full-width;
+    padding: 4rem 0;
+    background: $white;
+    @include media-breakpoint-only(md) {
+      position: $relative;
+      top: -2rem;
+      padding: 3rem 0;
+    }
+    .container {
+      .mob_space {
+        padding-left: 0 !important;
+        margin-top: 2.5rem;
+      }
+      .support_container {
+        display: flex;
+        flex-direction: column;
+        width: $full-width;
+        .support_box {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          width: $full-width;
+          padding: 1.5rem;
+          background: $white;
+          border-radius: 1.25rem;
+          box-shadow: 0 1px 80px 9px rgba(0, 0, 0, .06);
+          &.border_purple {
+            border-left: 2px solid #7b68ee;
+          }
+          &.border_sky {
+            border-left: 2px solid #00e2ef;
+          }
+          &.border_pink {
+            border-left: 2px solid #fd71af;
+          }
+          &.border_yellow {
+            border-left: 2px solid #ffbe16;
+          }
+          &.border_green {
+            border-left: 2px solid #00b884;
+          }
+          &.border_orange {
+            border-left: 2px solid #ff7f5c;
+          }
+          h2.number {
+            display: inline-flex;
+            font-family: $font-family-poppins;
+            font-size: 1.875rem;
+            font-weight: $font-weight-semibold;
+            &.purple {
+              color: #7b68ee;
+            }
+            &.sky {
+              color: #00e2ef;
+            }
+            &.pink {
+              color: #fd71af;
+            }
+            &.yellow {
+              color: #ffbe16;
+            }
+            &.green {
+              color: #00b884;
+            }
+            &.orange {
+              color: #ff7f5c;
+            }
+          }
+          h1.support_heading {
+            display: inline-flex;
+            width: 65%;
+            margin: 1rem 0;
+            font-family: $font-family-poppins;
+            font-size: 2.425rem;
+            font-weight: $font-weight-semibold;
+            line-height: 3.375rem;
+            color: #313131;
+          }
+          h6 {
+            display: inline-flex;
+            margin-bottom: 1rem;
+            font-family: $font-family-poppins;
+            font-size: .9375rem;
+            font-weight: $font-weight-semibold;
+            color: #7b68ee;
+            letter-spacing: .00938rem;
+          }
+          span {
+            display: inline-flex;
+            flex-wrap: wrap;
+            width: 70%;
+            font-family: $font-family-poppins;
+            font-size: .9375rem;
+            font-weight: $font-weight-medium;
+            color: $black;
+          }
+        }
+        h3.support_heading {
+          display: inline-flex;
+          margin-bottom: 1rem;
+          font-family: $font-family-poppins;
+          font-size: 2.5rem;
+          font-weight: $font-weight-semibold;
+          color: $black;
+          letter-spacing: .025rem;
+          @include media-breakpoint-only(md) {
+            margin-top: 1.5rem;
+          }
+        }
+        h6.purple_head {
+          margin-bottom: 1rem;
+          font-family: $font-family-poppins;
+          font-size: 1.125rem;
+          font-weight: $font-weight-semibold;
+          color: #7b68ee;
+        }
+      }
+    }
+  }
+  //**** Get our support section style ends! ****//
+}

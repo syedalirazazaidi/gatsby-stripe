@@ -1,0 +1,443 @@
+@use "./variables" as *;
+
+main.download_page {
+    width: $full-width;
+    overflow: hidden;
+    //********** Hero section styles **********//
+    section.download_hero {
+      width: $full-width;
+      background: #f1f0f5;
+      .hero_container {
+        display: flex;
+        flex-direction: row;
+        width: $full-width;
+        .hero_content {
+          display: flex;
+          flex-direction: column;
+          width: 50%;
+          @media screen and (min-device-width: 320px) and (max-device-width: 961px) {
+            width: $full-width;
+          }
+          .shape {
+            margin: 50px 0 0 3px;
+          }
+          .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: $full-width;
+            margin: 50px 0 50px 4rem;
+            @media screen and (min-device-width: 320px) and (max-device-width: 961px) {
+              margin: 40px 0;
+              padding: 0 20px;
+              align-items: center;
+              justify-content: center;
+            }
+            .label {
+              background: #E5EAF5;
+              border-radius: 20px;
+              width: 310px;
+              font-family: $font-family-poppins;
+              color: #007AFF;
+              font-size: 0.975rem;
+              text-align: center;
+              padding: 12px 0;
+              .download_icon {
+                height: 20px;
+                width: 20px;
+                padding-right: 4px;
+              }
+            }
+            .hero_text {
+              margin: 25px 0;
+              color: $black;
+              font-family: $font-family-poppins;
+              font-size: 2.85rem;
+              font-weight: $font-weight-light;
+              @media screen and (min-device-width: 320px) and (max-device-width: 961px) {
+                font-size: 1.8rem;
+                text-align: center;
+                br {
+                  display: none;
+                }
+                b {
+                  font-weight: $font-weight-bold;
+                }
+              }
+            }
+            p {
+              display: flex;
+              color: #595858;
+              font-family: $font-family-poppins;
+              font-size: 1.2rem;
+              font-weight: $font-weight-light;
+              line-height: 2.4rem;
+              width: 80%;
+              margin-bottom: 40px;
+              @media screen and (min-device-width: 320px) and (max-device-width: 768px) {
+                width: $full-width;
+                text-align: center;
+                font-size: 1rem;
+                line-height: 1.8rem;
+              }
+            }
+            a.download {
+              width: 260px;
+              height: 56px;
+              border-radius: 36px;
+              background: #2F0559;
+              border: 1px solid #2F0559;
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+              color: $white;
+              font-family: $font-family-poppins;
+              .btn_text {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                margin-left: 15px;
+                .small {
+                  font-size: 12px;
+                  font-weight: $font-weight-medium;
+                }
+                .title {
+                  font-size: 14px;
+                  font-weight: $font-weight-light;
+                }
+              }
+            }
+          }
+        }
+        .hero_clipart {
+          display: flex;
+          width: 50%;
+          @media screen and (min-device-width: 320px) and (max-device-width: 961px) {
+            display: none;
+          }
+        }
+      }
+    }
+    //********** Hero section styles **********//
+  
+    //********** Browser extension styles **********//
+    section.browser_listing {
+      background: #F7F8F9;
+      padding: 25px 0;
+      ul.extension_listing {
+        width: $full-width;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        margin-bottom: 0;
+        padding-left: 0;
+        li {
+          display: flex;
+          margin-right: 60px;
+          &:last-child {
+            margin-right: 0;
+          }
+          a {
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            span.icon {
+              height: 40px;
+              width: 40px;
+            }
+            h6 {
+              color: #667682;
+              font-family: $font-family-poppins;
+              font-size: 1.1rem;
+              font-weight: $font-weight-normal;
+              margin-top: 4px;
+              &.active {
+                color: #001D2E;
+              }
+            }
+          }
+        }
+      }
+    }
+    //********** Browser extension styles **********//
+  
+    //********** Why-ESB section styles **********//
+    section.why_esb {
+      width: $full-width;
+      background: url("../../../src/images/download/why-esb-shape.svg") no-repeat left 20%;
+      background-color: $white;
+      @media screen and (min-device-width: 320px) and (max-device-width: 768px) {
+        background-image: none;
+      }
+      @media screen and (min-device-width: 769px) and (max-device-width: 961px) {
+        background: url("../../../src/images/download/why-esb-shape.svg") no-repeat left 10%;
+      }
+      .why_esb_content {
+        display: flex;
+        flex-direction: column;
+        width: $full-width;
+        padding: 60px 0 50px 0;
+        justify-content: center;
+        align-items: center;
+        @media screen and (min-device-width: 320px) and (max-device-width: 768px) {
+          padding: 40px 0;
+        }
+        h1 {
+          color: $black;
+          text-align: center;
+          font-family: $font-family-poppins;
+          font-size: 2.225rem;
+          font-weight: $font-weight-medium;
+          line-height: 3.2rem;
+          display: block;
+          @media screen and (min-device-width: 320px) and (max-device-width: 768px) {
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+            br {
+              display: none;
+            }
+          }
+          @media screen and (min-device-width: 769px) and (max-device-width: 961px) {
+            font-size: 2rem;
+            line-height: 3rem;
+          }
+        }
+        p.subtitle {
+          color: #757373;
+          text-align: center;
+          font-family:$font-family-poppins;
+          font-size: 1rem;
+          font-weight: $font-weight-light;
+          line-height: 1.75rem;
+          display: block;
+          margin: 5px 0;
+          @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+            br {
+              display: none;
+            }
+          }
+        }
+        .content_row {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          width: $full-width;
+          margin-top: 60px;
+          @media screen and (min-device-width: 320px) and (max-device-width: 768px) {
+            flex-direction: column;
+            margin-top: 40px;
+          }
+          @media screen and (min-device-width: 769px) and (max-device-width: 961px) {
+            justify-content: center;
+            margin-top: 40px;
+            flex-direction: column;
+          }
+          .left_clipart {
+            width: 30%;
+            @media screen and (min-device-width: 320px) and (max-device-width: 768px) {
+              width: $full-width;
+            }
+            @media screen and (min-device-width: 769px) and (max-device-width: 961px) {
+              width: auto;
+            }
+          }
+          .right_content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 60%;
+            @media screen and (min-device-width: 320px) and (max-device-width: 961px) {
+              width: $full-width;
+              margin-top: 20px;
+            }
+            h3 {
+              color: $black;
+              font-family: $font-family-poppins;
+              font-size: 1.75rem;
+              line-height: 2.4rem;
+              font-weight: $font-weight-normal;
+              margin-bottom: 20px;
+              @media screen and (min-device-width: 320px) and (max-device-width: 768px) {
+                font-size: 1.4rem;
+                line-height: 2.2rem;
+              }
+            }
+            .content {
+              display: flex;
+              flex-direction: row;
+              margin-top: 20px;
+              .tick_icon {
+                height: 38px;
+                width: 38px;
+              }
+              p.why_content {
+                color: #272727;
+                font-family: $font-family-poppins;
+                font-size: 0.975rem;
+                font-weight: $font-weight-light;
+                line-height: 1.625rem;
+                text-align: left;
+                margin-left: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+    //********** Why-ESB section styles **********//
+  
+    //********** Extension setup styles **********//
+    section.extension_setup {
+      background: #FBFBFB;
+      padding: 50px 0;
+      @media screen and (min-device-width: 320px) and (max-device-width: 768px) {
+        padding: 40px 0;
+      }
+      .star_shape {
+        position: absolute;
+        background: url('../../../src/images/download/star-shape.svg') no-repeat;
+        width: 153px;
+        height: 130px;
+        right: 0;
+        margin-top: -120px;
+      }
+      .setup_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h1 {
+          color: $black;
+          text-align: center;
+          font-family: $font-family-poppins;
+          font-size: 2.125rem;
+          line-height: 3rem;
+          font-weight: $font-weight-medium;
+          @media screen and (min-device-width: 320px) and (max-device-width: 768px) {
+            font-size: 1.8rem;
+            line-height: 2.4rem;
+            br {
+              display: none;
+            }
+          }
+        }
+        p.subtitle {
+          color: #535353;
+          text-align: center;
+          font-family: $font-family-poppins;
+          font-size: 1rem;
+          font-weight: $font-weight-light;
+          line-height: 1.75rem;
+          display: block;
+          margin: 10px 0;
+          @media screen and (min-device-width: 320px) and (max-device-width: 768px) {
+            br {
+              display: none;
+            }
+          }
+          a {
+            text-decoration: underline;
+            color: #0703EC;
+          }
+        }
+        .contect_container {
+          display: flex;
+          flex-direction: row;
+          width: $full-width;
+          margin-top: 40px;
+          align-items: center;
+          @media screen and (min-device-width: 320px) and (max-device-width: 961px) {
+            flex-direction: column;
+          }
+          .content_box {
+            border-radius: 10px;
+            border: 1px solid #BFBFBF;
+            background: #FFFCFC;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 30%;
+            @media screen and (min-device-width: 320px) and (max-device-width: 961px) {
+              width: $full-width;
+            }
+            h4 {
+              color: #3D5FFF;
+              font-family: $font-family-poppins;
+              font-size: 1.25rem;
+              font-weight: $font-weight-bold;
+              letter-spacing: 0.0625rem;
+              text-decoration: underline;
+            }
+            h5.title {
+              color: $black;
+              font-family: $font-family-poppins;
+              font-size: 1.2rem;
+              font-weight: $font-weight-medium;
+              display: block;
+              margin: 10px 0 15px 0;
+            }
+            p {
+              color: #878585;
+              font-family: $font-family-poppins;
+              font-size: 1rem;
+              font-weight: $font-weight-light;
+              line-height: 1.6rem;
+            }
+          }
+          .divider {
+            width: 5%;
+            height: 1px;
+            background: #BFBFBF;
+            @media screen and (min-device-width: 320px) and (max-device-width: 961px) {
+              width: 1px;
+              height: 50px;
+            }
+          }
+        }
+      }
+    }
+    .extension_listing {
+      a {
+        &.active {
+          color: #007bff;
+    
+          .icon img {
+            filter: brightness(0);
+          }
+        }
+    
+        .icon img {
+          transition: filter 0.3s ease;
+        }
+    
+        &:not(.active) {
+          .icon img {
+            filter: grayscale(100%);
+          }
+        }
+      }
+    
+      ul {
+        li {
+          a {
+            h6 {
+              &.active {
+                color: #001d2e;
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+    }
+    
+    //********** Extension setup styles **********//
+  }
+  

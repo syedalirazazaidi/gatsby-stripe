@@ -1,0 +1,97 @@
+.pl_null {
+  padding-left: 0;
+}
+.pr_null {
+  padding-right: 0;
+}
+section.gradient_divider {
+  width: $full-width;
+  height: 2px;
+  background: linear-gradient(270deg, #4287fd 0%, #61bc90 23.96%, #95d83b 48.44%, #f3d321 75%, #fd4f00 100%);
+  &.about_page {
+    height: 1px;
+  }
+}
+
+a.read_story {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  span {
+    display: inline-flex;
+    font-family: $font-family-poppins;
+    font-size: .875rem;
+    font-weight: $font-weight-semibold;
+    line-height: 1.75rem;
+    color: #5278ce;
+  }
+  i {
+    display: inline-flex;
+    margin-top: 1px;
+    margin-left: .5rem;
+    font-size: 1rem;
+    color: #5278ce;
+  }
+}
+.full-width {
+  width: $full-width;
+}
+//**** Top Notification panel styles ****//
+// section.top_notification {
+//   width: $full-width;
+//   .alert {
+//     --bs-alert-padding-x: 1rem;
+//     --bs-alert-padding-y: 1rem;
+//     --bs-alert-margin-bottom: 1rem;
+//     --bs-alert-color: inherit;
+//     --bs-alert-border-radius: 0;
+//     --bs-alert-link-color: inherit;
+//     position: relative;
+//     padding: var(--bs-alert-padding-y) var(--bs-alert-padding-x);
+//     font-family: $font-family-poppins;
+//     font-size: .9375rem;
+//     font-weight: $font-weight-normal;
+//     color: #fffefe;
+//     text-align: center;
+//     &.blue {
+//       background: #4287fd;
+//     }
+//     &.alert-dismissible {
+//       .btn-close {
+//         top: 10px;
+//         right: 10px;
+//         display: flex;
+//         justify-content: center;
+//         padding: .6rem .8rem;
+//         background: #0852d1;
+//         border: none;
+//         border-radius: .25rem;
+//         i {
+//           color: $white;
+//         }
+//       }
+//     }
+//   }
+// }
+//**** Top Notification panel style ends! ****//
+
+h6.light {
+  display: block;
+  margin-bottom: .8rem;
+  font-family: $font-family-poppins;
+  font-size: 1.25rem;
+  font-weight: $font-weight-light;
+  color: $black;
+  letter-spacing: .0125rem;
+}
+h6.blue_heading {
+  display: block;
+  font-family: $font-family-poppins;
+  font-size: 1.125rem;
+  font-weight: $font-weight-semibold;
+  color: #283071;
+}
+
+.hide {
+  display: none;
+}

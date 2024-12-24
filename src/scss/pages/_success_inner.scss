@@ -1,0 +1,311 @@
+main.success_stories_inner {
+  width: $full-width;
+  overflow: hidden;
+  //**** Stories inner hero styles ****//
+  section.stories_inner_hero {
+    width: $full-width;
+    padding: 4rem 0;
+    background: linear-gradient(117deg, #fff 0%, #fff 19.79%, #ebebeb 100%);
+    @include media-breakpoint-only(md) {
+      padding: 2rem 0;
+    }
+    .container {
+      .inner_left_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 3rem;
+        @include media-breakpoint-only(md) {
+          margin-top: 0;
+        }
+        h6 {
+          display: block;
+          margin-bottom: 2rem;
+          font-family: $font-family-poppins;
+          font-size: .9375rem;
+          font-weight: $font-weight-semibold;
+          color: #1a0681;
+          letter-spacing: .01875rem;
+          @include media-breakpoint-only(md) {
+            margin-bottom: 1rem;
+          }
+        }
+        .hero_heading {
+          display: flex;
+          flex-wrap: wrap;
+          width: 70%;
+          margin-bottom: 2rem;
+          font-family: $font-family-poppins;
+          font-size: 2.125rem;
+          font-weight: $font-weight-light;
+          line-height: 3.45rem;
+          color: $black;
+          @include media-breakpoint-only(md) {
+            width: $full-width;
+            margin-bottom: 1rem;
+          }
+          span {
+            font-size: 2.75rem;
+            font-weight: $font-weight-bold;
+            @include media-breakpoint-only(md) {
+              display: inline-flex;
+              margin-left: 10px;
+            }
+          }
+        }
+        p {
+          display: block;
+          width: 70%;
+          font-family: $font-family-poppins;
+          font-size: 1rem;
+          font-weight: $font-weight-light;
+          line-height: 1.75rem;
+          color: $gray-light-500;
+          @include media-breakpoint-only(md) {
+            width: $full-width;
+            margin-bottom: 3rem;
+          }
+        }
+      }
+      .inner_right_bg {
+        height: 477px;
+        background: url("../../assets/images/success-stories/stories-inner-bg.png") no-repeat 0 0;
+        background-size: contain;
+      }
+    }
+  }
+  //**** Stories inner hero style ends! ****//
+
+  //**** Why ESBooking solution styles ****//
+  section.esbooking_solution {
+    width: $full-width;
+    padding: 4rem 0;
+    background: $white;
+    @include media-breakpoint-only(md) {
+      padding: 2.5rem 0;
+    }
+    .container {
+      .left_solution {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: $full-width;
+        h5 {
+          display: block;
+          margin-bottom: 2rem;
+          font-family: $font-family-poppins;
+          font-size: 1.25rem;
+          font-weight: $font-weight-semibold;
+          color: #041527;
+          letter-spacing: .0125rem;
+        }
+        p {
+          display: block;
+          margin-bottom: 2rem;
+          font-family: $font-family-poppins;
+          font-size: .9375rem;
+          font-weight: $font-weight-lighter;
+          line-height: 1.675rem;
+          color: #636363;
+        }
+        ul.btn_listing {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          padding: 0;
+          list-style-type: none;
+          li {
+            display: flex;
+            align-items: center;
+            width: 47%;
+            margin-bottom: 1rem;
+            @include media-breakpoint-only(md) {
+              width: 48%;
+            }
+            a {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: flex-start;
+              width: $full-width;
+              padding: .6rem 1rem;
+              background: $gray-light-100;
+              border-radius: .625rem;
+              &.read_more {
+                justify-content: center;
+                font-family: $font-family-poppins;
+                font-size: 1rem;
+                font-weight: $font-weight-semibold;
+                line-height: 1.875rem;
+                color: #085be4;
+                text-decoration-line: underline !important;
+                letter-spacing: .01rem;
+                background: $white;
+              }
+              .icon {
+                display: inline-flex;
+                img {
+                  width: 38px;
+                  height: 38px;
+                }
+              }
+              .text {
+                display: inline-flex;
+                margin-left: .8rem;
+                font-family: $font-family-poppins;
+                font-size: 1rem;
+                font-weight: $font-weight-semibold;
+                line-height: 1.875rem;
+                color: $black;
+                letter-spacing: .01rem;
+              }
+            }
+          }
+        }
+      }
+      .right_section {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: $full-width;
+        padding-left: 4rem;
+        @include media-breakpoint-only(md) {
+          padding-left: 0;
+        }
+        h3 {
+          display: inline-flex;
+          margin-bottom: 1.5rem;
+          font-family: $font-family-poppins;
+          font-size: 1.5rem;
+          font-weight: $font-weight-semibold;
+          color: #041527;
+          letter-spacing: .02rem;
+        }
+        .para_text {
+          display: block;
+          font-family: $font-family-poppins;
+          font-size: .9375rem;
+          font-weight: $font-weight-light;
+          line-height: 1.875rem;
+          color: #636363;
+          a {
+            font-weight: $font-weight-medium;
+            color: #636363;
+            text-decoration-line: underline !important;
+          }
+        }
+        .client_testi {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          padding: 2rem 0;
+          margin: 2rem 0;
+          border-top: 1px solid #cac9c9;
+          border-bottom: 1px solid #cac9c9;
+          span.client_comments {
+            display: inline-flex;
+            width: $full-width;
+            font-family: $font-family-poppins;
+            font-size: 1.125rem;
+            font-weight: $font-weight-light;
+            line-height: 1.875rem;
+            color: #2f0559;
+          }
+          .client_info {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            margin-top: 2rem;
+            img {
+              display: inline-flex;
+              width: 64px;
+              height: 64px;
+            }
+            div {
+              display: flex;
+              flex-direction: column;
+              margin-left: 1rem;
+              span {
+                display: inline-flex;
+                font-family: $font-family-poppins;
+                font-weight: $font-weight-light;
+                &.name {
+                  font-size: 1rem;
+                  color: #041527;
+                }
+                &.status {
+                  font-size: .875rem;
+                  line-height: 1.8rem;
+                  color: #6f6f6f;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  //**** Why ESBooking solution style ends! ****//
+
+  //**** Seccess inner contact styles ****//
+  section.success_contact {
+    width: $full-width;
+    padding: 8rem 0 2rem;
+    background: $gray-light-100;
+    @include media-breakpoint-only(md) {
+      padding: 8rem 0;
+    }
+    .container {
+      .conatct_container {
+        position: $relative;
+        display: flex;
+        width: $full-width;
+        height: 300px;
+        .dark_bg {
+          position: $absolute;
+          z-index: 101;
+        }
+        .border_clipart {
+          position: $absolute;
+          top: -2rem;
+          left: 5rem;
+          z-index: 999;
+          fill: rgba(37, 35, 51,);
+          stroke: #3288ec;
+          stroke-width: 1px;
+        }
+      }
+      .contact_content {
+        position: $relative;
+        top: -12rem;
+        z-index: 999;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        @include media-breakpoint-only(md) {
+          top: 8rem;
+          left: 2rem;
+          flex-direction: column;
+        }
+        h2 {
+          display: inline-flex;
+          width: 50%;
+          font-family: $font-family-poppins;
+          font-size: 2.5rem;
+          font-weight: $font-weight-semibold;
+          line-height: 3.375rem;
+          color: $white;
+          @include media-breakpoint-only(md) {
+            width: $full-width;
+            font-size: 2rem;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  //**** Seccess inner contact style ends! ****//
+}

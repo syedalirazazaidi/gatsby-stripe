@@ -1,0 +1,205 @@
+main.how_to_use {
+  width: $full-width;
+  overflow: hidden;
+  //**** Top clipart section style starts ****//
+  section.top_clipart {
+    width: $full-width;
+    height: 259px;
+    background: $gray-light-100;
+    background-image: url("../../assets/images/how-to-use/top_clipart.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    @include media-breakpoint-only(md) {
+      background-size: contain;
+    }
+  }
+  //**** Top clipart section style ends! ****//
+
+  //**** Steps section style starts ****//
+  section.use_steps {
+    width: $full-width;
+    padding: 2rem 0 8rem;
+    background: $gray-light-100;
+    @include media-breakpoint-only(md) {
+      padding: 0 0 4rem;
+    }
+    .container {
+      .divider {
+        min-height: 160px;
+        @include media-breakpoint-only(md) {
+          min-height: 60px;
+        }
+      }
+      .left_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        .yellow_number {
+          display: block;
+          width: 6.25rem;
+          padding: .5rem 0;
+          font-family: $font-family-poppins;
+          font-size: 1rem;
+          font-weight: $font-weight-medium;
+          color: $white;
+          text-align: center;
+          background: #ff9e2b;
+          border-radius: .25rem;
+        }
+        h2 {
+          display: flex;
+          flex-wrap: wrap;
+          margin: 1.5rem 0;
+          font-family: $font-family-poppins;
+          font-size: 2rem;
+          font-weight: $font-weight-bold;
+          line-height: 2.875rem;
+          color: #191925;
+        }
+        p {
+          display: block;
+          font-family: $font-family-poppins;
+          font-size: 1rem;
+          font-weight: $font-weight-lighter;
+          line-height: 2rem;
+          color: #696969;
+          b {
+            text-decoration: underline;
+          }
+        }
+      }
+      .right_container {
+        display: flex;
+        @include media-breakpoint-only(md) {
+          margin-bottom: 6rem;
+        }
+        .gredient_bg {
+          position: $relative;
+          z-index: 111;
+          width: 90%;
+          height: 380px;
+          background-repeat: no-repeat;
+          background-size: contain;
+          @include media-breakpoint-only(md) {
+            width: $full-width;
+          }
+          &.left {
+            background-image: url("../../assets/images/how-to-use/gradient_bg_left.png");
+          }
+          &.right {
+            background-image: url("../../assets/images/how-to-use/gradient_bg_right.png");
+          }
+          img {
+            position: $absolute;
+            top: 2rem;
+            left: 2rem;
+            z-index: 999;
+          }
+        }
+      }
+    }
+  }
+  //**** Steps section style ends! ****//
+
+  //**** Support section style starts ****//
+  section.support {
+    width: $full-width;
+    min-height: 380px;
+    padding-top: 4rem;
+    background: $white;
+    background-image: url("../../assets/images/how-to-use/support-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    @include media-breakpoint-only(md) {
+      padding-top: 2rem;
+    }
+    .container {
+      .support_container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        @include media-breakpoint-only(md) {
+          flex-direction: column;
+          width: $full-width;
+        }
+        h2 {
+          display: inline-flex;
+          font-family: $font-family-poppins;
+          font-size: 3.375rem;
+          font-weight: $font-weight-bold;
+          color: #132742;
+          &.great {
+            margin-top: .6rem;
+            margin-left: 5rem;
+            @include media-breakpoint-only(md) {
+              margin-left: 0;
+            }
+          }
+          &.customer {
+            margin-top: .6rem;
+            margin-left: 15rem;
+            @include media-breakpoint-only(md) {
+              margin-top: 1rem;
+              margin-left: 0;
+            }
+          }
+          &.support {
+            margin-top: 1.4rem;
+            margin-left: 8rem;
+            @include media-breakpoint-only(md) {
+              margin-top: 1rem;
+              margin-left: 0;
+            }
+          }
+          &.just {
+            margin-top: 1.4rem;
+            margin-left: 16rem;
+            @include media-breakpoint-only(md) {
+              margin-top: 1rem;
+              margin-left: 0;
+            }
+          }
+          &.beginning {
+            margin-top: 1.8rem;
+            margin-left: 10rem;
+            @include media-breakpoint-only(md) {
+              margin-top: 1rem;
+              margin-left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  //**** Support section style ends! ****//
+
+  //**** Video section style starts ****//
+  section.video_btn {
+    width: $full-width;
+    padding: 4rem 0;
+    background: $white;
+    .container {
+      .youtube_link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+          width: 15.625rem;
+          padding: .8rem 0;
+          font-family: $font-family-poppins;
+          font-size: .9375rem;
+          font-weight: $font-weight-normal;
+          color: $black;
+          background: rgba(217, 217, 217,);
+          border: 1px solid $black;
+          border-radius: .25rem;
+        }
+      }
+    }
+  }
+  //**** Video section style ends! ****//
+}

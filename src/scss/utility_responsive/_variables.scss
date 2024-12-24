@@ -1,0 +1,28 @@
+$full-width: 100%;
+$relative: relative;
+$absolute: absolute;
+$white: #fff !default;
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+) !default;
+
+$font-family-poppins:
+  'Poppins',
+  system-ui,
+  -apple-system,
+  Roboto !default;
+$font-weight-semibold: 600 !default;
+$black:    #000 !default;
+$font-weight-light:           300 !default;
+$gray-light-500: #656565;
+$font-weight-normal:          400 !default;
+$font-weight-bold:            700 !default;
+$font-weight-medium:          500 !default;
+$font-weight-normal:          400 !default;
+$gray-color-200: #575757;
+$gray-light-100: #f5f5f5;

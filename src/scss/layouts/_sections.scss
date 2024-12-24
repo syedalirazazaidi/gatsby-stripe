@@ -1,0 +1,1025 @@
+main.sections {
+  width: $full-width;
+  overflow: hidden;
+  //**** ESBooking features section styles ****//
+  section.esbooking_features {
+    width: $full-width;
+    padding: 4rem 0 2rem;
+    background: $white;
+    @include media-breakpoint-only(md) {
+      padding: 4rem 0;
+    }
+    .container {
+      .slot_booking {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 492px;
+        background: url("../../assets/images/sections/usbooking-bg.png") no-repeat 0 0;
+        background-size: 100%;
+        img {
+          display: block;
+          width: 55px;
+          height: 55px;
+          margin-bottom: 1rem;
+        }
+        h2 {
+          display: block;
+          font-family: $font-family-poppins;
+          font-size: 1.8rem;
+          font-weight: $font-weight-semibold;
+          color: $white;
+        }
+        p {
+          display: block;
+          padding: 0 1.5rem;
+          font-family: $font-family-poppins;
+          font-size: 1rem;
+          font-weight: $font-weight-light;
+          color: $white;
+          text-align: center;
+        }
+        a.learn_more {
+          display: block;
+          margin-top: .2rem;
+          font-family: $font-family-poppins;
+          font-size: 1rem;
+          font-weight: $font-weight-semibold;
+          color: #ffe500;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      .features_slider {
+        display: flex;
+        flex-direction: column;
+        width: $full-width;
+        ul.slider_listing {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          padding: 0;
+          list-style-type: none;
+          li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem 2rem;
+            border-right: 1px solid #d9d9d9;
+            img {
+              display: block;
+              width: 120px;
+              height: 120px;
+              margin: 1.5rem 0;
+            }
+            h3.orange_heading {
+              display: block;
+              margin-bottom: 1.5rem;
+              font-family: $font-family-poppins;
+              font-size: 1.25rem;
+              font-weight: $font-weight-semibold;
+              color: #fd4f00;
+              @include media-breakpoint-only(md) {
+                text-align: center;
+              }
+            }
+            p {
+              display: block;
+              font-family: $font-family-poppins;
+              font-size: .875rem;
+              font-weight: $font-weight-light;
+              color: #333;
+              text-align: center;
+            }
+            a {
+              display: block;
+              margin-top: .6rem;
+              font-family: $font-family-poppins;
+              font-size: 1rem;
+              font-weight: $font-weight-semibold;
+              color: #333;
+            }
+          }
+        }
+        .arrow_container {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: flex-end;
+          margin-top: 1rem;
+          @include media-breakpoint-only(md) {
+            justify-content: center;
+          }
+          a {
+            display: inline-flex;
+            &.active {
+              margin-left: .8rem;
+              i {
+                color: #fd4f00;
+              }
+            }
+            i {
+              font-size: 1.6rem;
+              color: #999;
+            }
+          }
+        }
+      }
+    }
+  }
+  //**** ESBooking features section style ends! ****//
+
+  //**** Company logo's listing section styles ****//
+  section.company_listing {
+    width: $full-width;
+    padding: 2rem 0 1rem;
+    background: #ff5857;
+    .container {
+      ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 0;
+        list-style-type: none;
+        li {
+          display: inline-flex;
+        }
+      }
+    }
+  }
+  //**** Company logo's listing section style ends! ****//
+
+  //**** Eligibility section style starts ****//
+  section.check_eligibility {
+    position: $relative;
+    width: $full-width;
+    min-height: 960px;
+    background: url("../../assets/images/sections/eligibility-bg.png") no-repeat 0 0;
+    background-size: cover;
+    .container {
+      .country_list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 420px;
+        padding-top: 6rem;
+        @include media-breakpoint-only(md) {
+          ustify-content: space-between;
+          align-items: center;
+          width: 60%;
+        }
+        .country_box {
+          position: $relative;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 200px;
+          height: 80px;
+          background: $black;
+          border-radius: 6px;
+          img {
+            position: $absolute;
+            top: -26px;
+            left: 14px;
+            display: block;
+          }
+          h1.country_name {
+            font-family: $font-family-poppins;
+            font-size: 1.425rem;
+            font-weight: $font-weight-bold;
+            color: $white;
+            letter-spacing: .01625rem;
+          }
+        }
+      }
+    }
+    .eligibility_form_container {
+      position: $absolute;
+      right: -6px;
+      bottom: 4rem;
+      width: 580px;
+      background: $white;
+      border-radius: .5rem;
+      box-shadow: -16px 16px 0 0 #ffbe16;
+      @include media-breakpoint-only(md) {
+        position: $relative;
+        top: 3rem;
+        right: 0;
+        left: 7rem;
+      }
+      form.eligibility {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 1.5rem;
+        font-family: $font-family-poppins;
+        @include media-breakpoint-only(md) {
+          .pr_null {
+            padding-right: calc(var(--bs-gutter-x) * .5) !important;
+          }
+          .pl_null {
+            padding-left: calc(var(--bs-gutter-x) * .5) !important;
+          }
+        }
+        h6 {
+          display: block;
+          font-family: $font-family-poppins;
+          font-size: .975rem;
+          font-weight: $font-weight-light;
+          color: #ff3c54;
+        }
+        .border_btm {
+          display: block;
+          width: 4.6875rem;
+          height: .0625rem;
+          background: linear-gradient(90deg, #ff3c54 0%, #ffc0c8 102.14%);
+          border-radius: .125rem;
+        }
+        h1 {
+          display: block;
+          margin: 1rem 0 2rem;
+          font-family: $font-family-poppins;
+          font-size: 2rem;
+          font-weight: $font-weight-bold;
+          color: $black;
+        }
+        label.form-label {
+          font-family: $font-family-poppins;
+          font-size: 1rem;
+          font-weight: $font-weight-light;
+          color: $gray-light-800;
+        }
+        .btn_container {
+          display: flex;
+          justify-content: flex-end;
+          margin-top: 1rem;
+          @include media-breakpoint-only(md) {
+            justify-content: center;
+          }
+          .btn-outline-warning {
+            font-family: $font-family-poppins;
+            font-size: 1rem;
+            font-weight: $font-weight-normal;
+          }
+        }
+      }
+    }
+  }
+  //**** Eligibility section style ends! ****//
+
+  //**** onboarding experiences style starts ****//
+  section.onboarding_experiences {
+    width: $full-width;
+    padding: 0 0 2rem;
+    background: rgb(240, 242, 243);
+    background: linear-gradient(180deg, rgba(240, 242, 243, 1) 0%, rgba(240, 242, 243, 1) 79%, rgba(237, 238, 238, 1) 80%, rgba(236, 236, 236, 1) 100%);
+    @include media-breakpoint-only(md) {
+      padding: 8rem 0 0;
+    }
+    .onboarding_container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      @include media-breakpoint-only(md) {
+        flex-direction: column;
+      }
+      .left_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 48%;
+        @include media-breakpoint-only(md) {
+          width: $full-width;
+        }
+        h1 {
+          display: block;
+          font-family: $font-family-poppins;
+          font-size: 2.125rem;
+          font-weight: $font-weight-bold;
+          line-height: 3.125rem;
+          color: $black;
+          text-align: center;
+        }
+        p {
+          display: block;
+          padding: 0 4rem;
+          margin: 1rem 0;
+          font-family: $font-family-poppins;
+          font-size: 1rem;
+          font-weight: $font-weight-light;
+          line-height: 1.875rem;
+          color: $gray-light-500;
+          text-align: center;
+        }
+        form.free_demo {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 25rem;
+          padding: 1.5rem;
+          margin-top: 1rem;
+          background: $white;
+          border-radius: .375rem;
+          box-shadow: 6px 6px 0 0 #feb155;
+          @include media-breakpoint-only(md) {
+            width: 80%;
+          }
+          .heading {
+            display: block;
+            margin-bottom: 1.5rem;
+            h3 {
+              display: block;
+              font-family: $font-family-poppins;
+              font-size: 1.25rem;
+              font-weight: $font-weight-semibold;
+              line-height: 1.6rem;
+              color: $black;
+              text-align: center;
+              &.second {
+                display: block;
+                color: #e9292f;
+                background: linear-gradient(90deg, #e9292f 30.64%, #ff666b 54.06%, #ffb5b7 73.06%, #ff9699 73.06%);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+              }
+            }
+            .red_divider {
+              display: block;
+              width: 8rem;
+              height: .0625rem;
+              margin: 0 auto;
+              background: linear-gradient(90deg, #ee6a5f 0%, #fe4839 107.81%);
+            }
+          }
+          .next_content {
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+            .btn_next {
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              width: 8.75rem;
+              height: 2.25rem;
+              font-family: $font-family-poppins;
+              font-size: 1.0625rem;
+              font-weight: $font-weight-normal;
+              color: $white;
+              background: #004fff;
+              border-radius: 1.25rem;
+            }
+          }
+        }
+      }
+      .right_content {
+        display: flex;
+        width: $full-width;
+        width: 48%;
+        @include media-breakpoint-only(md) {
+          width: $full-width;
+          margin-bottom: 3rem;
+        }
+        .right_bg {
+          width: $full-width;
+          height: 1049px;
+          background: url("../../assets/images/sections/onboarding-right-bg.png") no-repeat 0 0;
+          background-position: right;
+          background-size: contain;
+          @include media-breakpoint-only(md) {
+            height: 990px;
+          }
+        }
+      }
+    }
+  }
+  //**** onboarding experiences style ends! ****//
+
+  //**** green offer section style starts ****//
+  section.green_offer {
+    width: $full-width;
+    padding: 1.5rem 0 1rem;
+    background: linear-gradient(90deg, #22d143 0%, #22d143 34.38%, #09e532 69.79%, #22d143 100%);
+    .container {
+      .offer_content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        h3 {
+          display: inline-flex;
+          justify-content: flex-start;
+          width: 50%;
+          margin-bottom: 0;
+          font-family: $font-family-poppins;
+          font-size: 1.875rem;
+          font-weight: $font-weight-semibold;
+          color: $white;
+        }
+        ul.timer_listing {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: flex-end;
+          width: 50%;
+          padding: 0;
+          margin-top: 8px;
+          li {
+            display: inline-flex;
+            margin-right: 1rem;
+            &:last-child {
+              margin-right: 0;
+            }
+            span {
+              font-family: $font-family-poppins;
+              font-size: 1.875rem;
+              font-weight: $font-weight-semibold;
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+  //**** green offer section style ends! ****//
+
+  //**** Our features section styles starts ****//
+  section.our_features_dark {
+    width: $full-width;
+    padding: 4rem 0;
+    background: #191c1f;
+    .container {
+      .head_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h6 {
+          display: block;
+          font-family: $font-family-poppins;
+          font-size: .9375rem;
+          font-weight: $font-weight-semibold;
+          color: #f34e02;
+        }
+        h1 {
+          display: block;
+          margin: 1.5rem 0;
+          font-family: $font-family-poppins;
+          font-size: 2.625rem;
+          font-weight: $font-weight-lighter;
+          color: $white;
+          @include media-breakpoint-only(md) {
+            line-height: 1.4;
+            text-align: center;
+          }
+          strong {
+            display: inline-block;
+            font-weight: $font-weight-bold;
+          }
+        }
+        p {
+          display: block;
+          width: 60%;
+          margin-bottom: 4rem;
+          font-family: $font-family-poppins;
+          font-size: 1.0625rem;
+          font-weight: $font-weight-light;
+          line-height: 1.8rem;
+          color: rgba(255, 255, 255, .5);
+          text-align: center;
+          @include media-breakpoint-only(md) {
+            width: $full-width;
+            margin-bottom: 2rem;
+          }
+        }
+      }
+      .features_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        ul.listing {
+          display: flex;
+          flex-direction: column;
+          padding: 0;
+          list-style-type: none;
+          li {
+            display: flex;
+            flex-direction: column;
+            margin: 1.5rem 0;
+            border-bottom: 1px solid #3c3c3c;
+            .heading {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              margin-bottom: 1rem;
+              font-family: $font-family-poppins;
+              font-weight: $font-weight-bold;
+              h2 {
+                display: inline-flex;
+                font-size: 1.875rem;
+                line-height: 2rem;
+                color: #f34e02;
+                letter-spacing: .0375rem;
+              }
+              h1 {
+                display: inline-flex;
+                margin-left: .5rem;
+                font-size: 1.875rem;
+                color: $white;
+              }
+            }
+            p {
+              display: flex;
+              padding-bottom: .6rem;
+              font-family: $font-family-poppins;
+              font-size: 1.0625rem;
+              font-weight: $font-weight-light;
+              line-height: 2rem;
+              color: #ababab;
+            }
+          }
+        }
+      }
+      .right_bg {
+        width: $full-width;
+        height: 618px;
+        background: url("../../assets/images/sections/traveller-bg.svg") no-repeat 0 0;
+        background-size: cover;
+        @include media-breakpoint-only(md) {
+          width: $full-width;
+          background-position: center;
+        }
+      }
+    }
+  }
+  //**** Our features section style ends! ****//
+
+  //**** Client's telegram section styles starts ****//
+  section.clients_telegram {
+    width: $full-width;
+    padding: 6rem 0 8rem;
+    background: $white;
+    @include media-breakpoint-only(md) {
+      padding: 4rem 0;
+    }
+    .container {
+      .telegram_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: $full-width;
+        .telegram_heading {
+          display: flex;
+          flex-direction: row;
+          width: $full-width;
+          margin-bottom: 3rem;
+          @include media-breakpoint-only(md) {
+            padding-left: 2.5rem;
+          }
+          .telegram_icn {
+            display: inline-flex;
+            width: 90px;
+            height: 90px;
+          }
+          h2 {
+            display: inline-flex;
+            flex-wrap: wrap;
+            margin-left: 1.5rem;
+            font-family: $font-family-poppins;
+            font-size: 2.125rem;
+            font-weight: $font-weight-light;
+            line-height: 2.875rem;
+            color: $black;
+            strong {
+              font-size: 2.5rem;
+              font-weight: $font-weight-bold;
+            }
+          }
+        }
+        ul.support_list {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          padding: 0;
+          margin-bottom: 2rem;
+          list-style-type: none;
+          @include media-breakpoint-only(md) {
+            padding-left: 5rem !important;
+          }
+          li {
+            display: inline-flex;
+            align-items: center;
+            width: 50%;
+            .red_tick {
+              display: inline-flex;
+              width: 20px;
+              height: 20px;
+            }
+            .support_text {
+              display: inline-flex;
+              margin-left: .6rem;
+              font-family: $font-family-poppins;
+              font-size: .875rem;
+              font-weight: $font-weight-light;
+              color: $black;
+            }
+          }
+        }
+        p {
+          display: block;
+          width: 90%;
+          margin-bottom: 2rem;
+          font-family: $font-family-poppins;
+          font-size: 1rem;
+          font-weight: $font-weight-light;
+          line-height: 1.875rem;
+          color: $gray-light-500;
+          @include media-breakpoint-only(md) {
+            width: $full-width;
+            text-align: center;
+          }
+        }
+        a.read_study {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          width: 20.625rem;
+          height: 3.125rem;
+          background: #5840ba;
+          border-radius: .5rem;
+          @include media-breakpoint-only(md) {
+            position: $relative;
+            top: 0;
+            bottom: 5rem;
+            display: block;
+            height: auto;
+            padding: 1.2rem 0;
+            margin: 0 auto;
+            text-align: center;
+          }
+          span {
+            display: inline-flex;
+            font-family: $font-family-poppins;
+            font-size: 1rem;
+            font-weight: $font-weight-light;
+            color: $white;
+          }
+          i {
+            display: inline-flex;
+            margin-top: 2px;
+            margin-left: .8rem;
+            color: $white;
+          }
+        }
+      }
+      .video_container {
+        position: $relative;
+        width: $full-width;
+        @include media-breakpoint-only(md) {
+          margin-top: 1rem;
+        }
+        .yellow_bg {
+          position: $absolute;
+          right: 0;
+          z-index: 111;
+          width: 412px;
+          height: 475px;
+          background: #ffe81b;
+          border-radius: 8px;
+          @include media-breakpoint-only(md) {
+            position: $relative;
+            width: $full-width;
+          }
+          .video_content {
+            position: $relative;
+            right: 16rem;
+            z-index: 999;
+            width: 628px;
+            height: 464px;
+            @include media-breakpoint-only(md) {
+              right: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  //**** Client's telegram section style ends! ****//
+
+  //**** Become an affiliate section styles starts ****//
+  section.become_affiliate {
+    position: $relative;
+    z-index: 111;
+    width: $full-width;
+    background: linear-gradient(90deg, #fedfb1 0%, #fedfb1 50%, #fff4e2 100%);
+    @include media-breakpoint-only(md) {
+      display: none;
+    }
+    .container {
+      .affiliate_container {
+        display: flex;
+        flex-direction: row;
+        .affiliate_left {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          width: 50%;
+          padding: 2rem 0;
+          a {
+            display: block;
+            font-family: $font-family-poppins;
+            font-size: 1rem;
+            font-weight: $font-weight-normal;
+            color: #3761fa;
+            text-decoration-line: underline !important;
+            letter-spacing: .02rem;
+          }
+          h1 {
+            display: block;
+            margin-top: 1rem;
+            font-family: $font-family-poppins;
+            font-size: 2.125rem;
+            font-weight: $font-weight-bold;
+            line-height: 3.125rem;
+            color: $black;
+            strong {
+              color: #3734a9;
+              letter-spacing: .0425rem;
+            }
+          }
+        }
+        .affiliate_right {
+          z-index: 999;
+          display: flex;
+          .affiliate_bg {
+            position: $absolute;
+            top: -2.9rem;
+            right: 0;
+            width: 467px;
+            height: 258px;
+            background: url("../../assets/images/sections/affiliate-bg.png") no-repeat 0 0;
+            background-position: right;
+          }
+        }
+      }
+    }
+  }
+  //**** Become an affiliate section style ends! ****//
+
+  //**** Plan offer section styles starts ****//
+  section.offering_plan {
+    width: $full-width;
+    padding: 1.5rem 0;
+    background: linear-gradient(180deg, #4903cc 0%, #310387 100%);
+    @include media-breakpoint-only(md) {
+      display: none;
+    }
+    .container {
+      .offer_container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        img {
+          display: inline-flex;
+          width: 44px;
+          height: 44px;
+        }
+        h2 {
+          display: inline-flex;
+          width: 68%;
+          margin-top: 8px;
+          margin-left: .8rem;
+          font-family: $font-family-poppins;
+          font-size: 1.5rem;
+          font-weight: $font-weight-lighter;
+          color: $white;
+          .gradient_text {
+            font-weight: $font-weight-bold;
+            color: #fd491f;
+            letter-spacing: .0325rem;
+          }
+          .white_bold {
+            font-weight: $font-weight-bold;
+          }
+        }
+        a.green_btn {
+          display: inline-flex;
+          justify-content: center;
+          width: 11.25rem;
+          padding: .6rem 0;
+          font-family: $font-family-poppins;
+          font-size: .9375rem;
+          font-weight: $font-weight-normal;
+          color: $black;
+          background: #9cd161;
+          border-radius: .25rem;
+        }
+        a.border_btn {
+          display: inline-flex;
+          justify-content: center;
+          width: 8.75rem;
+          padding: .6rem 0;
+          font-family: $font-family-poppins;
+          font-size: .9375rem;
+          font-weight: $font-weight-normal;
+          color: $white;
+          background: rgba(57, 3, 159,);
+          border: 1px solid rgba(255, 255, 255, .3);
+          border-radius: .25rem;
+          &:hover {
+            color: $black;
+            background: rgba(255, 255, 255, .8);
+            border: 1px solid rgba(255, 255, 255, .3);
+          }
+        }
+      }
+    }
+  }
+  //**** Plan offer section styles ends! ****//
+
+  //**** How it works section styles starts ****//
+  section.how_it_works {
+    width: $full-width;
+    padding: 5rem 0;
+    background: $gray-light-100;
+    .container {
+      .content_box {
+        width: $full-width;
+        .header {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 6rem;
+          @include media-breakpoint-only(md) {
+            margin-bottom: 3rem;
+          }
+          h1 {
+            display: block;
+            margin-bottom: .6rem;
+            font-family: $font-family-poppins;
+            font-size: 2rem;
+            font-weight: $font-weight-semibold;
+            color: $black;
+            text-align: center;
+            letter-spacing: .02rem;
+          }
+          p {
+            display: block;
+            font-family: $font-family-poppins;
+            font-size: .975rem;
+            font-weight: $font-weight-light;
+            line-height: 1.75rem;
+            color: $gray-500;
+            text-align: center;
+            letter-spacing: .00938rem;
+          }
+        }
+        .works_container {
+          display: block;
+          width: $full-width;
+          margin: 0 auto;
+          .works_content {
+            width: $full-width;
+            .content_box {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: flex-start;
+              @include media-breakpoint-only(md) {
+                align-items: center;
+                justify-content: center;
+              }
+              img.web_browser {
+                display: block;
+                width: 370px;
+                height: 370px;
+              }
+              .points {
+                display: flex;
+                flex-direction: column;
+                margin-top: 8rem;
+                @include media-breakpoint-only(md) {
+                  margin-top: 4rem;
+                }
+                &.right {
+                  margin-top: 2rem;
+                  margin-bottom: 15rem;
+                  @include media-breakpoint-only(md) {
+                    margin-bottom: 4rem;
+                  }
+                }
+                h5 {
+                  display: block;
+                  font-family: $font-family-poppins;
+                  font-size: 1.25rem;
+                  font-weight: $font-weight-semibold;
+                  line-height: 1.75rem;
+                  color: #476db4;
+                  letter-spacing: .0125rem;
+                }
+                h2 {
+                  display: block;
+                  margin-bottom: 1rem;
+                  font-family: $font-family-poppins;
+                  font-size: 1.425rem;
+                  font-weight: $font-weight-semibold;
+                  line-height: 1.75rem;
+                  color: $black;
+                  letter-spacing: .01125rem;
+                }
+                p {
+                  display: block;
+                  font-family: $font-family-poppins;
+                  font-size: 1rem;
+                  font-weight: $font-weight-light;
+                  line-height: 1.85rem;
+                  color: $gray-500;
+                  letter-spacing: .00938rem;
+                }
+              }
+            }
+            .circle_divider {
+              width: $full-width;
+              height: 740px;
+              background: url("../../assets/images/sections/circle-divider.svg") no-repeat 0 0;
+              background-position: center;
+            }
+            .works_benefits_bg {
+              display: flex;
+              flex-direction: column;
+              margin-left: 8.765rem;
+              @include media-breakpoint-only(md) {
+                display: none;
+              }
+              .bottom_divider {
+                width: 800px;
+                height: 120px;
+                @include media-breakpoint-only(md) {
+                  width: $full-width;
+                }
+              }
+            }
+            .benefits_content {
+              display: block;
+              width: 800px;
+              margin: 0 auto;
+              overflow: hidden;
+              @include media-breakpoint-only(md) {
+                width: $full-width;
+                margin-top: 2rem;
+              }
+              .benefit_container {
+                display: block;
+              }
+              .content_box {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                float: left;
+                width: 33.33%;
+                img {
+                  display: block;
+                  width: 76px;
+                  height: 75px;
+                }
+                h4 {
+                  display: block;
+                  margin: 1rem 0;
+                  font-family: $font-family-poppins;
+                  font-size: 1rem;
+                  font-weight: $font-weight-semibold;
+                  line-height: 1.625rem;
+                  color: $black;
+                  text-align: center;
+                  letter-spacing: .02rem;
+                }
+                p {
+                  display: block;
+                  font-family: $font-family-poppins;
+                  font-size: .975rem;
+                  font-weight: $font-weight-light;
+                  line-height: 1.625rem;
+                  color: $gray-500;
+                  text-align: center;
+                  letter-spacing: .00875rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  //**** How it works section style ends! ****//
+}

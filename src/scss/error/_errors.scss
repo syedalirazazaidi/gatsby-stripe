@@ -1,0 +1,105 @@
+@use './variables' as *;
+
+main.error_page {
+  width: $full-width;
+  overflow: hidden;
+  //********** 404 Pages styles **********//
+  section.content_404 {
+    width: $full-width;
+    padding: 60px 0;
+    .container {
+      background: url('../../../src/images/error/404-bg.png') no-repeat 0 0;
+      background-size: contain;
+      min-height: 800px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .wrapper_404 {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h1.blue_heading {
+          color: #091e42;
+          text-align: center;
+          font-family: $font-family-poppins;
+          font-size: 3rem;
+          line-height: 1.5;
+          font-weight: $font-weight-bold;
+          margin-bottom: 20px;
+        }
+        p {
+          color: #253858;
+          text-align: center;
+          font-family: $font-family-poppins;
+          font-size: 1.45rem;
+          font-weight: $font-weight-light;
+        }
+        a.blue_btn {
+          width: 160px;
+          border-radius: 4px;
+          background: #2f39bf;
+          color: $white;
+          text-align: center;
+          font-family: $font-family-poppins;
+          font-size: 1rem;
+          font-weight: $font-weight-normal;
+          padding: 10px 0;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+  //********** 404 Pages styles **********//
+
+  //********** Error page styles **********//
+  section.error_content {
+    width: $full-width;
+    padding: 60px 0;
+    .container {
+      background: url('../../../src/images/error/error-bg.svg') no-repeat 0 0;
+      background-size: contain;
+      min-height: 800px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .error_wrapper {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h1.blue_heading {
+          color: #091e42;
+          text-align: center;
+          font-family: $font-family-poppins;
+          font-size: 3rem;
+          line-height: 1.5;
+          font-weight: $font-weight-bold;
+          margin-bottom: 20px;
+        }
+        p {
+          color: #253858;
+          text-align: center;
+          font-family: $font-family-poppins;
+          font-size: 1.45rem;
+          font-weight: $font-weight-light;
+        }
+        a.blue_btn {
+          width: 160px;
+          border-radius: 4px;
+          background: #2f39bf;
+          color: $white;
+          text-align: center;
+          font-family: $font-family-poppins;
+          font-size: 1rem;
+          font-weight: $font-weight-normal;
+          padding: 10px 0;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+  //********** Error page styles **********//
+}

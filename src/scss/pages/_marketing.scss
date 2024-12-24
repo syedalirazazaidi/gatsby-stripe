@@ -1,0 +1,987 @@
+main.marketing_page {
+  width: $full-width;
+  overflow: hidden;
+  //**** Marketing header section styles starts ****//
+  section.marketing_header {
+    position: $relative;
+    width: $full-width;
+    height: 723px;
+    background-color: #222;
+    background-image: url("../../assets/images/marketing/marketing-header-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    .container {
+      .header_content {
+        display: flex;
+        align-items: center;
+        width: $full-width;
+        padding: 5rem 0;
+        @include media-breakpoint-only(md) {
+          padding: 4rem 0;
+        }
+        h1 {
+          display: block;
+          font-family: $font-family-poppins;
+          font-size: 2.75rem;
+          font-weight: $font-weight-lighter;
+          line-height: 3.85rem;
+          color: $white;
+          @include media-breakpoint-only(md) {
+            text-align: center;
+            br {
+              display: none;
+            }
+          }
+          strong {
+            font-weight: $font-weight-bold;
+          }
+        }
+        .grab_offer {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          margin-top: 8rem;
+          @include media-breakpoint-only(md) {
+            margin-top: 2rem;
+          }
+          h2 {
+            display: block;
+            font-family: $font-family-poppins;
+            font-size: 2rem;
+            font-weight: $font-weight-lighter;
+            line-height: 2.85rem;
+            color: $white;
+            @include media-breakpoint-only(md) {
+              margin-bottom: 1rem;
+              text-align: center;
+            }
+            strong {
+              font-size: 2.25rem;
+              font-weight: $font-weight-bold;
+              @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+                font-size: 2rem;
+              }
+            }
+          }
+          ul.date_listing {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            padding: 0;
+            margin: 1rem 0;
+            list-style-type: none;
+            @include media-breakpoint-only(md) {
+              justify-content: center;
+              margin: 2rem 0;
+            }
+            li {
+              display: inline-flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              width: 5.625rem;
+              height: 4.6875rem;
+              margin-left: 1rem;
+              background: $white;
+              border-radius: .25rem;
+              &:first-child {
+                margin-left: 0;
+              }
+              h4 {
+                display: block;
+                margin: 0;
+                font-family: $font-family-poppins;
+                font-size: 1.5rem;
+                font-weight: $font-weight-bold;
+                color: $font-weight-bold;
+              }
+              span {
+                display: block;
+                font-family: $font-family-poppins;
+                font-size: .9375rem;
+                font-weight: $font-weight-normal;
+                color: rgba(0, 0, 0, .51);
+              }
+            }
+          }
+          .grab_plan {
+            width: 15rem;
+            margin-top: 1rem;
+            font-weight: $font-weight-medium;
+            @include media-breakpoint-only(md) {
+              display: block;
+              padding-top: .8rem;
+              margin: 0 auto;
+              text-align: center;
+            }
+          }
+        }
+      }
+      .special_offer {
+        position: $relative;
+        top: -8rem;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        @include media-breakpoint-only(md) {
+          top: -10rem;
+        }
+      }
+    }
+  }
+  //**** Marketing header section style ends! ****//
+
+  //**** Referral cashback section style stars ****//
+  section.referral_cashback {
+    position: $relative;
+    top: -6rem;
+    width: $full-width;
+    min-height: 809px;
+    .referral_bg {
+      width: $full-width;
+      min-height: 809px;
+      background: url("../../assets/images/marketing/cashback-bg.png") no-repeat 0 0;
+      background-size: cover;
+      .container {
+        .cashback_content {
+          position: $relative;
+          top: 15rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          width: 55%;
+          @include media-breakpoint-only(md) {
+            top: 14rem;
+            width: $full-width;
+          }
+          h1 {
+            display: inline-flex;
+            flex-wrap: wrap;
+            margin-bottom: 1.25rem;
+            font-family: $font-family-poppins;
+            font-size: 2.5rem;
+            font-weight: $font-weight-lighter;
+            line-height: 3.75rem;
+            color: $white;
+            strong {
+              font-weight: $font-weight-bold;
+            }
+          }
+          p {
+            display: block;
+            margin-bottom: 2rem;
+            font-family: $font-family-poppins;
+            font-size: 1.0625rem;
+            font-weight: $font-weight-light;
+            line-height: 1.875rem;
+            color: $white;
+          }
+          .reffer_now {
+            width: 12rem;
+            font-weight: $font-weight-medium;
+          }
+          ul.social_listing {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 0;
+            margin-top: 3rem;
+            list-style-type: none;
+            @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+              margin-top: 2rem;
+            }
+            li {
+              display: inline-flex;
+              margin-right: 1rem;
+              &:last-child {
+                margin-right: 0;
+              }
+              a {
+                width: 58px;
+                height: 58px;
+                img {
+                  width: 54px;
+                  height: 54px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  //**** Referral cashback section style ends! ****//
+
+  //**** ESBooking protection with competitors style starts ****//
+  section.protection_competitors {
+    position: $relative;
+    top: -6rem;
+    width: $full-width;
+    padding: 4rem 0 10rem;
+    background: $gray-light-100;
+    @include media-breakpoint-only(md) {
+      top: -9rem;
+      padding: 3rem 0;
+    }
+    .container {
+      .protection_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .content_header {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 80%;
+          @include media-breakpoint-only(md) {
+            width: $full-width;
+          }
+          h1 {
+            display: block;
+            margin-bottom: 1.5rem;
+            font-family: $font-family-poppins;
+            font-size: 2.75rem;
+            font-weight: $font-weight-semibold;
+            color: $black;
+            @include media-breakpoint-only(md) {
+              text-align: center;
+            }
+            strong {
+              font-weight: $font-weight-bold;
+              color: #671099;
+            }
+          }
+          h4 {
+            display: block;
+            font-family: $font-family-poppins;
+            font-size: 2.425rem;
+            font-weight: $font-weight-light;
+            color: $black;
+            @include media-breakpoint-only(md) {
+              width: $full-width;
+              font-size: 2.125rem;
+              text-align: center;
+            }
+          }
+        }
+        .benefits_with_othrs {
+          display: flex;
+          flex-direction: column;
+          width: 80%;
+          padding: 1.5rem 1rem;
+          margin-top: 3rem;
+          background: $white;
+          border: 1px solid rgba(85, 52, 251, .5);
+          border-radius: .625rem;
+          @include media-breakpoint-only(md) {
+            width: $full-width;
+          }
+          ul.benefits_listing {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding: 0;
+            list-style-type: none;
+            li {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              padding-bottom: .5rem;
+              border-bottom: 1px solid rgba(85, 52, 251, .5);
+              .content {
+                display: inline-flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                width: 60%;
+                h5 {
+                  display: block;
+                  margin-bottom: 1rem;
+                  font-family: $font-family-poppins;
+                  font-size: 1rem;
+                  font-weight: $font-weight-medium;
+                  line-height: normal;
+                  color: $black;
+                }
+                h6 {
+                  display: block;
+                  font-family: $font-family-poppins;
+                  font-size: 1.375rem;
+                  font-weight: $font-weight-light;
+                  color: $black;
+                  @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+                    font-size: 1.245rem;
+                  }
+                }
+                p {
+                  display: block;
+                  font-family: $font-family-poppins;
+                  font-size: 1.0625rem;
+                  font-weight: $font-weight-light;
+                  line-height: 1.875rem;
+                  color: $gray-light-500;
+                }
+              }
+              .esbooking,
+              .competitors {
+                display: inline-flex;
+                justify-content: center;
+                width: 20%;
+                font-family: $font-family-poppins;
+                font-size: 1rem;
+                font-weight: $font-weight-normal;
+                color: $black;
+              }
+              span.icon_content {
+                display: inline-flex;
+                justify-content: center;
+                width: 20%;
+                img {
+                  width: 40px;
+                  height: 40px;
+                }
+              }
+            }
+          }
+
+          .find_exclusion {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            width: $full-width;
+            span {
+              display: inline-block;
+              width: $full-width;
+              font-family: $font-family-poppins;
+              font-size: .875rem;
+              font-weight: $font-weight-light;
+              color: rgba(0, 0, 0, .32);
+              text-align: center;
+              a {
+                display: inline-block;
+                font-size: 1rem;
+                font-weight: $font-weight-semibold;
+                color: #004fff;
+                text-decoration-line: underline;
+              }
+            }
+          }
+          .learn_more {
+            display: flex;
+            justify-content: center;
+            margin: 2rem 0 1rem;
+          }
+        }
+      }
+    }
+  }
+  //**** ESBooking protection with competitors style ends! ****//
+
+  //**** Top booking agency section style stars ****//
+  section.top_booking_agency {
+    position: $relative;
+    top: -9rem;
+    width: $full-width;
+    padding-top: 4rem;
+    background: $white;
+    border-radius: 5rem 5rem 0 0;
+    @include media-breakpoint-only(md) {
+      border-radius: 0;
+    }
+    .container {
+      .left_content {
+        position: $relative;
+        z-index: 111;
+        height: 684px;
+        background: url("../../assets/images/marketing/marketing-left-bg.png") no-repeat 0 0;
+        background-size: contain;
+        ul.date_listing {
+          position: $absolute;
+          top: 10rem;
+          right: 60px;
+          z-index: 999;
+          display: flex;
+          flex-direction: column;
+          width: 250px;
+          @include media-breakpoint-only(md) {
+            top: 12rem;
+          }
+          li {
+            position: $relative;
+            display: flex;
+            flex-direction: column;
+            width: 250px;
+            min-height: 128px;
+            background: $white;
+            border-radius: .25rem;
+            @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+              box-shadow: rgba(50, 50, 93, .25) 0 6px 12px -2px, rgba(0, 0, 0, .3) 0 3px 7px -3px;
+            }
+            .heading {
+              display: block;
+              width: 250px;
+              height: 28px;
+              background: url("../../assets/images/marketing/purple-head.svg") no-repeat 0 0;
+            }
+            .datetime_content {
+              position: $relative;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+              padding: 1rem;
+              h1 {
+                display: inline-flex;
+                padding-right: 1rem;
+                font-family: $font-family-poppins;
+                font-size: 3.125rem;
+                font-weight: $font-weight-bold;
+                color: #5882fb;
+              }
+              .date_time {
+                display: flex;
+                flex-direction: column;
+                padding-left: 1rem;
+                list-style-type: none;
+                border-left: 1px solid #cad8ff;
+                h6.month_year {
+                  display: block;
+                  margin-bottom: .4rem;
+                  font-family: $font-family-poppins;
+                  font-size: 1rem;
+                  font-weight: $font-weight-light;
+                  color: #5882fb;
+                }
+                span {
+                  display: block;
+                  margin-bottom: .4rem;
+                  font-family: $font-family-poppins;
+                  font-size: .9375rem;
+                  font-weight: $font-weight-light;
+                  color: $gray-light-500;
+                }
+              }
+            }
+          }
+        }
+      }
+      .right_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-left: 3rem;
+        h1 {
+          display: block;
+          font-family: $font-family-poppins;
+          font-size: 2.45rem;
+          font-weight: $font-weight-lighter;
+          line-height: 3.25rem;
+          color: $black;
+          strong {
+            font-size: 2.675rem;
+            font-weight: $font-weight-bold;
+            background: linear-gradient(90deg, #ff5055 14.59%, #ff898d 45.41%, #f1383e 74.36%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+        p {
+          display: block;
+          margin: 1.5rem 0;
+          font-family: $font-family-poppins;
+          font-size: 1rem;
+          font-weight: $font-weight-light;
+          line-height: 1.75rem;
+          color: $gray-light-500;
+        }
+        ul.increase_listing {
+          display: flex;
+          flex-direction: column;
+          padding: 0;
+          list-style-type: none;
+          li {
+            display: flex;
+            flex-direction: column;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            &:last-child {
+              margin-bottom: 0;
+            }
+            &.active {
+              background: $gray-light-100;
+              border: 1px solid rgba(55, 97, 250, .35);
+              border-radius: .25rem;
+            }
+            h4 {
+              display: block;
+              margin-bottom: 1rem;
+              font-family: $font-family-poppins;
+              font-size: 1.45rem;
+              font-weight: $font-weight-light;
+              color: $black;
+              strong {
+                font-size: 1.75rem;
+                font-weight: $font-weight-bold;
+                &.blue {
+                  background: linear-gradient(93deg, #0238b0 32.24%, #86a9f8 51.35%);
+                  background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                }
+                &.yellow {
+                  background: linear-gradient(93deg, #fe8a00 20.75%, #ffd097 34.67%);
+                  background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                }
+                &.orange {
+                  background: linear-gradient(93deg, #fd491f 20.75%, #fec6b9 34.67%);
+                  background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                }
+              }
+            }
+            span {
+              display: block;
+              font-family: $font-family-poppins;
+              font-size: 1.0625rem;
+              font-weight: $font-weight-light;
+              color: #9d9c9c;
+            }
+          }
+        }
+      }
+    }
+  }
+  //**** Top booking agency section style ends! ****//
+
+  //**** Fan trust section style starts ****//
+  section.fan_trust_support {
+    position: $relative;
+    top: -8rem;
+    width: $full-width;
+    padding: 4rem 0;
+    background: linear-gradient(100deg, #1f1356 0%, #312275 47.4%, #130b36 100%);
+    @include media-breakpoint-only(md) {
+      padding: 3rem 0 2rem;
+    }
+    .support-bg {
+      width: $full-width;
+      min-height: 610px;
+      background: url("../../assets/images/marketing/support-bg.svg") no-repeat 0 0;
+      background-position: center;
+      background-size: cover;
+      @include media-breakpoint-only(md) {
+        background-size: contain;
+      }
+      .container {
+        .support_heading {
+          display: block;
+          width: 44%;
+          margin: 0 auto;
+          @include media-breakpoint-only(md) {
+            width: $full-width;
+          }
+          h1 {
+            display: block;
+            margin-bottom: 3rem;
+            font-family: $font-family-poppins;
+            font-size: 1.875rem;
+            font-weight: $font-weight-bold;
+            line-height: 2.875rem;
+            color: $white;
+            text-align: center;
+            @include media-breakpoint-only(md) {
+              margin-bottom: 1.5rem;
+            }
+          }
+        }
+        .support_container {
+          display: block;
+          width: 76%;
+          margin: 0 auto;
+          .support_content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            width: $full-width;
+            margin-top: 8rem;
+            @include media-breakpoint-only(md) {
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              margin-top: 4rem;
+            }
+            .user_content {
+              width: 50%;
+              @include media-breakpoint-only(md) {
+                width: $full-width;
+              }
+              .users-bg {
+                display: inline-flex;
+                width: $full-width;
+                height: 308px;
+                background: url("../../assets/images/marketing/support-users.png") no-repeat 0 0;
+                background-size: contain;
+                @include media-breakpoint-only(md) {
+                  background-position: center;
+                }
+              }
+            }
+            .reliable_clients {
+              width: 50%;
+              min-height: 350px;
+              background-image: url("../../assets/images/marketing/dotted-divider.svg");
+              background-repeat: no-repeat;
+              background-position: left;
+              @include media-breakpoint-only(md) {
+                width: $full-width !important;
+                background-image: none;
+              }
+              .reliable_content {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                padding-left: 3rem;
+                @include media-breakpoint-only(md) {
+                  align-items: center;
+                  justify-content: center;
+                  padding-left: 0;
+                }
+                h3 {
+                  display: block;
+                  margin: 3.2rem 0;
+                  font-family: $font-family-poppins;
+                  font-size: 1.825rem;
+                  font-weight: $font-weight-light;
+                  color: $white;
+                  @include media-breakpoint-only(md) {
+                    margin: 3rem 0 1.5rem;
+                  }
+                }
+                p {
+                  display: block;
+                  margin-bottom: 2rem;
+                  font-family: $font-family-poppins;
+                  font-size: 1rem;
+                  font-weight: $font-weight-light;
+                  line-height: 1.825rem;
+                  color: rgba(255, 255, 255, .7);
+                  @include media-breakpoint-only(md) {
+                    text-align: center;
+                  }
+                }
+                .user_info {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: flex-start;
+                  @include media-breakpoint-only(md) {
+                    align-items: center;
+                    justify-content: center;
+                  }
+                  h5 {
+                    display: block;
+                    margin-bottom: .5rem;
+                    font-family: $font-family-poppins;
+                    font-size: 1.245rem;
+                    font-weight: $font-weight-semibold;
+                    color: #ffd109;
+                    @include media-breakpoint-only(md) {
+                      text-align: center;
+                    }
+                  }
+                  span {
+                    display: block;
+                    font-family: $font-family-poppins;
+                    font-size: 1rem;
+                    font-weight: $font-weight-light;
+                    color: rgba(255, 209, 9, .63);
+                    @include media-breakpoint-only(md) {
+                      text-align: center;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  //**** Fan trust section style ends! ****//
+
+  //**** Referral cashback section style starts ****//
+  section.referral_cashback_banner {
+    position: $relative;
+    top: -8rem;
+    width: $full-width;
+    padding: 4rem 0;
+    background: linear-gradient(97deg, #74201f 1.68%, #c94240 51.87%, #d24140 100%);
+    @include media-breakpoint-only(md) {
+      padding: 3rem 0;
+    }
+    .container {
+      .left_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: $full-width;
+        @include media-breakpoint-only(md) {
+          align-items: center;
+          justify-content: center;
+        }
+        h2 {
+          display: block;
+          font-family: $font-family-poppins;
+          font-size: 2.375rem;
+          font-weight: $font-weight-lighter;
+          line-height: 3.675rem;
+          color: $white;
+          @include media-breakpoint-only(md) {
+            font-size: 2rem;
+            line-height: 1.4;
+            text-align: center;
+          }
+          strong {
+            font-weight: $font-weight-bold;
+          }
+        }
+        span {
+          display: block;
+          margin: .5rem 0;
+          font-family: $font-family-poppins;
+          font-size: 1.25rem;
+          font-weight: $font-weight-normal;
+          color: #d6d6d6;
+        }
+        .rating_img {
+          display: block;
+          margin-top: 2rem;
+          img {
+            width: 128px;
+            height: 128px;
+          }
+        }
+      }
+      .happy_customer {
+        width: 100%;
+        height: 400px;
+        background-image: url("../../assets/images/marketing/happy-cutomer.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        @include media-breakpoint-only(md) {
+          height: 300px;
+          margin-top: 3rem;
+          background-position: center;
+        }
+      }
+    }
+  }
+  //**** Referral cashback section style ends! ****//
+
+  //**** Marketing testimonial section style starts ****//
+  section.marketing_testimonials {
+    position: $relative;
+    top: -12rem;
+    width: $full-width;
+    padding: 6rem 0 4rem;
+    background: $white;
+    border-radius: 3.75rem 3.75rem 0 0;
+    @include media-breakpoint-only(md) {
+      padding: 4rem 0;
+    }
+    .container {
+      .testi_left_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        @include media-breakpoint-only(md) {
+          align-items: center;
+          justify-content: center;
+        }
+        img.blue_clipart {
+          display: block;
+          width: 60px;
+          height: 60px;
+          margin-bottom: 1rem;
+        }
+        .clients_think {
+          display: flex;
+          flex-wrap: wrap;
+          width: 78%;
+          margin-top: 1rem;
+          h1 {
+            display: block;
+            font-family: $font-family-poppins;
+            font-size: 2.475rem;
+            font-weight: $font-weight-bold;
+            line-height: 4.375rem;
+            color: $black;
+            @include media-breakpoint-only(md) {
+              font-size: 1.845rem;
+              text-align: center;
+            }
+            img {
+              display: inline-block;
+            }
+          }
+        }
+      }
+      .testimonial_right_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: $full-width;
+        .header_slider {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          .testimonials_users {
+            display: inline-flex;
+            justify-content: flex-start;
+            img {
+              width: 182px;
+              height: 72px;
+            }
+          }
+          .testimonials_arrows {
+            display: inline-flex;
+            align-items: center;
+            justify-content: flex-end;
+            a {
+              display: inline-flex;
+              width: 4rem;
+              height: 4rem;
+              &.left_arrow {
+                background: url("../../assets/images/marketing/left-arrow.svg") no-repeat 0 0;
+              }
+              &.right_arrow {
+                background: url("../../assets/images/marketing/right-arrow.svg") no-repeat 0 0;
+              }
+            }
+          }
+        }
+        .slider_content {
+          display: block;
+          width: $full-width;
+          margin: 2rem 0;
+          font-family: $font-family-poppins;
+          font-size: 1.125rem;
+          font-style: italic;
+          font-weight: $font-weight-light;
+          line-height: 2rem;
+          color: $black;
+        }
+        .user_info {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          .user_details {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            span {
+              display: block;
+              font-family: $font-family-poppins;
+              font-size: 1.0625rem;
+              font-weight: $font-weight-light;
+              line-height: 2rem;
+              color: #8c8b8b;
+            }
+          }
+          a.read_plus {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-family: $font-family-poppins;
+            font-size: .9375rem;
+            font-weight: $font-weight-bold;
+            line-height: 2rem;
+            color: #005efe;
+            i {
+              display: inline-flex;
+              margin-left: .3rem;
+              font-weight: $font-weight-bold;
+            }
+          }
+        }
+      }
+    }
+  }
+  //**** Marketing testimonial section style ends! ****//
+
+  //**** Marketing FAQ section style start ****//
+  section.marketing_faq {
+    position: $relative;
+    top: -8rem;
+    width: $full-width;
+    padding: 4rem 0 2rem;
+    background: #ececed;
+    @include media-breakpoint-only(md) {
+      top: -12rem;
+      padding: 3rem 0;
+    }
+    .container {
+      h1 {
+        display: flex;
+        justify-content: center;
+        width: $full-width;
+        font-family: $font-family-poppins;
+        font-size: 2.5rem;
+        font-weight: $font-weight-bold;
+        color: $black;
+      }
+      .marketing_faq_container {
+        display: flex;
+        flex-direction: column;
+        width: $full-width;
+        margin: 4rem 0 2rem;
+        .accordion_content {
+          display: block;
+          width: $full-width;
+          .accordion-body {
+            p {
+              display: block;
+              font-family: $font-family-poppins;
+              font-size: .9375rem;
+              font-weight: $font-weight-light;
+              line-height: 1.875rem;
+              color: $gray-light-500;
+            }
+            ul.like_dislike {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: flex-start;
+              padding: 0;
+              margin-top: 2rem;
+              list-style-type: none;
+              a {
+                display: inline-flex;
+                width: 40px;
+                height: 40px;
+                &.like {
+                  background: url("../../assets/images/marketing/thumbs-up.svg") no-repeat 0 0;
+                }
+                &.dislike {
+                  margin-left: 1rem;
+                  background: url("../../assets/images/marketing/thumbs-down.svg") no-repeat 0 0;
+                }
+              }
+            }
+          }
+        }
+        .view_all {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+  //**** Marketing FAQ section style ends! ****//
+}

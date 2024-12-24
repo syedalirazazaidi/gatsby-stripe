@@ -1,0 +1,269 @@
+main.contact_sales {
+  width: $full-width;
+  overflow: hidden;
+  section.contact_sales_form {
+    padding: 50px 0 80px;
+    background: rgb(245, 245, 245);
+    background: linear-gradient(180deg, rgba(245, 245, 245, 1) 0%, rgba(245, 245, 245, 1) 40.5%, rgba(255, 255, 255, 1) 40.6%, rgba(255, 255, 255, 1) 100%);
+    .container {
+      .contact_sales_content {
+        width: $full-width;
+        overflow: hidden;
+        .left_content {
+          float: left;
+          width: 30%;
+          @media only screen and (min-width: 320px) and (max-width: 960px) {
+            width: $full-width;
+            text-align: center;
+          }
+          h2 {
+            font-family: $font-family-poppins;
+            font-size: 2.4rem;
+            font-weight: $font-weight-light;
+            line-height: 1.4;
+            color: $black;
+            letter-spacing: .0225rem;
+            @media only screen and (min-width: 320px) and (max-width: 960px) {
+              font-size: 1.8rem;
+            }
+          }
+          .faq_text {
+            display: block;
+            margin-top: 30px;
+            margin-bottom: 48px;
+            font-family: $font-family-poppins;
+            font-size: 16px;
+            font-weight: $font-weight-light;
+            line-height: 1.8;
+            color: #0d0e10;
+            @media only screen and (min-width: 320px) and (max-width: 960px) {
+              margin-top: 15px;
+              margin-bottom: 40px;
+            }
+            a {
+              color: $black;
+              text-decoration: underline;
+            }
+          }
+        }
+        .right_content {
+          float: right;
+          width: 60%;
+          padding: 30px;
+          background-color: $white;
+          border: 1px solid rgba(47, 45, 43, .1);
+          border-radius: 4px;
+          box-shadow: 0 30px 30px rgba(36, 50, 66, .14);
+          @media only screen and (min-width: 768px) and (max-width: 960px) {
+            width: $full-width;
+          }
+          @media only screen and (min-width: 320px) and (max-width: 767px) {
+            width: $full-width;
+            padding: 25px;
+          }
+          form.sales_form {
+            width: $full-width;
+            @media only screen and (min-width: 768px) and (max-width: 960px) {
+              display: block;
+            }
+            @media only screen and (min-width: 320px) and (max-width: 767px) {
+              display: block;
+            }
+            .input_container {
+              display: flex;
+              flex-direction: row;
+              @media only screen and (min-width: 768px) and (max-width: 960px) {
+                display: block;
+                float: left;
+                width: 50%;
+              }
+              @media only screen and (min-width: 320px) and (max-width: 767px) {
+                display: block;
+                width: $full-width;
+              }
+              input {
+                width: 70%;
+                margin-left: 10px;
+                color: #273240;
+                @media only screen and (min-width: 768px) and (max-width: 960px) {
+                  width: 95%;
+                  margin-left: 0;
+                }
+                @media only screen and (min-width: 320px) and (max-width: 767px) {
+                  width: $full-width;
+                  margin-left: 0;
+                }
+              }
+              select {
+                width: 70%;
+                padding: 10px 16px;
+                margin-bottom: 0;
+                margin-left: 10px;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 28px;
+                color: rgba(13, 14, 16, .7);
+                border: 1px solid rgba(47, 45, 43, .2);
+                border-radius: 4px;
+                @media only screen and (min-width: 768px) and (max-width: 960px) {
+                  width: 95%;
+                  margin-left: 0;
+                }
+                @media only screen and (min-width: 320px) and (max-width: 767px) {
+                  width: $full-width;
+                  margin-left: 0;
+                }
+              }
+              .select_height {
+                height: 46.5px;
+              }
+            }
+            label.sales_label {
+              width: 28%;
+              margin-top: 13px;
+              font-family: $font-family-poppins;
+              font-size: 14px;
+              font-weight: $font-weight-light;
+              line-height: 28px;
+              color: #273240;
+              @media only screen and (min-width: 320px) and (max-width: 960px) {
+                width: $full-width;
+                margin-top: 0;
+                margin-bottom: 6px;
+                font-weight: $font-weight-medium;
+              }
+            }
+            .textarea_container {
+              display: flex;
+              flex-direction: row;
+              @media only screen and (min-width: 320px) and (max-width: 960px) {
+                display: block;
+              }
+              label {
+                width: 28%;
+                margin-top: 13px;
+                font-family: $font-family-poppins;
+                font-size: 14px;
+                font-weight: $font-weight-light;
+                line-height: 28px;
+                color: #273240;
+                @media only screen and (min-width: 320px) and (max-width: 960px) {
+                  width: $full-width;
+                  margin-top: 0;
+                  margin-bottom: 6px;
+                  font-weight: $font-weight-medium;
+                }
+              }
+              textarea {
+                width: 70%;
+                padding: 10px 16px;
+                margin-bottom: 0;
+                margin-left: 10px;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 28px;
+                color: rgba(13, 14, 16, .7);
+                border: 1px solid rgba(47, 45, 43, .2);
+                border-radius: 4px;
+                @media only screen and (min-width: 768px) and (max-width: 960px) {
+                  width: 98%;
+                  margin-left: 0;
+                }
+                @media only screen and (min-width: 320px) and (max-width: 767px) {
+                  width: $full-width;
+                  margin-left: 0;
+                }
+              }
+            }
+            .checkbox_container {
+              display: flex;
+              flex-direction: row;
+              @media only screen and (min-width: 768px) and (max-width: 960px) {
+                display: block;
+                width: $full-width;
+              }
+              @media only screen and (min-width: 320px) and (max-width: 960px) {
+                label.sales_label {
+                  display: none;
+                }
+              }
+              .checkbox_content {
+                display: flex;
+                width: 70%;
+                @media only screen and (min-width: 320px) and (max-width: 960px) {
+                  width: $full-width;
+                }
+                .mktoField {
+                  width: 16px !important;
+                  height: 16px;
+                  padding: 10px 16px;
+                  margin-top: 3px;
+                  margin-right: 8px;
+                  font-size: 16px;
+                  font-weight: 400;
+                  line-height: 28px;
+                  color: #0d0e10;
+                  accent-color: #1e1f21;
+                  border: 1px solid rgba(47, 45, 43, .2);
+                  border-radius: 2px;
+                }
+                label {
+                  display: inline-block;
+                  width: auto;
+                  margin-top: 0;
+                  font-family: $font-family-poppins;
+                  font-size: 14px;
+                  line-height: 24px;
+                  color: rgba(13, 14, 16, .7);
+                  @media only screen and (min-width: 768px) and (max-width: 960px) {
+                    font-size: 12px;
+                  }
+                  a {
+                    color: rgba(13, 14, 16, .7);
+                    border-bottom: 1.5px solid rgba(13, 14, 16, .7);
+                  }
+                }
+              }
+            }
+            .btn_container {
+              display: flex;
+              flex-direction: row;
+              @media only screen and (min-width: 768px) and (max-width: 960px) {
+                display: block;
+                width: $full-width;
+              }
+              @media only screen and (min-width: 320px) and (max-width: 960px) {
+                label.sales_label {
+                  display: none;
+                }
+              }
+              .lets_chat {
+                padding: 8px 15px;
+                font-family: $font-family-poppins;
+                font-size: 1rem;
+                font-weight: $font-weight-light;
+                color: $white;
+                background: $theme-primarycolor;
+                border-radius: 4px;
+              }
+            }
+          }
+          .agree_text {
+            margin-top: 16px;
+            font-size: 1rem;
+            font-weight: $font-weight-light;
+            line-height: 1.8;
+            color: #0d0e10;
+          }
+        }
+      }
+    }
+  }
+
+  .divider {
+    flex-shrink: 0;
+    width: $full-width;
+    height: .1475rem;
+    background: linear-gradient(270deg, #4287fd 0%, #61bc90 23.96%, #95d83b 48.44%, #f3d321 75%, #fd4f00 100%);
+  }
+}
