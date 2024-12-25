@@ -19,7 +19,36 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 const NavbarHeader = () => {
   const elementRef = useRef<HTMLDivElement | null>(null);
+  useEffect(() => {
+    const element: any = elementRef.current;
 
+    if (!element) return;
+
+    const sheet = element.querySelector('.slide-sheet');
+    const openButton = element.querySelector('.has-dropdown .feature_css');
+
+    const toggleSheet = () => {
+      if (sheet) {
+        const isOpen = sheet.classList.contains('open');
+        if (!isOpen) {
+          sheet.classList.add('open');
+        } else {
+          sheet.classList.remove('open');
+        }
+      }
+    };
+
+    const handleButtonClick = (event: Event) => {
+      event.preventDefault();
+      toggleSheet();
+    };
+
+    openButton?.addEventListener('click', handleButtonClick);
+
+    return () => {
+      openButton?.removeEventListener('click', handleButtonClick);
+    };
+  }, []);
   useEffect(() => {
     const element: any = elementRef.current;
 
