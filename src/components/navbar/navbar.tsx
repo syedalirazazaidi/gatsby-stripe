@@ -268,15 +268,6 @@ const NavbarHeader = () => {
     const backArrow = document.querySelector('.back-arrow');
     const sheetContent = document.querySelector('.sheet-content');
   
-    // Debugging: Verify element selection
-    console.log({
-      slideSheet,
-      sheetContent,
-      featureLinks,
-      closeSheetButton,
-      backArrow,
-    });
-  
     if (!slideSheet || !sheetContent) {
       console.error('Slide sheet or sheet content is not found.');
       return;
@@ -296,12 +287,16 @@ const NavbarHeader = () => {
         `#${dataContent} .content`
       )?.innerHTML;
   
-      console.log({ dataContent, dropdownContent });
+      console.log('First click detected:', { dataContent, dropdownContent });
   
       if (dropdownContent) {
         sheetContent.innerHTML = dropdownContent;
-        slideSheet.classList.add('active');
-        console.log('Slide sheet activated.');
+  
+        // Force repaint before adding the active class
+        requestAnimationFrame(() => {
+          slideSheet.classList.add('active');
+          console.log('Slide sheet activated on first click.');
+        });
       } else {
         console.error('Dropdown content not found.');
       }
