@@ -19,36 +19,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 const NavbarHeader = () => {
   const elementRef = useRef<HTMLDivElement | null>(null);
-  useEffect(() => {
-    const element: any = elementRef.current;
-
-    if (!element) return;
-
-    const sheet = element.querySelector('.slide-sheet');
-    const openButton = element.querySelector('.has-dropdown .feature_css');
-
-    const toggleSheet = () => {
-      if (sheet) {
-        const isOpen = sheet.classList.contains('open');
-        if (!isOpen) {
-          sheet.classList.add('open');
-        } else {
-          sheet.classList.remove('open');
-        }
-      }
-    };
-
-    const handleButtonClick = (event: Event) => {
-      event.preventDefault();
-      toggleSheet();
-    };
-
-    openButton?.addEventListener('click', handleButtonClick);
-
-    return () => {
-      openButton?.removeEventListener('click', handleButtonClick);
-    };
-  }, []);
+ 
   useEffect(() => {
     const element: any = elementRef.current;
 
@@ -296,43 +267,64 @@ const NavbarHeader = () => {
     const closeSheetButton = document.querySelector('.close-sheet');
     const backArrow = document.querySelector('.back-arrow');
     const sheetContent = document.querySelector('.sheet-content');
-
-    function closeAllNavBars() {
-      document.body.classList.remove('nav-open');
+  
+    // Debugging: Verify element selection
+    console.log({
+      slideSheet,
+      sheetContent,
+      featureLinks,
+      closeSheetButton,
+      backArrow,
+    });
+  
+    if (!slideSheet || !sheetContent) {
+      console.error('Slide sheet or sheet content is not found.');
+      return;
     }
-
+  
+    const closeAllNavBars = () => {
+      document.body.classList.remove('nav-open');
+      slideSheet?.classList.remove('active');
+    };
+  
+    const handleFeatureClick = (event: any) => {
+      const item = event.target.closest('.has-dropdown');
+      if (!item) return;
+  
+      const dataContent = item.getAttribute('data-content');
+      const dropdownContent = document.querySelector(
+        `#${dataContent} .content`
+      )?.innerHTML;
+  
+      console.log({ dataContent, dropdownContent });
+  
+      if (dropdownContent) {
+        sheetContent.innerHTML = dropdownContent;
+        slideSheet.classList.add('active');
+        console.log('Slide sheet activated.');
+      } else {
+        console.error('Dropdown content not found.');
+      }
+    };
+  
+    const handleCloseClick = () => {
+      console.log('Closing slide sheet.');
+      closeAllNavBars();
+    };
+  
     featureLinks.forEach(item => {
-      item.addEventListener('click', function (event) {
-        // event.preventDefault();
-
-        const dataContent = item.getAttribute('data-content');
-        const dropdownContent = document.querySelector(
-          `#${dataContent} .content`
-        )?.innerHTML;
-
-        if (sheetContent && dropdownContent) {
-          sheetContent.innerHTML = dropdownContent;
-          slideSheet?.classList.add('active');
-        }
-      });
+      item.addEventListener('click', handleFeatureClick);
     });
-
-    closeSheetButton?.addEventListener('click', function () {
-      slideSheet?.classList.remove('active');
-      closeAllNavBars();
-    });
-
-    backArrow?.addEventListener('click', function () {
-      slideSheet?.classList.remove('active');
-      closeAllNavBars();
-    });
-
+  
+    closeSheetButton?.addEventListener('click', handleCloseClick);
+    backArrow?.addEventListener('click', handleCloseClick);
+  
     return () => {
       featureLinks.forEach(item => {
-        item.removeEventListener('click', () => {});
+        item.removeEventListener('click', handleFeatureClick);
       });
-      closeSheetButton?.removeEventListener('click', () => {});
-      backArrow?.removeEventListener('click', () => {});
+      closeSheetButton?.removeEventListener('click', handleCloseClick);
+      backArrow?.removeEventListener('click', handleCloseClick);
     };
   }, []);
 
