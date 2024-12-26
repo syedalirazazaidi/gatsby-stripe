@@ -261,6 +261,78 @@ const NavbarHeader = () => {
       dropdownList.removeEventListener('mouseleave', hideDropdownWithDelay);
     };
   }, []);
+  useEffect(() => {
+    const featureLinks = document.querySelectorAll('.has-dropdown');
+    const slideSheet = document.querySelector('.slide-sheet');
+    const closeSheetButton = document.querySelector('.close-sheet');
+    const backArrow = document.querySelector('.back-arrow');
+    const sheetContent = document.querySelector('.sheet-content');
+  
+    if (!slideSheet || !sheetContent) {
+      console.error('Slide sheet or sheet content is not found.');
+      return;
+    }
+  
+    const closeAllNavBars = () => {
+      console.log('Closing slide sheet.');
+      document.body.classList.remove('nav-open');
+      slideSheet?.classList.remove('active');
+    };
+  
+    const handleFeatureClick = (event: any) => {
+      // Ensure the click is properly detected on the menu item or its child elements
+      const item = event.target.closest('.has-dropdown');
+      if (!item) {
+        console.log('Click not detected on .has-dropdown.');
+        return;
+      }
+  
+      // Get the data-content attribute of the clicked menu item
+      const dataContent = item.getAttribute('data-content');
+      const dropdownContent = document.querySelector(
+        `#${dataContent} .content`
+      )?.innerHTML;
+  
+      console.log('Menu item clicked:', { dataContent, dropdownContent });
+  
+      if (dropdownContent) {
+        // Inject the content into the sheet content area
+        sheetContent.innerHTML = dropdownContent;
+  
+        // Add the active class to make the slide sheet visible
+        requestAnimationFrame(() => {
+          slideSheet.classList.add('active');
+          console.log('Slide sheet activated.');
+        });
+      } else {
+        console.error('Dropdown content not found.');
+      }
+    };
+  
+    const handleCloseClick = () => {
+      closeAllNavBars();
+    };
+  
+    // Attach click event listeners to all .has-dropdown elements
+    featureLinks.forEach(item => {
+      item.addEventListener('click', handleFeatureClick);
+    });
+  
+    // Attach click event listeners to close buttons
+    closeSheetButton?.addEventListener('click', handleCloseClick);
+    backArrow?.addEventListener('click', handleCloseClick);
+  
+    // Cleanup event listeners on component unmount
+    return () => {
+      featureLinks.forEach(item => {
+        item.removeEventListener('click', handleFeatureClick);
+      });
+      closeSheetButton?.removeEventListener('click', handleCloseClick);
+      backArrow?.removeEventListener('click', handleCloseClick);
+    };
+  }, []);
+  ;
+  // working code bottom isssue
   // useEffect(() => {
   //   const featureLinks = document.querySelectorAll('.has-dropdown');
   //   const slideSheet = document.querySelector('.slide-sheet');
@@ -322,67 +394,67 @@ const NavbarHeader = () => {
   //     backArrow?.removeEventListener('click', handleCloseClick);
   //   };
   // }, []);
-  useEffect(() => {
-    const featureLinks = document.querySelectorAll('.has-dropdown');
-    const slideSheet = document.querySelector('.slide-sheet');
-    const closeSheetButton = document.querySelector('.close-sheet');
-    const backArrow = document.querySelector('.back-arrow');
-    const sheetContent = document.querySelector('.sheet-content');
+  // useEffect(() => {
+  //   const featureLinks = document.querySelectorAll('.has-dropdown');
+  //   const slideSheet = document.querySelector('.slide-sheet');
+  //   const closeSheetButton = document.querySelector('.close-sheet');
+  //   const backArrow = document.querySelector('.back-arrow');
+  //   const sheetContent = document.querySelector('.sheet-content');
   
-    if (!slideSheet || !sheetContent) {
-      console.error('Slide sheet or sheet content is not found.');
-      return;
-    }
+  //   if (!slideSheet || !sheetContent) {
+  //     console.error('Slide sheet or sheet content is not found.');
+  //     return;
+  //   }
   
-    const closeAllNavBars = () => {
-      document.body.classList.remove('nav-open');
-      slideSheet?.classList.remove('active');
-    };
+  //   const closeAllNavBars = () => {
+  //     document.body.classList.remove('nav-open');
+  //     slideSheet?.classList.remove('active');
+  //   };
   
-    const handleFeatureClick = (event: any) => {
-      const item = event.target.closest('.has-dropdown');
-      if (!item) return;
+  //   const handleFeatureClick = (event: any) => {
+  //     const item = event.target.closest('.has-dropdown');
+  //     if (!item) return;
   
-      const dataContent = item.getAttribute('data-content');
-      const dropdownContent = document.querySelector(
-        `#${dataContent} .content`
-      )?.innerHTML;
+  //     const dataContent = item.getAttribute('data-content');
+  //     const dropdownContent = document.querySelector(
+  //       `#${dataContent} .content`
+  //     )?.innerHTML;
   
-      console.log('First click detected:', { dataContent, dropdownContent });
+  //     console.log('First click detected:', { dataContent, dropdownContent });
   
-      if (dropdownContent) {
-        sheetContent.innerHTML = dropdownContent;
+  //     if (dropdownContent) {
+  //       sheetContent.innerHTML = dropdownContent;
   
-        // Force repaint before adding the active class
-        requestAnimationFrame(() => {
-          slideSheet.classList.add('active');
-          console.log('Slide sheet activated on first click.');
-        });
-      } else {
-        console.error('Dropdown content not found.');
-      }
-    };
+  //       // Force repaint before adding the active class
+  //       requestAnimationFrame(() => {
+  //         slideSheet.classList.add('active');
+  //         console.log('Slide sheet activated on first click.');
+  //       });
+  //     } else {
+  //       console.error('Dropdown content not found.');
+  //     }
+  //   };
   
-    const handleCloseClick = () => {
-      console.log('Closing slide sheet.');
-      closeAllNavBars();
-    };
+  //   const handleCloseClick = () => {
+  //     console.log('Closing slide sheet.');
+  //     closeAllNavBars();
+  //   };
   
-    featureLinks.forEach(item => {
-      item.addEventListener('click', handleFeatureClick);
-    });
+  //   featureLinks.forEach(item => {
+  //     item.addEventListener('click', handleFeatureClick);
+  //   });
   
-    closeSheetButton?.addEventListener('click', handleCloseClick);
-    backArrow?.addEventListener('click', handleCloseClick);
+  //   closeSheetButton?.addEventListener('click', handleCloseClick);
+  //   backArrow?.addEventListener('click', handleCloseClick);
   
-    return () => {
-      featureLinks.forEach(item => {
-        item.removeEventListener('click', handleFeatureClick);
-      });
-      closeSheetButton?.removeEventListener('click', handleCloseClick);
-      backArrow?.removeEventListener('click', handleCloseClick);
-    };
-  }, []);
+  //   return () => {
+  //     featureLinks.forEach(item => {
+  //       item.removeEventListener('click', handleFeatureClick);
+  //     });
+  //     closeSheetButton?.removeEventListener('click', handleCloseClick);
+  //     backArrow?.removeEventListener('click', handleCloseClick);
+  //   };
+  // }, []);
   return (
     <div className="morph-container">
       <header ref={elementRef} className="morph-dropdown">
